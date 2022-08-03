@@ -1,207 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbsolonDesigns</title>
+    
+     
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-      
-
-      
-      
-      :root {
-          --Dark-cyan: hsl(158, 36%, 37%);
-          --Darker-cyan: hsl(156, 42%, 17%);
-          --Cream: hsl(30, 38%, 92%);
-          --Very-dark-blue: hsl(212, 21%, 14%);
-          --Dark-grayish-blue: hsl(228, 12%, 48%);
+    
+    <style>
+          :root {
           --White: hsl(0, 0%, 100%);
-          --Black: hsl(0,0%,0%;);
-            }
-      
-            body{
-          font-size: 14px;
-          font-weight: 500;
-          
-      }
-      
-      .main_body{
-          width: 100%; max-width: 1440px; height: 600px; background-color: hsl(30, 38%, 92%); margin: 0 auto; align-content: center; display: flex;
-          padding-bottom: 18px;
-          
-      }
-      
-      .main_block{
-          width: 500px; height: auto; background-color: #fff; display: flex; margin: auto; border-radius: 8px; overflow: hidden;
-          
-      }
-      
-      .img_block{
-          width: 50%; 
-      }
-      
-            .picture{
-          width: 100%; display: flex; object-fit: cover; height: 100%;
-      }
-      
-
-        .info_block {
-            background-color: var(--White);
-            width: 50%; padding: 30px;
+          --Cream: hsl(30, 38%, 92%);
+          --dark_bg: #262125;
+          --bg: linear-gradient(to right, #e0eafc, #cfdef3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          }
+        
+        body{
+           
         }
-      
-      .product{
-      color: var(--Dark-grayish-blue);
-      font-family: 'Montserrat';
-      text-transform: uppercase;
-      font-size: .575rem;
-      letter-spacing: .4rem;
-      padding-bottom: 18px;
-
-
-      }
-
-      .name{
-      color: var(--Black);
-      font-family: 'Fraunces';
-      font-weight: 700;
-      font-size: 2rem;
-      line-height: 2rem;
-      padding-bottom: 18px;
-
-      }
-
-      .desc{
-      color: var(--Dark-grayish-blue);
-      font-family: 'Montserrat';
-      font-size: .8rem;
-      line-height: 1.2rem;
-      padding-bottom: 18px;
-   
-      }
-      
-      .price{
-          color: var(--Dark-cyan);
-          font-family: 'Fraunces';
-          font-size: 2rem;
-          display: flex;
-          align-items:center; 
-          padding-bottom: 18px;
         
-
-                
-      }
-      
-      .price-strike{
-          font-family: 'Montserrat'; font-size: .8rem; color: var(--Dark-grayish-blue);  text-decoration: line-through;  padding-left: 10px;
-      }
+        .hero{
+            max-width: 1000px; height: 360px; margin: 0 auto;  position: relative;
+        }
         
-      
-      .btn{
-          display: flex;
-          align-items:center; 
-          background-color: var(--Dark-cyan);
-          height: 48px;
-          border-radius: 8px;
-          color:  var(--White);
-          justify-content: center;
-        
-      }
-      
-      
-      .btn:hover{
-        background-color: var(--Darker-cyan);
-        cursor:pointer;
-        
-      }
-      
-      .btn::before    {
-          content: url(https://thurnix01.github.io/absolondesigns/images/icon-cart.svg);
-          padding-right: 14px;    
-          
-      }
-      
-      /* mobile-view */
-      
-    @media only screen and (max-width: 700px) {
-        
-              .main_body{
-          width: 100%; max-width: 420px; height: 720px; background-color: hsl(30, 38%, 92%); margin: 0 auto; align-content: center; display: flex;
-      }
-        
-        
-            .main_block{
-          width: 375px; height: auto; background-color: #fff; display: block; margin: auto; border-radius: 8px; overflow: hidden;
-      }
-      
-        
-            .img_block{
-          width: 100%; 
-         height: 300px;
+        .nav_wrapper{
+            width: 90%; height: 80px; display: flex; margin: 0 auto; justify-content: space-between; align-items: center; position: relative; color: #fff;
+        }
     
-      }
         
-            .info_block {
-            background-color: var(--White);
-            width: 300px; 
-  
+        .card_wrapper{
+            max-width: 1000px; height: auto;  margin: 20px auto;  display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo{
+            font-family:'Montserrat', sans-serif; font-size: 2.5rem; font-weight: 700; text-transform: uppercase; text-align: left; width:7%; color: #fff;
         }
         
-      .desc{
-      color: var(--Dark-grayish-blue);
-      font-family: 'Montserrat';
-      font-size: .9rem;
-      line-height: 1.6rem;
-      padding-bottom: 18px;
-   
-      }
+        .nav_items{
+            color: #fff;
+        }
+        
+
+    
+        .card {
+            width: 300px; height: auto; min-height: 380px; background-color: #fff; border-radius: 12px; box-shadow: 0.5px 0.5px 2px 0.5px #000; overflow: hidden; transition-duration: 0.3s; color: #000;
+        }
+        
+            .card:hover{
+            box-shadow: 0px 8px 8px 3px #000;
+            cursor: pointer;
+            
+        }
+        
+       .card,a {
+                text-decoration: none;
+        }
+        
+        
+        .card_top{
+            height: 50%;
+    
+        }
+        .card-img{
+            width:100%; height: 190px;  display: flex; object-fit: cover;
+      
+        }
+        
+        .card_info{
+            height: 50%; padding: 0 30px; font-family: 'Montserrat'; font-size: 0.75rem; line-height: 1.25rem;
+        }
+        
 
         
-      }
-      
-
-      
-    .attribution { font-size: 11px; text-align: center; padding-top: 24px;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-      
-  </style>
+    
+    </style>
 </head>
-<body>
-  
-  <div class="main_body">
+
+<body style="width: 100%;  background: var(--dark_bg); ">
+   
+   <div class="hero";>
+   
+  <div><img src="images/hero_img.jpg"  style="width: 100%; position: absolute; height: 320px; object-fit: cover;"></div>
+    <div class="nav_wrapper">
+
+        <a href=""><div style="width:100%;"><div class="logo "><img src="images/ad_logo.png" style="width: 100%;"></div></div></a>
+        <a href=""><div class="nav_items">About</div></a>
+        <a href=""><div class="nav_items">Contact</div></a>
+    </div>
     
-     <div class="main_block">
+    </div>
+    
+    
+     <div class="card_wrapper">
+
+         <a href=""><div class="card">
+             <div class="card_top"><img src="images/preview_01.jpg" class="card-img" alt="image"></div>
+             <div class="card_info">
+                 <h2>Product preview card component</h2> HTML CSS 1 NEWBIE This HTML &amp; CSS-only challenge will be perfect for anyone starting to build responsive projects.
+             </div>
+             </div></a>
+
+         <a href=""><div class="card">
+             <div class="card_top"><img src="images/blank.jpg" class="card-img" alt="image"></div>
+             <div class="card_info">
+                 <h2>Coming Soon</h2>
+             </div>
+             </div></a>
+         
+         <a href=""><div class="card">
+             <div class="card_top"><img src="images/blank.jpg" class="card-img" alt="image"></div>
+             <div class="card_info">
+                 <h2>Coming Soon</h2>
+             </div>
+             </div></a>
      
-     <div class="img_block"><img src="https://thurnix01.github.io/absolondesigns/images/image-product-desktop.jpg" class="picture" ></div>
-         <div class="info_block">
-         
-         
-         <div class="product">perfume</div>
-         <div class="name">Gabrielle Essence Eau De Parfum</div>
-         <div class="desc">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</div>
-             <div class="price">$149.99 <span class="price-strike">$169.99</span></div>
-         <div class="btn">Add to Cart</div>
-           
-           
-        </div>
-     </div>
-      
-  </div>
+     
+    </div>
+    
 
+    
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">absolondesigns</a>.
-  </div>
+   
+    
 </body>
 </html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
