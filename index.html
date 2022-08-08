@@ -6,7 +6,7 @@
       
        <link rel="icon" type="image/png" sizes="42x42" href="https://thurnix01.github.io/absolondesigns/images/ad-favicon-32x32.png"><title>AbsolonDesigns</title>
     
-    
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,9 +22,14 @@
           --bg: linear-gradient(to right, #e0eafc, #cfdef3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
           }
         
+        html {
+          scroll-behavior: smooth;
+        }
+        
         body{
             width: 100%;  background: var(--dark_bg);
             font-family: 'Montserrat';
+            margin: 0;
         }
         
         
@@ -75,7 +80,7 @@
         }
         
        .card a {
-                text-decoration: none;
+                text-decoration: none ;
         }
         
         
@@ -90,6 +95,7 @@
         
         .card_info{
             height: 50%; padding: 0 30px; font-family: 'Montserrat'; font-size: 0.75rem; line-height: 1.25rem;
+            
         }
         
         
@@ -129,6 +135,10 @@
         
         @media only screen and (max-width: 700px) {
             
+            html {
+              scroll-behavior: none;
+            }
+
              .logo{
             width: 20%;
             height: auto;
@@ -173,8 +183,13 @@
                  text-align: right;
               }
                 
+       
                 
             }
+        
+        .hero{
+            z-index: -99;
+        }
         
 
 
@@ -183,7 +198,8 @@
 
 <body>
    
-   <div class="hero";>
+   <div class="hero">
+     <header class="zoom">
    
   <div><img src="https://thurnix01.github.io/absolondesigns/images/hero_img.jpg"  class="hero_img"></div>
     <div class="nav_wrapper">
@@ -208,7 +224,7 @@
 
         
     </div>
-    
+       </header>
     </div>
     
     
@@ -246,6 +262,7 @@
 </body>
 
 <script>
+    
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -254,6 +271,21 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+    
+    
+        
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+	$(".zoom img").css({
+		transform: 'translate3d(0%, -'+(scroll/100)+'%, 0) scale('+(100 + scroll/5)/100+')',
+		//Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
+		//"-webkit-filter": "blur(" + (scroll/200) + "px)",
+		//filter: "blur(" + (scroll/200) + "px)"
+	});
+});
+
+    
+    
 </script>
 
 </html>
