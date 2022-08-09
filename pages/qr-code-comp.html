@@ -20,7 +20,7 @@
             --Light_gray: hsl(212, 45%, 89%);
             --Grayish_blue: hsl(220, 15%, 55%);
             --Dark_blue: hsl(218, 44%, 22%);
-            --Black: hsl(0, 0%, 0%; );
+            --Black: hsl(0, 0%, 0%);
         }
 
         body {
@@ -64,7 +64,14 @@
             padding: 10px 32px;
         }
 
+        
+        .title{
+            font-weight: 700; font-size: 1.35rem;color: var(--Dark_blue);
+        }
 
+        .copy{
+            padding: 16px 0 30px; color: var(--Grayish_blue); font-weight: 400; font-size: 0.95rem;
+        }
 
              .attribution {
                 font-size: 11px; text-align: center;
@@ -92,9 +99,9 @@
         <div class="main_block">
             <div class="top_block"><img src="https://thurnix01.github.io/absolondesigns/images/image-qr-code.png" style="width:100%;" alt="QR Code"></div>
             <div class="bottom_block">
-                <div style="font-weight: 700; font-size: 1.35rem;color: var(--Dark_blue);">Improve your front-end skills by building projects</div>
+                <div class="title">Improve your front-end skills by building projects</div>
 
-                <div style="padding: 16px 0 30px; color: var(--Grayish_blue); font-weight: 400; font-size: 0.95rem;">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
+                <div class="copy">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
             </div>
 
         </div>
