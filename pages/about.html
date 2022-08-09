@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://thurnix01.github.io/absolondesigns/images/ad-favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        :root {
+            --White: hsl(0, 0%, 100%);
+            --Light_gray: hsl(212, 45%, 89%);
+            --Grayish_blue: hsl(220, 15%, 55%);
+            --Dark_blue: hsl(218, 44%, 22%);
+            --Black: hsl(225, 5%, 10%);
+             --dark_bg: #262125;
+        }
+
+        body {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 11px; 
+            background-color: var(--dark_bg);
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: block;
+            align-content: center;
+            margin: 0 auto;
+            font-size: 15px;
+
+        }
+        
+
+        .main_block {
+            font-family: 'Outfit';
+            max-width: 640px;
+            height: auto;
+            margin: 200px auto;
+            display: block;
+            align-content: center;
+            border-radius: 20px;
+            box-shadow: 0 13px 30px rgb(0 0 0 / 0.10);
+        }
+
+        .top_block {
+            margin: 16px;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 285px;
+            
+        }
+
+        .bottom_block {
+            padding: 10px 32px;
+        }
+
+        
+        .title{
+            font-weight: 700; font-size: 1.35rem;color: var(--White);
+        }
+
+        .copy{
+            padding: 16px 0 30px; color: var(--White); font-weight: 300; font-size: 0.95rem; line-height: 1.5rem; text-align: left; width: 100%;
+        }
+
+             .attribution {
+                font-size: 11px; text-align: center; color: white;
+            }
+
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        
+            .logo{
+            width:10%;float: right;
+            mix-blend-mode: difference;
+            opacity: 0.1;
+            }
+
+            .nav_items{
+            color: #fff;
+            }
+
+
+            .topnav {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            width: 860px;
+            margin: 0 auto;
+            height: auto;
+
+            }
+
+            .topnav a {
+            float: right;
+            display: block;    
+            color: #d9d9d9;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Montserrat';
+            font-size: 1rem;
+            }
+
+            .topnav a:hover {
+            text-decoration: underline;
+            color: #fff;
+            }
+
+            .topnav a.active {
+
+            color: white;
+            }
+
+            .topnav .icon {
+            display: none;
+
+            }
+
+            #hide{
+            display: none;
+            }
+        
+        .nav_wrapper{
+            background-color: var(--dark_bg)
+        }
+
+        
+            @media only screen and (max-width: 700px) {
+        .container {
+            max-width: 375px;
+        }
+            
+        }
+ 
+            @media screen and (max-width: 700px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+            float: right;
+            display: block;
+            }
+            }
+
+            @media screen and (max-width: 700px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            }
+            .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: right;
+            position: relative;
+
+            }
+            .logo{
+            width:18%;
+            float: right;
+            padding-right: 30px
+            }
+
+
+            #hide{
+            display: block;
+            }
+                
+            .topnav {
+            width: 100%;
+            }
+
+
+            }
+        
+    </style>
+</head>
+
+<body>
+    
+        <div class="nav_wrapper">
+
+        
+        
+        <div class="topnav" id="myTopnav">
+
+            <a href="https://thurnix01.github.io/absolondesigns/" class="active"><img src="https://thurnix01.github.io/absolondesigns/images/ad_logo.png" class="logo"></a>
+  
+           
+        </div>
+
+        
+
+        
+    </div>
+
+    <div class="container">
+
+        <div class="main_block">
+        <img src="https://thurnix01.github.io/absolondesigns/images/profile.png" class="top_block" alt="Profile picture">
+            <div class="bottom_block">
+                <div class="title">Hi, my name is Terence Absolon</div>
+
+                <div class="copy">I am an enthusiastic professional, always looking to improve on my professional and personal development. My goal is continuing with self-investment by pursuing work opportunities that help me promote my skills as a graphic designer and gaining even more experience in a creative environment. I believe that by combining my interpersonal skills with graphic design helps to promote me in a profession that I see being a successful and rewarding one.</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="attribution">
+            Coded by <a href="https://thurnix01.github.io/absolondesigns/">absolondesigns</a>.
+    </div>
+</body>
+
+</html>
