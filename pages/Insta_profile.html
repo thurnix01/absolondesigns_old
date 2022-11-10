@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://thurnix01.github.io/absolondesigns/images/ad-favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        :root {
+            --White: hsl(0, 0%, 100%);
+            --Light_gray: hsl(212, 45%, 89%);
+            --Grayish_blue: hsl(220, 15%, 55%);
+            --Dark_blue: hsl(218, 44%, 22%);
+            --Black: hsl(0, 0%, 0%);
+        }
+
+        body {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 11px; 
+                        background-color: var(--Light_gray);
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: block;
+            align-content: center;
+            margin: 0 auto;
+            font-size: 15px;
+
+        }
+        
+
+        .main_block {
+            font-family: 'Outfit';
+            width: 318px;
+            height: auto;
+            background-color: var(--White);
+            margin: 200px auto;
+            display: block;
+            align-content: center;
+            border-radius: 20px;
+            box-shadow: 0 13px 30px rgb(0 0 0 / 0.10);
+        }
+
+        .top_block {
+            margin: 16px;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 285px;
+        }
+
+        .bottom_block {
+            padding: 10px 32px;
+        }
+
+        
+        .title{
+            font-weight: 700; font-size: 1.35rem;color: var(--Dark_blue);
+        }
+
+        .copy{
+            padding: 16px 0 30px; color: var(--Grayish_blue); font-weight: 400; font-size: 0.95rem;
+        }
+
+             .attribution {
+                font-size: 11px; text-align: center;
+            }
+
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        
+        
+         @media only screen and (max-width: 700px) {
+        .container {
+            max-width: 375px;
+        }
+            
+        }
+        
+        
+                .logo{
+            width:10%;float: right;
+            mix-blend-mode: difference;
+            opacity: 0.1;
+            }
+
+            .nav_items{
+            color: #fff;
+            }
+
+
+            .topnav {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            width: 860px;
+            margin: 0 auto;
+            height: auto;
+
+            }
+
+            .topnav a {
+            float: right;
+            display: block;    
+            color: #d9d9d9;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Montserrat';
+            font-size: 1rem;
+            }
+
+            .topnav a:hover {
+            text-decoration: underline;
+            color: #fff;
+            }
+
+            .topnav a.active {
+
+            color: white;
+            }
+
+            .topnav .icon {
+            display: none;
+
+            }
+
+            #hide{
+            display: none;
+            }
+        
+        .nav_wrapper{
+            background-color: var(--Light_gray)
+        }
+        
+        .container a:hover{
+            opacity: 0.8;
+        }
+        
+        ._row{
+            display: flex; gap: 1.8rem; padding: 30px 30px 0; width: 100%;
+        }
+        
+        .insta_block {
+             width: 100%; display: flex; 
+        }
+
+            @media screen and (max-width: 700px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+            float: right;
+            display: block;
+            }
+            }
+
+            @media screen and (max-width: 700px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            }
+            .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: right;
+            position: relative;
+
+            }
+            .logo{
+            width:18%;
+            float: right;
+            padding-right: 30px
+            }
+
+
+            #hide{
+            display: block;
+            }
+                
+            .topnav {
+            width: 100%;
+            }
+
+                
+                  ._row{
+            display: block; gap: 1.8rem; padding: 30px 30px 0; width: auto;
+        }
+
+                  .insta_block {
+             width: 100%; display: flex;    padding-bottom: 30px;
+        }
+            }
+        
+    </style>
+</head>
+
+<body>
+    
+        <div class="nav_wrapper">
+            <div class="topnav" id="myTopnav">
+            <a href="https://thurnix01.github.io/absolondesigns/" class="active"><img src="https://thurnix01.github.io/absolondesigns/images/ad_logo.png" class="logo"></a>
+        </div>
+    </div>
+    
+
+
+    <div class="container" style="max-width: 1000px;">
+        <div style="max-width:140px; padding-left: 30px; margin-top: 60px;"><img src="https://thurnix01.github.io/absolondesigns/images/Dans-Logo_blk.png" style="width:100%; display: flex;"></div>
+    
+<div style=" width: 100%; margin: 0 auto;">
+   <div class="_row">
+      
+       <a href="https://www.instagram.com/p/CkuFx4rM1mW/" style="" target="_blank"><div style=""><img src="https://thurnix01.github.io/absolondesigns/images/314544687_604684361437388_6633887794355754221_n.jpeg" class="insta_block"></div></a>
+              
+                    
+           <a href="https://www.instagram.com/p/Ckd0qDHuJjH/" style="" target="_blank"><div style=""><img src="https://thurnix01.github.io/absolondesigns/images/313603602_1164538581145662_6768700408625340801_n.jpeg" class="insta_block"></div></a>
+                    
+        
+            <a href="https://www.instagram.com/p/CkL58lggNNZ/" style="" target="_blank"><div style=""><img src="https://thurnix01.github.io/absolondesigns/images/cult_vans.jpg" class="insta_block"></div></a>
+       
+   </div>
+   
+      <div class="_row">
+      
+       <a href="https://www.instagram.com/p/CUajXohL_Az/" style="" target="_blank"><div style=""><img src="https://thurnix01.github.io/absolondesigns/images/243175394_4470765086350413_3818289491350480236_n.jpg" class="insta_block"></div></a>
+              
+                    
+           <a href="https://www.instagram.com/p/Ch5npCauMcX/" style="" target="_blank"><div style=""><img src="https://thurnix01.github.io/absolondesigns/images/302160551_118992397580777_9030054866471928430_n.jpg" class="insta_block"></div></a>
+                    
+        
+            <a href="https://www.instagram.com/p/CZH9_XjOkvY/" style="" target="_blank"><div style=""><img src="https://thurnix01.github.io/absolondesigns/images/272616088_963891071217596_2590960215127745371_n.jpg" class="insta_block"></div></a>
+       
+   </div>
+   
+           <div style="max-width:200px; padding-left: 30px; margin-top: 60px;"><img src="https://thurnix01.github.io/absolondesigns/images/Performance_Long.png" style="width:100%; display: flex;"></div>
+   
+         <div class="_row">
+         
+         
+      
+       <a href="https://www.instagram.com/p/CdWqQdYP5iJ/" style="" target="_blank"><div style=""><img src="https://thurnix01.github.io/absolondesigns/images/280314058_522967115961948_2004804170331307546_n.jpg"  class="insta_block"></div></a>
+              
+                    
+           <a href="https://www.instagram.com/p/CVayXBhNJbm/" style="" target="_blank"><div style=""><img src="https://thurnix01.github.io/absolondesigns/images/248299130_260318105903608_7319196458734298269_n.jpg" class="insta_block"></div></a>
+                    
+        
+            <a href="https://www.instagram.com/p/CH_LuvZAQWe/" style="" target="_blank"><div style=""><img src="https://thurnix01.github.io/absolondesigns/images/127538478_220802639460495_9137204038813273091_n.jpg" class="insta_block"></div></a>
+       
+   </div>
+   
+
+   
+   
+   
+   
+   
+   </div>
+   
+   
+   
+   
+   
+    </div>
+  
+</body>
+
+</html>
