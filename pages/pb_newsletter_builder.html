@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add/Remove InnerHTML Template</title>
+    
+           <style type="text/css">
+      @media screen {
+          @font-face {
+              font-family: 'tungsten';
+              font-style: normal;
+              src: local('tungsten Regular'), local('tungsten-Regular'), url(https://www.performancebike.com/content/skins/performancebike/fonts/Tungsten-Medium.woff) format('woff');
+            font-display: optional;
+          }
+      }
+
+      @media screen {
+          @font-face {
+              font-family: 'UniversLTStd-Cn';
+              font-style: normal;
+              src: local('UniversLTStd-Cn Regular'), local('UniversLTStd-Cn-Regular'), url(https://www.performancebike.com/content/skins/performancebike/fonts/UniversLTStd-Cn.woff2) format('woff');
+                font-display: optional
+          }
+
+      }
+      </style>
+    
+     <style>
+  
+        
+      /* Add your CSS styles here */
+      .component-builder {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto 60px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .component-builder label {
+        margin-bottom: 10px;
+        font-family: 'UniversLTStd-Cn', 'verdana', 'arial', sans-serif;
+        font-display: optional;
+      }
+
+      .component-builder input[type="text"],
+      .component-builder input[type="url"],
+      .component-builder textarea {
+        width: auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-family: 'verdana', 'arial', sans-serif;
+      }
+
+      .component-builder button {
+        padding: 10px 20px;
+        background-color: #464647;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        max-width:  300px;
+      }
+         
+         #editor {
+        max-width: 600px;
+        margin: 0 auto 60px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+         }
+        
+        table{
+            max-width: 600px;
+            width: 100%;
+        }
+         
+    </style>
+ <style>
+            #_header-section table, #_double_section table{
+            width: 600px;
+            margin: 0 auto;
+            }
+     
+   
+     
+            #container2 ._double_section{
+                flex: 1 0 47%;
+                width: auto;
+                background-color: #f9f9f9;
+                margin: 8px 8px;
+                padding: 8px;
+            }
+            
+     
+                   
+
+            #container2 {
+            display: flex;
+            flex-wrap: wrap;
+            }
+     
+
+             #container5  {
+                 margin: 0 auto;
+             }
+
+            table h1 {
+            font-size: 4.5rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            font-family: 'tungsten','verdana', sans-serif;
+            text-align: left;
+            text-transform: uppercase;
+            margin:32px 32px 0;
+            }
+
+            h3, table h3 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            font-family: 'tungsten','verdana', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            margin:32px 0;
+            }
+
+
+            table p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 500;
+            font-family: 'UniversLTStd-Cn','verdana', sans-serif;
+            text-align: left;
+            margin:32px 32px;
+            }
+
+            ._nl_content {
+            max-width: 600px;
+            width: 100%;
+            }
+
+
+
+    ._nl_button a {
+        font-family: 'UniversLTStd-Cn', 'verdana', 'arial', sans-serif;
+        font-weight: black;
+        font-size: 1rem;
+        line-height: 2.5rem;
+        
+    }
+    
+        ._half_section {
+            float: none;
+            clear: both;
+            width: 50%;
+            background-color:#f9f9f9;
+            margin: 20px;
+            padding: 20px;
+          }
+          
+
+
+    @media only screen and (max-width: 599px){
+        
+                #_header-section table, #_double_section table{
+            width: auto;
+            margin: 0 auto;
+        }
+         ._half_section {
+             width: auto;
+             float: left !important;
+              padding: 32px 32px 32px 38px ;
+      }
+        
+         ._nl_content tr td {
+         font-family: 'UniversLTStd-Cn', 'verdana', 'arial', sans-serif;
+         font-size: 1.25rem;
+         line-height: 2rem;
+         }
+        
+            ._nl_content {
+                max-width: 100% !important;
+        }
+        
+    }
+        
+  
+</style>
+
+  </head>
+  <body>
+      <div class="component-builder">
+        
+               <h3>Header Section</h3>
+         
+          <label for="hero-image">Hero Image URL:</label>
+          <input type="text" id="hero-image" placeholder="Enter URL">
+         
+          <label for="intro-line">Introduction Line:</label>
+          <input type="text" id="intro-line" placeholder="Enter Intro Line">
+
+         
+          <label for="body-copy">Intro Copy:</label>
+          <textarea id="body-copy" rows="4" placeholder="Enter Intro Copy"></textarea>
+
+                                
+        <label for="intro-body-title">Section Title</label>
+          <input type="text" id="intro-body-title" placeholder="Enter Section Title">
+            
+             <div>
+          <button onclick="addTemplate1()">Add Header</button>
+          <button onclick="removeTemplate1()">Remove Header</button>
+            </div>
+            
+                    <h3>Body Section</h3>
+
+        
+       
+                     <label for="image-1">Image URL:</label>
+          <input type="text" id="image-1" placeholder="Enter URL">
+            
+          <label for="image-copy-1">Product Name:</label>
+          <input type="text" id="image-copy-1" placeholder="Enter Product Name">
+           
+           
+            <label for="cta-button">Button CTA:</label>
+          <input type="url" id="cta-button" placeholder="Enter CTA">        
+               
+   
+             <div>
+          <button onclick="addTemplate2()">Add Section</button>
+          <button onclick="removeTemplate2()">Remove Section</button>
+            </div>
+            
+              <h3>Additional Image</h3>
+        <label for="image-2">Image URL:</label>
+          <input type="text" id="image-2" placeholder="Enter URL">
+           
+                     <div>
+          <button onclick="addTemplate3()">Add Image</button>
+          <button onclick="removeTemplate3()">Remove Image</button>
+            </div>
+           
+            
+             <h3>More Body Copy</h3>
+
+          <label for="body-copy-2">Body Copy:</label>
+          <textarea id="body-copy-2" rows="4" placeholder="Enter Body of Copy"></textarea>
+ 
+
+   
+             <div>
+          <button onclick="addTemplate4()">Add Copy</button>
+          <button onclick="removeTemplate4()">Remove Copy</button>
+            </div>
+            
+            
+        <h3>CTA Button</h3>
+            
+        <label for="cta-button-2" >Button CTA:</label>
+          <input type="url" id="cta-button-2" placeholder="Enter CTA">        
+              
+        
+
+<!--       <input type="text" id="inputField" />-->
+     <div style="margin-bottom: 10px;">
+
+      <input type="checkbox" id="disableCheckbox" onchange="toggleOutput()" />     
+       <label for="disableCheckbox">hide/show</label>
+
+  
+         
+         </div>
+
+          
+   
+             <div>
+          <button onclick="addTemplate5()">Add Section</button>
+          <button onclick="removeTemplate5()">Remove Section</button>
+            </div>
+            
+            <div style="width: 100%;display: flex; justify-content: flex-end;">
+            <button onclick="toggleView()" style="width: 120px;">View HTML</button>
+            </div>
+      </div>
+    
+
+      <div id="editor" contenteditable="false">
+
+          <table id="container"></table>
+          <table id="container2"></table>
+          <table id="container3"></table>
+          <table id="container4"></table>
+          <table id="container5"></table>
+         
+
+      </div>
+    
+          
+     
+        
+    <script>
+      function addTemplate1() {
+        var heroImage = document.getElementById("hero-image").value;
+        var introLine = document.getElementById("intro-line").value;
+        var bodyCopy = document.getElementById("body-copy").value;
+        var introBodyTitle = document.getElementById("intro-body-title").value;  
+          
+        var container = document.getElementById("container");
+        var template = document.createElement("table");
+        template.className = "_header-section";
+        template.innerHTML = `
+
+        <table>
+        <tr><td><img src="${heroImage}" alt="Hero Image" style="max-width: 100%; width: 600px; height: 600px; display: flex; object-fit: cover; object-position: top;"></td></tr>
+        <tr><td><h1>${introLine}</h1></td></tr>
+        <tr><td><p>${bodyCopy}</p></td></tr>
+        <tr><td><h3>${introBodyTitle}</h3></td></tr>
+        </table>
+        `;
+        container.appendChild(template);
+      }
+
+      function removeTemplate1() {
+        var container = document.getElementById("container");
+        var templates = container.getElementsByClassName("_header-section");
+        if (templates.length > 0) {
+          container.removeChild(templates[templates.length - 1]);
+        }
+      }
+        
+          //-------------------------------------------
+        
+        function addTemplate2() {
+        var image1 = document.getElementById("image-1").value;
+        var imageCopy1 = document.getElementById("image-copy-1").value;
+        var ctaBtn = document.getElementById("cta-button").value;
+          
+        var container = document.getElementById("container2");
+        var template = document.createElement("table");
+        template.className = "_double_section";
+        template.innerHTML = `
+
+        <table >
+
+        <tr><td>
+        <img src="${image1}" alt="Image" style=" width: 100%; mix-blend-mode: multiply;">
+        <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.25rem; font-size: 1rem; text-align: center; margin: 1rem 0; color: #000;"> ${imageCopy1}</p>
+        <div style="max-width:80%; margin:0 auto;" id="cta-button-2">
+                  <table  style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%;border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                      <tbody>
+                          <tr>
+                              <td style="mso-padding-alt:16px 12px 12px; text-align:center;"> <a style="color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase;" href="#">${ctaBtn}</a> </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+        </td></tr>
+
+
+        </table>
+        `;
+        container.appendChild(template);
+      }
+
+      function removeTemplate2() {
+        var container = document.getElementById("container2");
+        var templates = container.getElementsByClassName("_double_section ");
+        if (templates.length > 0) {
+          container.removeChild(templates[templates.length - 1]);
+        }
+      }
+        
+                    
+          //-------------------------------------------
+        
+        
+              function addTemplate3() {
+         var image2 = document.getElementById("image-2").value;
+  
+        var container = document.getElementById("container3");
+        var template = document.createElement("table");
+        template.className = "_header-section";
+        template.innerHTML = `
+
+        <table style=" width: 100%;">
+
+               <tr><td>
+          <img src="${image2}" alt="Image" style=" width: 100%; mix-blend-mode: multiply; margin-top: 60px; height: 300px; object-fit: cover; object-position: top;">
+             </td></tr>
+
+        </table>
+        `;
+        container.appendChild(template);
+      }
+
+      function removeTemplate3() {
+        var container = document.getElementById("container3");
+        var templates = container.getElementsByClassName("_header-section");
+        if (templates.length > 0) {
+          container.removeChild(templates[templates.length - 1]);
+        }
+      }
+    
+        
+          //-------------------------------------------
+        
+        
+              function addTemplate4() {
+        var imageCopy2 = document.getElementById("body-copy-2").value;
+  
+        var container = document.getElementById("container4");
+        var template = document.createElement("table");
+        template.className = "_header-section";
+        template.innerHTML = `
+
+        <table >
+
+        <tr><td><p>${imageCopy2}</p></td></tr>
+
+        </table>
+        `;
+        container.appendChild(template);
+      }
+
+      function removeTemplate4() {
+        var container = document.getElementById("container4");
+        var templates = container.getElementsByClassName("_header-section");
+        if (templates.length > 0) {
+          container.removeChild(templates[templates.length - 1]);
+        }
+      }
+        
+    
+            
+          //-------------------------------------------
+        
+        
+              function addTemplate5() {
+        var ctaBtn2 = document.getElementById("cta-button-2").value;
+  
+        var container = document.getElementById("container5");
+        var template = document.createElement("table");
+        template.className = "_header-section";
+        template.innerHTML = `
+
+        <table >
+
+               <tr><td>
+        <div style="max-width:80%; margin:0 auto;">
+                  <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%;border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                      <tbody>
+                          <tr>
+                              <td style="mso-padding-alt:16px 12px 12px; text-align:center;"> <a style="color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase;" href="#">${ctaBtn2}</a> </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+        </td></tr>
+
+        </table>
+        `;
+        container.appendChild(template);
+      }
+
+      function removeTemplate5() {
+        var container = document.getElementById("container5");
+        var templates = container.getElementsByClassName("_header-section");
+        if (templates.length > 0) {
+          container.removeChild(templates[templates.length - 1]);
+        }
+      }
+    
+    
+    </script>
+    
+
+             <script>
+      var inputField = document.getElementById("inputField");
+      var output = document.getElementById("container5");
+      var disableCheckbox = document.getElementById("disableCheckbox");
+
+      function toggleOutput() {
+        if (disableCheckbox.checked) {
+          output.style.display = "none";
+          inputField.disabled = true;
+        } else {
+          output.style.display = "block";
+          inputField.disabled = false;
+        }
+      }
+
+      inputField.addEventListener("input", function () {
+        output.textContent = inputField.value;
+      });
+    </script>
+
+    <!-----------------HTML-vs-Live---------------------------->
+
+        <script>
+      var isHtmlView = false;
+      var editorElement = document.getElementById("editor");
+
+      function toggleView() {
+        isHtmlView = !isHtmlView;
+
+        if (isHtmlView) {
+          // Switch to HTML view
+          var htmlContent = editorElement.innerHTML;
+          editorElement.textContent = htmlContent;
+        } else {
+          // Switch to WYSIWYG view
+          var textContent = editorElement.textContent;
+          editorElement.innerHTML = textContent;
+        }
+      }
+    </script>    
+
+  </body>
+</html>
