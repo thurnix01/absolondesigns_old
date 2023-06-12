@@ -23,7 +23,6 @@
 
                }
            </style>
-
            <style>
                /* Add your CSS styles here */
                .component-builder {
@@ -89,27 +88,6 @@
                    width: 100%;
                }
 
-               #container3 ._double_section {
-                   flex: 1 0 47%;
-                   width: auto;
-                   background-color: #f9f9f9;
-                   margin: 8px 8px;
-                   padding: 8px;
-               }
-
-
-
-
-               #container3 {
-                   margin-bottom: 32px;
-                   display: flex;
-                   flex-wrap: wrap;
-               }
-
-
-               #container6 {
-                   margin: 0 auto;
-               }
 
                table h1 {
                    font-size: 4.5rem;
@@ -129,7 +107,7 @@
                    font-family: 'tungsten', 'verdana', sans-serif;
                    text-align: center;
                    text-transform: uppercase;
-                   margin: 32px 0;
+                   margin: 32px 32px 16px;
                }
 
 
@@ -139,34 +117,20 @@
                    font-weight: 500;
                    font-family: 'UniversLTStd-Cn', 'verdana', sans-serif;
                    text-align: left;
-                   margin: 32px 32px;
-               }
-
-               ._nl_content {
-                   max-width: 600px;
-                   width: 100%;
+                   margin: 0 32px 32px;
                }
 
 
-
-               ._nl_button a {
-                   font-family: 'UniversLTStd-Cn', 'verdana', 'arial', sans-serif;
-                   font-weight: black;
-                   font-size: 1rem;
-                   line-height: 2.5rem;
-
+                .container {
+                   max-width: 600px; height: auto; display: flex; flex-wrap: wrap; margin: 0 auto;
                }
-
-               ._half_section {
-                   float: none;
-                   clear: both;
-                   width: 50%;
-                   background-color: #f9f9f9;
-                   margin: 20px;
-                   padding: 20px;
+               
+               ._double_section{
+                 width:295px;flex-grow: 1; flex-shrink: 0;
                }
+ 
 
-
+               
 
                @media only screen and (max-width: 599px) {
 
@@ -175,23 +139,6 @@
                        width: auto;
                        margin: 0 auto;
                    }
-
-                   ._half_section {
-                       width: auto;
-                       float: left !important;
-                       padding: 32px 32px 32px 38px;
-                   }
-
-                   ._nl_content tr td {
-                       font-family: 'UniversLTStd-Cn', 'verdana', 'arial', sans-serif;
-                       font-size: 1.25rem;
-                       line-height: 2rem;
-                   }
-
-                   ._nl_content {
-                       max-width: 100% !important;
-                   }
-
                }
            </style>
 
@@ -204,7 +151,7 @@
           <label for="hero-image">Hero Image URL:</label>
           <input type="text" id="hero-image" placeholder="Enter URL">
          
-          <label for="intro-line">Introduction Line:</label>
+          <label for="intro-line">Intro Line:</label>
           <input type="text" id="intro-line" placeholder="Enter Intro Line">
 
          
@@ -223,17 +170,17 @@
              <div style="display: flex; gap: 2rem;">
                  <div style=" display: grid">
                      <label for="buttonLabel">Button Label:</label>
-                     <input type="text" id="buttonLabel" name="buttonLabel">
+                     <input type="text" id="buttonLabel" name="buttonLabel" placeholder="Enter CTA">
                  </div>
                  <div style="display: grid; max-width: 360px; width: 100%;">
                      <label for="buttonHref">Link:</label>
-                     <input type="url" id="buttonHref" name="buttonHref" style="width: 100%;">
+                     <input type="url" id="buttonHref" name="buttonHref" style="width: 100%;" placeholder="Enter link">
                  </div>
              </div>
           
          <div>
-          <button onclick="addTemplate6()">Add Button</button>
-          <button onclick="removeTemplate6()">Remove Button</button>
+          <button onclick="addTemplate1()">Add Button</button>
+          <button onclick="removeTemplate1()">Remove Button</button>
             </div>
             
                     <h3>Body Section</h3>
@@ -242,109 +189,100 @@
           <input type="text" id="intro-body-title" placeholder="Enter Section Title">
           
             <div style="margin-bottom: 20px;">
-          <button onclick="addTemplate1()">Add Title</button>
-          <button onclick="removeTemplate1()">Remove Title</button>
+          <button onclick="addTemplate2()">Add Title</button>
+          <button onclick="removeTemplate2()">Remove Title</button>
             </div>
             
-       
-         <label for="image-1">Image URL:</label>
-          <input type="text" id="image-1" placeholder="Enter URL">
             
-          <label for="image-copy-1">Product Name:</label>
-          <input type="text" id="image-copy-1" placeholder="Enter Product Name">
-           
-           
-             <div style="display: flex; gap: 2rem;">
-                 <div style=" display: grid">
-                     <label for="buttonLabel1">Button Label:</label>
-                     <input type="text" id="buttonLabel1" name="buttonLabel1">
-                 </div>
-                 <div style="display: grid; max-width: 360px; width: 100%;">
-                     <label for="buttonHref1">Link:</label>
-                     <input type="url" id="buttonHref1" name="buttonHref1" style="width: 100%;">
-                 </div>
-             </div>
-   
-             <div>
-          <button onclick="addTemplate2()">Add Section</button>
-          <button onclick="removeTemplate2()">Remove Section</button>
+            <label for="image-1">Image URL:</label>
+            <input type="text" id="image-1" placeholder="Enter URL">
+
+            <label for="image-copy-1">Product Name:</label>
+            <input type="text" id="image-copy-1" placeholder="Enter Product Name">
+
+
+            <div style="display: flex; gap: 2rem;">
+                <div style=" display: grid">
+                    <label for="buttonLabel1">Button Label:</label>
+                    <input type="text" id="buttonLabel1" name="buttonLabel1" placeholder="Enter CTA">
+                </div>
+                <div style="display: grid; max-width: 360px; width: 100%;">
+                    <label for="buttonHref1">Link:</label>
+                    <input type="url" id="buttonHref1" name="buttonHref1" style="width: 100%;" placeholder="Enter link">
+                </div>
+            </div>
+
+            <div>
+                <button onclick="addTemplate3()">Add Section</button>
+                <button onclick="removeTemplate3()">Remove Section</button>
             </div>
             
-              <h3>Additional Image</h3>
-        <label for="image-2">Image URL:</label>
-          <input type="text" id="image-2" placeholder="Enter URL">
+
+            <h3>Additional Image</h3>
+
+
+            <label for="image-2">Image URL:</label>
+            <input type="text" id="image-2" placeholder="Enter URL">
+
+
            
                      <div>
-          <button onclick="addTemplate3()">Add Image</button>
-          <button onclick="removeTemplate3()">Remove Image</button>
+          <button onclick="addTemplate4()">Add Image</button>
+          <button onclick="removeTemplate4()">Remove Image</button>
             </div>
            
             
-             <h3>More Body Copy</h3>
+             <h3>Additional Copy</h3>
 
           <label for="body-copy-2">Body Copy:</label>
           <textarea id="body-copy-2" rows="4" placeholder="Enter Body of Copy"></textarea>
  
 
-   
              <div>
-          <button onclick="addTemplate4()">Add Copy</button>
-          <button onclick="removeTemplate4()">Remove Copy</button>
+          <button onclick="addTemplate5()">Add Copy</button>
+          <button onclick="removeTemplate5()">Remove Copy</button>
             </div>
             
             
-        <h3>CTA Button</h3>
             
- 
-             <div style="display: flex; gap: 2rem;">
-                 <div style=" display: grid">
-                     <label for="buttonLabel2">Button Label:</label>
-                     <input type="text" id="buttonLabel2" name="buttonLabel2">
-                 </div>
-                 <div style="display: grid; max-width: 360px; width: 100%;">
-                     <label for="buttonHref2">Link:</label>
-                     <input type="url" id="buttonHref2" name="buttonHref2" style="width: 100%;">
-                 </div>
-             </div>
             
-             <div>
-          <button onclick="addTemplate5()">Add Button</button>
-          <button onclick="removeTemplate5()">Remove Button</button>
+        <h3>Additional CTA</h3>
+            <div style="display: flex; gap: 2rem;">
+                <div style=" display: grid">
+                    <label for="buttonLabel2">Button Label:</label>
+                    <input type="text" id="buttonLabel2" name="buttonLabel2" placeholder="Enter CTA">
+                </div>
+                <div style="display: grid; max-width: 360px; width: 100%;">
+                    <label for="buttonHref2">Link:</label>
+                    <input type="url" id="buttonHref2" name="buttonHref2" style="width: 100%;" placeholder="Enter link">
+                </div>
+            </div>
+            <div>
+             
+          <button onclick="addTemplate6()">Add Button</button>
+          <button onclick="removeTemplate6()">Remove Button</button>
            
             </div>
             
-            <div style="width: 100%;display: flex; justify-content: flex-end;">
-            <button onclick="toggleView()" style="width: 120px;">View HTML</button>
+            <div style="width: 100%;display: flex; justify-content: flex-end; margin-right: 10px; margin-bottom: 60px;">
+            <button onclick="toggleView()" style="width: 120px; margin-right: 8px; ">View HTML</button>
               <button onclick="copyToClipboard()">Copy to Clipboard</button>
             </div>
             
             
-            
 
 
-
-            
+                         
       </div>
-      
-        
-    
-
+   
       <div id="editor" contenteditable="false">
-
-          <div id="container"></div>
-          <div id="main-cta-button"></div>
-          <div id="section_title"></div>
-          <div id="container2"></div>
-          <div id="container3"></div>
-          <div id="container4"></div>
-          <div id="container5"></div>
-          <div id="container6"></div>
-
+          <div id="container" class="container"></div>
       </div>
     
-          
-     
-        
+    
+    <!-------------------------------------Script Start----------------------------------------------->
+    
+    
     <script>
         
         
@@ -376,182 +314,20 @@
         }
       }
         
-          //-------------------------------------------
+                
+                      //-------------------------------------------
         
         
       function addTemplate1() {
-        var introBodyTitle = document.getElementById("intro-body-title").value;  
-        var container = document.getElementById("section_title");
-        var template = document.createElement("table");
-        template.className = "_header-section";
-        template.innerHTML = `
-
-        <tr><td><h3>${introBodyTitle}</h3></td></tr>
-
-        `;
-        container.appendChild(template);
-      }
-      function removeTemplate1() {
-        var container = document.getElementById("section_title");
-        var templates = container.getElementsByClassName("_header-section");
-        if (templates.length > 0) {
-          container.removeChild(templates[templates.length - 1]);
-        }
-      }
-        
-          //-------------------------------------------
-        
-      function addTemplate2() {
-        var image1 = document.getElementById("image-1").value;
-        var imageCopy1 = document.getElementById("image-copy-1").value;
-        var buttonLabel1 = document.getElementById("buttonLabel1").value;
-        var buttonHref1 = document.getElementById("buttonHref1").value;
-          
-        var container = document.getElementById("container3");
-        var template = document.createElement("table");
-        template.className = "_double_section";
-        template.innerHTML = `
-
- 
-
-        <tr><td>
-        <img src="${image1}" alt="Product Image" style="width: 90%; margin: 0 auto; display: flex; mix-blend-mode: multiply; ">
-        <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.25rem; font-size: 1rem; text-align: center; margin: 1rem 0; color: #000;"> ${imageCopy1}</p>
-                            <div style="margin:0 auto; width: 80%; margin-bottom: 16px;">
-                        <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                            <tbody>
-                                <tr>
-                                    <td style="mso-padding-alt:16px 12px 12px; text-align:center;"> <a style="color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase;" href="${buttonHref1}" target="_blank">${buttonLabel1}</a> </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-        </td></tr>
-
-
-      
-        `;
-        container.appendChild(template);
-      }
-      function removeTemplate2() {
-        var container = document.getElementById("container3");
-        var templates = container.getElementsByClassName("_double_section ");
-        if (templates.length > 0) {
-          container.removeChild(templates[templates.length - 1]);
-        }
-      }
-        
-                    
-          //-------------------------------------------
-        
-        
-      function addTemplate3() {
-         var image2 = document.getElementById("image-2").value;
-  
-        var container = document.getElementById("container4");
-        var template = document.createElement("table");
-        template.className = "_header-section";
-        template.innerHTML = `
-
-      
-
-               <tr><td>
-          <img src="${image2}" alt="Lifestyle Image" style=" width: 100%; mix-blend-mode: multiply; height: 300px; object-fit: cover; object-position: top;">
-             </td></tr>
-
-        `;
-        container.appendChild(template);
-      }
-      function removeTemplate3() {
-        var container = document.getElementById("container4");
-        var templates = container.getElementsByClassName("_header-section");
-        if (templates.length > 0) {
-          container.removeChild(templates[templates.length - 1]);
-        }
-      }
-    
-        
-          //-------------------------------------------
-        
-        
-      function addTemplate4() {
-        var imageCopy2 = document.getElementById("body-copy-2").value;
-  
-        var container = document.getElementById("container5");
-        var template = document.createElement("table");
-        template.className = "_header-section";
-        template.innerHTML = `
-
-  
-
-        <tr><td><p>${imageCopy2}</p></td></tr>
-
-        `;
-        container.appendChild(template);
-      }
-      function removeTemplate4() {
-        var container = document.getElementById("container5");
-        var templates = container.getElementsByClassName("_header-section");
-        if (templates.length > 0) {
-          container.removeChild(templates[templates.length - 1]);
-        }
-      }        
-    
-            
-          //-------------------------------------------
-        
-        
-      function addTemplate5() {
-    var buttonLabel2 = document.getElementById("buttonLabel2").value;
-    var buttonHref2 = document.getElementById("buttonHref2").value;
- 
-     var resultDiv = document.getElementById("container6");              
-    var button = document.createElement("a");
-    button.className = "_header-section";
-    button.innerHTML = `
-      
-       <table style="width: 100%;">
-
-               <tr><td>
-        <div style="margin:0 auto; width: 80%; margin-bottom: 16px;">
-                  <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                      <tbody>
-                          <tr>
-                              <td style="mso-padding-alt:16px 12px 12px; text-align:center;"> <a style="color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase;" href="${buttonHref2}" target="_blank">${buttonLabel2}</a> </td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
-        </td></tr>
-
-        </table>
-      
-      
-      `;
-    resultDiv.appendChild(button);
-  }
-      function removeTemplate5() {
-        var resultDiv = document.getElementById("container6");     
-        var buttons = resultDiv.getElementsByClassName("_header-section");  
-        if (buttons.length > 0) {
-          resultDiv.removeChild(buttons[buttons.length - 1]);
-        }
-      }
-    
-        
-              //-------------------------------------------
-        
-        
-       function addTemplate6() {
         var buttonLabel = document.getElementById("buttonLabel").value;
         var buttonHref = document.getElementById("buttonHref").value;
 
-        var resultDiv = document.getElementById("main-cta-button");
-        var button = document.createElement("a");
-        button.className = "_header-section";
+        var resultDiv = document.getElementById("container");
+        var button = document.createElement("table");
+        button.className = "_header-cta";
         button.innerHTML = `
 
-        <table style="width: 100%;">
+
 
             <tr>
                 <td>
@@ -567,24 +343,186 @@
                 </td>
             </tr>
 
-        </table>
+  
 
 
         `;
         resultDiv.appendChild(button);
         }
-
-      function removeTemplate6() {
-          var resultDiv = document.getElementById("main-cta-button");
-          var buttons = resultDiv.getElementsByClassName("_header-section");
+      function removeTemplate1() {
+          var resultDiv = document.getElementById("container");
+          var buttons = resultDiv.getElementsByClassName("_header-cta");
           if (buttons.length > 0) {
           resultDiv.removeChild(buttons[buttons.length - 1]);
           }
       }
     
-    </script>
+                
+          //-------------------------------------------
+        
+        
+      function addTemplate2() {
+        var introBodyTitle = document.getElementById("intro-body-title").value;  
+        var container = document.getElementById("container");
+        var template = document.createElement("table");
+        template.className = "_section-title";
+        template.innerHTML = `
 
+        <tr><td><h3>${introBodyTitle}</h3></td></tr>
+
+        `;
+        container.appendChild(template);
+      }
+      function removeTemplate2() {
+        var container = document.getElementById("container");
+        var templates = container.getElementsByClassName("_section-title");
+        if (templates.length > 0) {
+          container.removeChild(templates[templates.length - 1]);
+        }
+      }
+        
+          //-------------------------------------------
+        
+      function addTemplate3() {
+        var image1 = document.getElementById("image-1").value;
+        var imageCopy1 = document.getElementById("image-copy-1").value;
+        var buttonLabel1 = document.getElementById("buttonLabel1").value;
+        var buttonHref1 = document.getElementById("buttonHref1").value;
+          
+        var container = document.getElementById("container");
+        var template = document.createElement("div");
+        template.className = "_double_section";
+        template.innerHTML = `
+
+                <tr><td>
+        <img src="${image1}" alt="Product Image" style="width: 90%; margin: 0 auto; display: flex; mix-blend-mode: multiply; ">
+        <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.25rem; font-size: 1rem; text-align: center; margin: 1rem 0; color: #000;"> ${imageCopy1}</p>
+                            <div style="margin:0 auto; width: 80%; margin-bottom: 16px;">
+                        <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tbody>
+                                <tr>
+                                    <td style="mso-padding-alt:16px 12px 12px; text-align:center;"> <a style="color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase;" href="${buttonHref1}" target="_blank">${buttonLabel1}</a> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+        </td></tr>
+
+            
+        `;
+        container.appendChild(template);
+      }
+      function removeTemplate3() {
+        var container = document.getElementById("container");
+        var templates = container.getElementsByClassName("_double_section ");
+        if (templates.length > 0) {
+          container.removeChild(templates[templates.length - 1]);
+        }
+      }
+        
+                    
+          //-------------------------------------------
+        
+        
+      function addTemplate4() {
+       
+
+        var image2 = document.getElementById("image-2").value;
+        var container = document.getElementById("container");
+        var template = document.createElement("table");
+        template.className = "_body-image";
+        template.innerHTML = `
+
+        
+               <tr><td>
+          <img src="${image2}" alt="Lifestyle Image" style=" width: 100%; mix-blend-mode: multiply; height: 300px; object-fit: cover; object-position: top; margin-bottom: 16px;" >
+             </td></tr>
+
+        `;
+        container.appendChild(template);
+      }
+      function removeTemplate4() {
+        var container = document.getElementById("container");
+        var templates = container.getElementsByClassName("_body-image");
+        if (templates.length > 0) {
+          container.removeChild(templates[templates.length - 1]);
+        }
+      }
     
+        
+          //-------------------------------------------
+        
+        
+      function addTemplate5() {
+        var imageCopy2 = document.getElementById("body-copy-2").value;
+  
+        var container = document.getElementById("container");
+        var template = document.createElement("table");
+        template.className = "_body-copy";
+        template.innerHTML = `
+
+  
+
+        <tr><td><p>${imageCopy2}</p></td></tr>
+
+        `;
+        container.appendChild(template);
+      }
+      function removeTemplate5() {
+        var container = document.getElementById("container");
+        var templates = container.getElementsByClassName("_body-copy");
+        if (templates.length > 0) {
+          container.removeChild(templates[templates.length - 1]);
+        }
+      }        
+    
+            
+          //-------------------------------------------
+        
+        
+      function addTemplate6() {
+    var buttonLabel2 = document.getElementById("buttonLabel2").value;
+    var buttonHref2 = document.getElementById("buttonHref2").value;
+ 
+     var resultDiv = document.getElementById("container");              
+    var button = document.createElement("table");
+    button.className = "_body-cta";
+    button.innerHTML = `
+      
+  
+
+               <tr><td>
+        <div style="margin:0 auto; width: 80%; margin-bottom: 16px;">
+                  <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                      <tbody>
+                          <tr>
+                              <td style="mso-padding-alt:16px 12px 12px; text-align:center;"> <a style="color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase;" href="${buttonHref2}" target="_blank">${buttonLabel2}</a> </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+        </td></tr>
+
+
+      
+      
+      `;
+    resultDiv.appendChild(button);
+  }
+      function removeTemplate6() {
+        var resultDiv = document.getElementById("container");     
+        var buttons = resultDiv.getElementsByClassName("_body-cta");  
+        if (buttons.length > 0) {
+          resultDiv.removeChild(buttons[buttons.length - 1]);
+        }
+      }
+    
+        
+
+    </script>
+    
+
+
 
     <!-----------------HTML-vs-Live---------------------------->
 
@@ -618,8 +556,6 @@
            alert("copied to clipboard");
       }
     </script>    
-    
-        <!-----------------href---------------------------->
     
 
  
