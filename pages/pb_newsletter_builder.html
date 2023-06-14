@@ -76,6 +76,14 @@
                    max-width: 600px;
                    width: 100%;
                }
+               
+               @media only screen and (max-width: 599px)
+               {
+             .component-builder {
+                   max-width: 100%;
+                 width: 100%;
+                   }
+               }
            </style>
            <style>
                #_header-section table,
@@ -90,7 +98,7 @@
 
 
                table h1 {
-                   font-size: 4.5rem;
+                   font-size: 4rem;
                    font-weight: 500;
                    letter-spacing: 0.2rem;
                    font-family: 'tungsten', 'verdana', sans-serif;
@@ -129,7 +137,16 @@
                  width:295px;flex-grow: 1; flex-shrink: 0;
                }
  
+            .active {
+              color: #464647 !important;
+                background-color: #fff !important;
+                border: 2.5px solid #464647;
+            }
 
+                ._header-cta, ._body-cta{
+                    mso-padding-alt:16px 12px 12px; text-align:center; color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase; background: #464647; border-radius: 4px; border: 2.5px solid #464647;
+                    margin:0 auto; width: 83%; margin-bottom: 16px;
+                }
                
 
                @media only screen and (max-width: 599px) {
@@ -148,7 +165,7 @@
         
                <h3>Header Section</h3>
          
-          <label for="hero-image">Hero Image URL:</label>
+          <label for="hero-image">Hero Image Link:</label>
           <input type="text" id="hero-image" placeholder="Enter URL">
          
           <label for="intro-line">Intro Line:</label>
@@ -166,7 +183,6 @@
           <button onclick="removeTemplate()">Remove Header</button>
             </div>
             
-            
              <div style="display: flex; gap: 2rem;">
                  <div style=" display: grid">
                      <label for="buttonLabel">Button Label:</label>
@@ -181,7 +197,10 @@
          <div>
           <button onclick="addTemplate1()">Add Button</button>
           <button onclick="removeTemplate1()">Remove Button</button>
+           <button onclick="buttonStyle()">Change Style</button>
             </div>
+
+
             
                     <h3>Body Section</h3>
 
@@ -194,7 +213,7 @@
             </div>
             
             
-            <label for="image-1">Image URL:</label>
+            <label for="image-1">Image Link:</label>
             <input type="text" id="image-1" placeholder="Enter URL">
 
             <label for="image-copy-1">Product Name:</label>
@@ -221,7 +240,7 @@
             <h3>Additional Image</h3>
 
 
-            <label for="image-2">Image URL:</label>
+            <label for="image-2">Image Link:</label>
             <input type="text" id="image-2" placeholder="Enter URL">
 
 
@@ -257,12 +276,46 @@
                     <input type="url" id="buttonHref2" name="buttonHref2" style="width: 100%;" placeholder="Enter link">
                 </div>
             </div>
-            <div>
-             
-          <button onclick="addTemplate6()">Add Button</button>
-          <button onclick="removeTemplate6()">Remove Button</button>
-           
+            
+
+            <div style="display: flex; align-items: center; gap: 0.4rem;">
+                <button onclick="addTemplate6()">Add Button</button>
+                <button onclick="removeTemplate6()">Remove Button</button>
+                <button onclick="buttonStyle2()">Change Style</button>
+
             </div>
+            
+            <h3>Footer</h3>
+            
+          <label for="image-3">Image Link:</label>
+            <input type="text" id="image-3" placeholder="Enter URL">    
+                        
+         <label for="intro-body-title-2">Section Title</label>
+          <input type="text" id="intro-body-title-2" placeholder="Enter Section Title">
+
+
+          <label for="body-copy-3">Body Copy:</label>
+          <textarea id="body-copy-3" rows="4" placeholder="Enter Body of Copy"></textarea>
+          
+                      <div style="display: flex; gap: 2rem;">
+                <div style=" display: grid">
+                    <label for="buttonLabel3">Button Label:</label>
+                    <input type="text" id="buttonLabel3" name="buttonLabel3" placeholder="Enter CTA">
+                </div>
+                <div style="display: grid; max-width: 360px; width: 100%;">
+                    <label for="buttonHref3">Link:</label>
+                    <input type="url" id="buttonHref3" name="buttonHref3" style="width: 100%;" placeholder="Enter link">
+                </div>
+            </div>
+ 
+
+             <div>
+          <button onclick="addTemplate7()">Add Footer</button>
+          <button onclick="removeTemplate7()">Remove Footer</button>
+            </div>
+            
+      
+            
             
             <div style="width: 100%;display: flex; justify-content: flex-end; margin-right: 10px; margin-bottom: 60px;">
             <button onclick="toggleView()" style="width: 120px; margin-right: 8px; ">View HTML</button>
@@ -319,43 +372,32 @@
         
         
       function addTemplate1() {
-        var buttonLabel = document.getElementById("buttonLabel").value;
-        var buttonHref = document.getElementById("buttonHref").value;
+      var buttonLabel = document.getElementById("buttonLabel").value;
+      var buttonHref = document.getElementById("buttonHref").value;
 
-        var resultDiv = document.getElementById("container");
-        var button = document.createElement("table");
-        button.className = "_header-cta";
-        button.innerHTML = `
-
+      var resultDiv = document.getElementById("container");
+      var button = document.createElement("a");
+      button.href = buttonHref;
 
 
-            <tr>
-                <td>
-                    <div style="margin:0 auto; width: 80%; margin-bottom: 16px;">
-                        <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                            <tbody>
-                                <tr>
-                                    <td style="mso-padding-alt:16px 12px 12px; text-align:center;"> <a style="color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase;" href="${buttonHref}" target="_blank">${buttonLabel}</a> </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </td>
-            </tr>
+      button.textContent = "Click me";
+      button.target = "_blank";
+      button.className = "_header-cta";
+      button.innerHTML = `
 
-  
+      ${buttonLabel}
 
-
-        `;
-        resultDiv.appendChild(button);
-        }
-      function removeTemplate1() {
-          var resultDiv = document.getElementById("container");
-          var buttons = resultDiv.getElementsByClassName("_header-cta");
-          if (buttons.length > 0) {
-          resultDiv.removeChild(buttons[buttons.length - 1]);
-          }
+      `;
+      resultDiv.appendChild(button);
       }
+      function removeTemplate1() {
+      var resultDiv = document.getElementById("container");
+      var buttons = resultDiv.getElementsByClassName("_header-cta");
+      if (buttons.length > 0) {
+      resultDiv.removeChild(buttons[buttons.length - 1]);
+      }
+      }
+        
     
                 
           //-------------------------------------------
@@ -395,7 +437,7 @@
         template.innerHTML = `
 
                 <tr><td>
-        <img src="${image1}" alt="Product Image" style="width: 90%; margin: 0 auto; display: flex; mix-blend-mode: multiply; ">
+        <a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width: 90%; margin: 0 auto; display: flex; mix-blend-mode: multiply; "></a>
         <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.25rem; font-size: 1rem; text-align: center; margin: 1rem 0; color: #000;"> ${imageCopy1}</p>
                             <div style="margin:0 auto; width: 80%; margin-bottom: 16px;">
                         <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
@@ -484,28 +526,18 @@
     var buttonLabel2 = document.getElementById("buttonLabel2").value;
     var buttonHref2 = document.getElementById("buttonHref2").value;
  
-     var resultDiv = document.getElementById("container");              
-    var button = document.createElement("table");
-    button.className = "_body-cta";
-    button.innerHTML = `
-      
-  
-
-               <tr><td>
-        <div style="margin:0 auto; width: 80%; margin-bottom: 16px;">
-                  <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                      <tbody>
-                          <tr>
-                              <td style="mso-padding-alt:16px 12px 12px; text-align:center;"> <a style="color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase;" href="${buttonHref2}" target="_blank">${buttonLabel2}</a> </td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
-        </td></tr>
+     var resultDiv = document.getElementById("container");
+      var button = document.createElement("a");
+      button.href = buttonHref2;
 
 
-      
-      
+      button.textContent = "Click me";
+      button.target = "_blank";
+      button.className = "_body-cta";
+      button.innerHTML = `
+
+      ${buttonLabel2}
+
       `;
     resultDiv.appendChild(button);
   }
@@ -515,10 +547,80 @@
         if (buttons.length > 0) {
           resultDiv.removeChild(buttons[buttons.length - 1]);
         }
+
       }
-    
+
         
 
+    
+        
+      function addTemplate7() {
+      var image3 = document.getElementById("image-3").value;
+      var introBodyTitle2 = document.getElementById("intro-body-title-2").value;
+      var imageCopy3 = document.getElementById("body-copy-3").value;
+
+      var buttonLabel3 = document.getElementById("buttonLabel3").value;
+      var buttonHref3 = document.getElementById("buttonHref3").value;
+
+      var container = document.getElementById("container");
+      var template = document.createElement("div");
+      template.className = "_body-footer";
+      template.innerHTML = `
+  
+
+
+        <div style="width:100%; max-width: 600px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; margin: 32px 0;">
+            <a href="${buttonHref3}" target="_blank"><div style="background-color: #777; height: 300px; width: 300px; "><img src="${image3}" alt="Promo Image" style="width: 100%; display: flex; object-fit: cover; height: 300px; object-position: center;"></div></a>
+
+
+            <div style="background-color: #f9f9f9; height: 300px; width: 300px; display: flex;">
+                <div style="padding: 16px; display: flex;flex-direction: column;justify-content: center;">
+                <h3 style="text-align: left; margin:32px 0 16px;">${introBodyTitle2}</h3>
+                <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.5rem; font-size: 1rem; text-align: left; margin: 1rem 0; color: #000;">${imageCopy3}</p>
+                <a href="${buttonHref3}" target="_blank" style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.5rem; font-size: 1rem; text-align: left; margin: 1rem 0; color: #000; text-transform: uppercase;">${buttonLabel3}</a>
+                </div>
+            </div>
+        </div>
+
+
+        `;
+        container.appendChild(template);
+      }
+      function removeTemplate7() {
+        var container = document.getElementById("container");
+        var templates = container.getElementsByClassName("_body-footer");
+        if (templates.length > 0) {
+          container.removeChild(templates[templates.length - 1]);
+        }
+      }        
+        
+
+    </script>
+    
+ <!-----------------Button-Alternate---------------------------->
+    
+    
+    <script>
+        function buttonStyle() {
+            var myDiv = document.querySelector("._header-cta");
+
+            if (myDiv.classList.contains("active")) {
+                myDiv.classList.remove("active");
+            } else {
+                myDiv.classList.add("active");
+            }
+        }
+        
+        
+                function buttonStyle2() {
+            var myDiv = document.querySelector("._body-cta");
+
+            if (myDiv.classList.contains("active")) {
+                myDiv.classList.remove("active");
+            } else {
+                myDiv.classList.add("active");
+            }
+        }
     </script>
     
 
