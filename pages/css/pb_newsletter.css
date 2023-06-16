@@ -1,0 +1,122 @@
+@media screen {
+    @font-face {
+        font-family: 'tungsten';
+        font-style: normal;
+        src: local('tungsten Regular'), local('tungsten-Regular'), url(https://www.performancebike.com/content/skins/performancebike/fonts/Tungsten-Medium.woff) format('woff');
+        font-display: optional;
+    }
+}
+
+@media screen {
+    @font-face {
+        font-family: 'UniversLTStd-Cn';
+        font-style: normal;
+        src: local('UniversLTStd-Cn Regular'), local('UniversLTStd-Cn-Regular'), url(https://www.performancebike.com/content/skins/performancebike/fonts/UniversLTStd-Cn.woff2) format('woff');
+        font-display: optional
+    }
+
+}
+
+
+
+#_header-section table,
+#_double_section table {
+    width: 600px;
+    margin: 0 auto;
+}
+
+._header-section table {
+    width: 100%;
+}
+
+table {
+    max-width: 600px;
+    width: 100%;
+}
+
+table h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    font-family: 'tungsten', 'verdana', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 32px 32px 0;
+}
+
+h3,
+table h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    font-family: 'tungsten', 'verdana', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 32px 32px 16px;
+}
+
+
+table p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    font-family: 'UniversLTStd-Cn', 'verdana', sans-serif;
+    text-align: left;
+    margin: 0 32px 32px;
+}
+
+
+.container {
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+._double_section {
+    width: 295px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.active {
+    color: #464647 !important;
+    background-color: #fff !important;
+    border: 2.5px solid #464647;
+}
+
+._header-cta,
+._body-cta {
+    mso-padding-alt: 16px 12px 12px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 16px 12px 12px;
+    text-align: center;
+    font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;
+    text-decoration: none;
+    box-shadow: 0 3px 3px #00000029;
+    text-transform: uppercase;
+    background: #464647;
+    border-radius: 4px;
+    border: 2.5px solid #464647;
+    width: 35%;
+    margin: 0 auto 16px 32px;
+}
+
+
+@media only screen and (max-width: 599px) {
+
+    #_header-section table,
+    #_double_section table {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    ._header-cta,
+    ._body-cta {
+        width: 83%;
+        margin: 0 auto 16px;
+    }
+}
