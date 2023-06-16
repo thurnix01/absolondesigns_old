@@ -25,7 +25,7 @@
     margin: 0 auto;
 }
 
-._header-section table {
+table._header-section  {
     width: 100%;
     margin: 0 auto;
 }
@@ -35,7 +35,7 @@ table._section-title {
     margin: 0 auto;
     max-width: 600px;
 }
-}
+
 
 table h1 {
     font-size: 4rem;
