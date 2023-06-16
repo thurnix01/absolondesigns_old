@@ -1,4 +1,12 @@
- function addTemplate() {
+     function addStyle(){
+  var buttonHref = "https://thurnix01.github.io/absolondesigns/pages/css/pb_newsletter.css";
+  var button = document.createElement("link");
+  button.href = buttonHref;
+  container.appendChild(button);
+    }
+
+
+function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
         var bodyCopy = document.getElementById("body-copy").value;
