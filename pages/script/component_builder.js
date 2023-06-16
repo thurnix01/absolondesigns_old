@@ -38,8 +38,6 @@
       var button = document.createElement("a");
       button.href = buttonHref;
 
-
-      button.textContent = "Click me";
       button.target = "_blank";
       button.className = "_header-cta";
       button.innerHTML = `
@@ -190,7 +188,6 @@
       button.href = buttonHref2;
 
 
-      button.textContent = "Click me";
       button.target = "_blank";
       button.className = "_body-cta";
       button.innerHTML = `
