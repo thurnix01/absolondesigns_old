@@ -1,0 +1,74 @@
+  ._body_style {
+                    display: flex;
+                    max-width: 1400px;
+                    margin: 0 auto;
+                }
+            
+               
+               
+               /* Add your CSS styles here */
+               .component-builder {
+                   display: flex;
+                   flex-direction: column;
+                   max-width: 600px;
+                   margin: 0 auto 60px;
+                   padding: 20px;
+                   border: 1px solid #ccc;
+                   border-radius: 5px;
+                   width: 100%;
+               }
+
+               .component-builder label {
+                   margin-bottom: 10px;
+                   font-family: 'UniversLTStd-Cn', 'verdana', 'arial', sans-serif;
+                   font-display: optional;
+               }
+
+               .component-builder input[type="text"],
+               .component-builder input[type="url"],
+               .component-builder textarea {
+                   width: auto;
+                   padding: 10px;
+                   border: 1px solid #ccc;
+                   border-radius: 5px;
+                   margin-bottom: 10px;
+                   font-family: 'verdana', 'arial', sans-serif;
+               }
+
+               .component-builder button {
+                   padding: 10px 20px;
+                   background-color: #464647;
+                   color: #fff;
+                   border: none;
+                   border-radius: 5px;
+                   cursor: pointer;
+                   max-width: 300px;
+               }
+
+               #editor {
+                   display: table;
+                   width: 100%;
+                   max-width: 600px;
+                   margin: 0 auto 60px;
+                   padding: 20px;
+                   border: 1px solid #ccc;
+                   border-radius: 5px;
+               }
+               
+               
+                .hide {
+                  display: none;
+                }
+
+
+
+               
+               @media only screen and (max-width: 599px)
+               {
+             .component-builder {
+                   max-width: 100%;
+         
+                   }
+                   
+                   
+               }
