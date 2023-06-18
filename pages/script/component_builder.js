@@ -1,9 +1,11 @@
      function addStyle(){
-  var buttonHref = "https://thurnix01.github.io/absolondesigns/pages/css/pb_newsletter.css";
-  var button = document.createElement("link");
-  button.href = buttonHref;
-  container.appendChild(button);
-    }
+     var buttonHref0 = "https://thurnix01.github.io/absolondesigns/pages/css/pb_newsletter.css";
+     var button = document.createElement("link");
+     button.rel = "stylesheet";
+     button.href = buttonHref0;
+     container.appendChild(button);
+
+     }
 
 
 function addTemplate() {
