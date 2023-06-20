@@ -69,13 +69,7 @@ table p {
 }
 
 
-.container {
-    max-width: 600px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
+
 
 ._double_section {
     width: 295px;
