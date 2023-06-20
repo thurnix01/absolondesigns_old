@@ -241,10 +241,10 @@ function addTemplate() {
 
 
         <div style="width:100%; max-width: 600px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; margin: 32px 0;">
-            <a href="${buttonHref3}" target="_blank"><div style="background-color: #777; height: 300px; width: 300px; "><img src="${image3}" alt="Promo Image" style="width: 100%; display: flex; object-fit: cover; height: 300px; object-position: center;"></div></a>
+            <a href="${buttonHref3}" target="_blank"><div style="background-color: #777; height: 300px; width: 298px; "><img src="${image3}" alt="Promo Image" style="width: 100%; display: flex; object-fit: cover; height: 300px; object-position: center;"></div></a>
 
 
-            <div style="background-color: #f9f9f9; height: 300px; width: 300px; display: flex;">
+            <div style="background-color: #f9f9f9; height: 300px; width: 298px; display: flex; flex-direction: column; justify-content: center;">
                 <div style="padding: 16px; display: flex;flex-direction: column;justify-content: center;">
                 <h3 style="text-align: left; margin:32px 0 16px;">${introBodyTitle2}</h3>
                 <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.5rem; font-size: 1rem; text-align: left; margin: 1rem 0; color: #000;">${imageCopy3}</p>
