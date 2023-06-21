@@ -95,6 +95,7 @@
         var container = document.getElementById("container");
         var template = document.createElement("table");
         template.className = "_section-title";
+        template.style.width = "100%"; 
         template.innerHTML = `
 
         <tr><td><h3 style="font-size: 2.5rem; font-weight: 500; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px 16px;">${introBodyTitle}</h3></td></tr>
