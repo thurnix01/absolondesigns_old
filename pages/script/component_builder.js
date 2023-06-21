@@ -1,4 +1,15 @@
-  function addTemplate() {
+  function addStyle(){
+     var buttonHref0 = "https://thurnix01.github.io/absolondesigns/pages/css/pb_newsletter.css";
+     var button = document.createElement("link");
+     button.rel = "stylesheet";
+     button.href = buttonHref0;
+
+     container.appendChild(button);
+
+     }
+        
+        
+      function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
         var bodyCopy = document.getElementById("body-copy").value;
@@ -11,9 +22,9 @@
         template.innerHTML = `
 
 
-        <tr><td><img src="${heroImage}" alt="Hero Image" style="max-width: 600px; width: 100%; min-height: 320px; height: 580px; display: flex; object-fit: cover; object-position: top;"></td></tr>
+        <tr><td><img src="${heroImage}" alt="Hero Image" style="max-width: 600px; width: 100%; min-height: 320px; max-height: 580px; display: flex; object-fit: cover; object-position: top;"></td></tr>
         <tr><td><h1 style="font-size: 3.5rem; font-weight: 500 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase; margin: 32px 32px 0; line-height: 3.3rem;">${introLine}</h1></td></tr>
-        <tr><td><p>${bodyCopy}</p></td></tr
+        <tr><td><p style="font-size: 1rem; line-height: 1.5rem; font-weight: 500; font-family: 'UniversLTStd-Cn', 'verdana', sans-serif; text-align: left; margin: 0 32px 32px;">${bodyCopy}</p></td></tr
 
         `;
         container.appendChild(template);
@@ -42,6 +53,23 @@
     
       button.target = "_blank";
       button.className = "_header-cta";
+      button.style.msoPaddingAlt = "16px 12px 12px";
+      button.style.font = "500 16px/1.5rem 'UniversLTStd-Cn', sans-serif";    
+      button.style.padding = "16px 12px 12px";  
+      button.style.textTransform = "uppercase";
+      button.style.textAlign = "center";
+      button.style.color = "#fff";
+      button.style.display = "block";
+      button.style.textDecoration = "none";
+      button.style.boxShadow = "0 3px 3px #00000029";
+      button.style.background = "#464647";
+      button.style.borderRadius = "4px";
+      button.style.border = "2.5px solid #464647";
+      button.style.width = "35%";
+      button.style.margin = "0 180px 16px 32px";
+            
+          
+          
       button.innerHTML = `
 
       ${buttonLabel}
@@ -69,7 +97,7 @@
         template.className = "_section-title";
         template.innerHTML = `
 
-        <tr><td><h3>${introBodyTitle}</h3></td></tr>
+        <tr><td><h3 style="font-size: 2.5rem; font-weight: 500; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px 16px;">${introBodyTitle}</h3></td></tr>
 
         `;
         container.appendChild(template);
@@ -100,7 +128,7 @@
             <tr style="display: flex;flex-wrap: wrap;height: auto">
                 <td style="text-align: center;flex: auto">
         
-            <a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width: 90%; margin: 0 auto; display: flex; mix-blend-mode: multiply; "></a>
+            <a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width: 90%; margin: 0 auto; display: flex;"></a>
         <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.25rem; font-size: 1rem; text-align: center; margin: 1rem; color: #000;"> ${imageCopy1}</p>
                             <div style="margin:0 auto; width: 80%; margin-bottom: 16px;">
                         <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
@@ -140,11 +168,12 @@
         var container = document.getElementById("container");
         var template = document.createElement("table");
         template.className = "_body-image";
+        template.style.width = "100%";    
         template.innerHTML = `
 
         
                <tr><td>
-          <img src="${image2}" alt="Lifestyle Image" style=" width: 90%; height: 300px; object-fit: cover; object-position: top; margin: 0 auto 15px; display: flex;" >
+          <img src="${image2}" alt="Lifestyle Image" style=" width: 90%; height: 300px; object-fit: cover; object-position: top; margin: 0 auto 15px; display: flex; border-radius: 8px;" >
              </td></tr>
 
         `;
@@ -172,7 +201,7 @@
 
   
 
-        <tr><td><p>${imageCopy2}</p></td></tr>
+        <tr><td><p style="font-size: 1rem; line-height: 1.5rem; font-weight: 500; font-family: 'UniversLTStd-Cn', 'verdana', sans-serif; text-align: left; margin: 0 32px 32px;">${imageCopy2}</p></td></tr>
 
         `;
         container.appendChild(template);
@@ -200,6 +229,20 @@
 
       button.target = "_blank";
       button.className = "_body-cta";
+      button.style.msoPaddingAlt = "16px 12px 12px";
+      button.style.font = "500 16px/1.5rem 'UniversLTStd-Cn', sans-serif";    
+      button.style.padding = "16px 12px 12px";  
+      button.style.textTransform = "uppercase";
+      button.style.textAlign = "center";
+      button.style.color = "#fff";
+      button.style.display = "block";
+      button.style.textDecoration = "none";
+      button.style.boxShadow = "0 3px 3px #00000029";
+      button.style.background = "#464647";
+      button.style.borderRadius = "4px";
+      button.style.border = "2.5px solid #464647";
+      button.style.width = "35%";
+      button.style.margin = "0 180px 16px 32px";
       button.innerHTML = `
 
       ${buttonLabel2}
@@ -242,7 +285,7 @@
             <div style="background-color: #f9f9f9; height: 300px; width: 298px; display: flex;flex-direction: column; justify-content: center;">
                 <div style="padding: 16px; display: flex;flex-direction: column;justify-content: center;">
                 <h3 style="text-align: left; margin:32px 0 16px;">${introBodyTitle2}</h3>
-                <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.5rem; font-size: 1rem; text-align: left; margin: 1rem 0; color: #000;">${imageCopy3}</p>
+                <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.5rem; font-size: 1rem; text-align: left; margin: 1rem; color: #000;">${imageCopy3}</p>
                 <a href="${buttonHref3}" target="_blank" style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.5rem; font-size: 1rem; text-align: left; margin: 1rem 0; color: #000; text-transform: uppercase;">${buttonLabel3}</a>
                 </div>
             </div>
