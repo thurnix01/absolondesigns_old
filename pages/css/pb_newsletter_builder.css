@@ -60,6 +60,28 @@
                   display: none;
                 }
 
+               table h1 {
+                   font-size: 3.5rem;
+                   font-weight: 500;
+                   letter-spacing: 0.1rem;
+                   font-family: 'tungsten', 'verdana', sans-serif;
+                   text-align: left;
+                   text-transform: uppercase;
+                   margin: 32px 32px 0;
+                   line-height: 3.3rem;
+               }
+
+               h3,
+               table h3 {
+                   font-size: 2.5rem;
+                   font-weight: 500;
+                   letter-spacing: 0.2rem;
+                   font-family: 'tungsten', 'verdana', sans-serif;
+                   text-align: center;
+                   text-transform: uppercase;
+                   margin: 32px 32px 16px;
+               }
+
                @media only screen and (max-width: 599px)
                {
              .component-builder {
