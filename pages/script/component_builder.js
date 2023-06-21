@@ -111,6 +111,9 @@
         var container = document.getElementById("container");
         var template = document.createElement("table");
         template.className = "_double_section";
+        template.style.width = "295px"; 
+        template.style.flexGrow = "1";
+        template.style.flexShrink = "0";
         template.innerHTML = `
 
 
@@ -146,6 +149,7 @@
           container.removeChild(templates[templates.length - 1]);
         }
       }
+        
         
                     
           //-------------------------------------------
