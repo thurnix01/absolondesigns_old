@@ -38,13 +38,6 @@
                }
 
 
-   
-               ._double_section {
-                   width: 295px;
-                   flex-grow: 1;
-                   flex-shrink: 0;
-               }
-
                .active {
                    color: #464647 !important;
                    background-color: #fff !important;
