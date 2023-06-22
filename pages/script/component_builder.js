@@ -1,3 +1,4 @@
+    
       function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
@@ -108,8 +109,9 @@
         var buttonLabel1 = document.getElementById("buttonLabel1").value;
         var buttonHref1 = document.getElementById("buttonHref1").value;
           
-        var container = document.getElementById("container");
+        var container = document.getElementById("_doubles");
         var template = document.createElement("table");
+
         template.className = "_double_section";
         template.style.width = "295px"; 
         template.style.flexGrow = "1";
@@ -149,7 +151,6 @@
           container.removeChild(templates[templates.length - 1]);
         }
       }
-        
         
                     
           //-------------------------------------------
@@ -256,8 +257,6 @@
         
 
     
-        
-         
         
       function addTemplate7() {
       var image3 = document.getElementById("image-3").value;
