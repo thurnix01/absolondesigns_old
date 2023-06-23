@@ -103,20 +103,38 @@
         
           //-------------------------------------------
         
-      function addTemplate3() {
+    var container = document.getElementById("container");
+    var blue = document.getElementById("blue");
+    var red = document.getElementById("red");
+       var called = false;
+    function addTemplate3() {
+      if (!called) {
+            var container = document.getElementById("container");
+            var blue = document.getElementById("blue");
+            var template1 = document.createElement("div");
+            template1.style.display = "flex";
+            template1.style.flexWrap = "wrap";
+            template1.id = "blue";
+
+ 
+            container.appendChild(template1);
+                   called = true;
+      }
+    }
+    function addTemplate3Add() {
         var image1 = document.getElementById("image-1").value;
         var imageCopy1 = document.getElementById("image-copy-1").value;
         var buttonLabel1 = document.getElementById("buttonLabel1").value;
         var buttonHref1 = document.getElementById("buttonHref1").value;
-          
-        var container = document.getElementById("_doubles");
-        var template = document.createElement("table");
-
-        template.className = "_double_section";
-        template.style.width = "295px"; 
-        template.style.flexGrow = "1";
-        template.style.flexShrink = "0";
-        template.innerHTML = `
+        var container = document.getElementById("container");
+        var blue = document.getElementById("blue");
+        var template2 = document.createElement("table");
+        template2.className = "_double_section";
+        template2.style.width = "295px"; 
+        template2.style.flexGrow = "1";
+        template2.style.flexShrink = "0";
+        template2.id = "red";
+        template2.innerHTML = `
 
 
 
@@ -142,13 +160,13 @@
      
             
         `;
-        container.appendChild(template);
-      }
-      function removeTemplate3() {
-        var container = document.getElementById("container");
-        var templates = container.getElementsByClassName("_double_section ");
+        blue.appendChild(template2);
+    }
+    function removeTemplate3() {
+        var blue = document.getElementById("blue");
+        var templates = blue.getElementsByClassName("_double_section");
         if (templates.length > 0) {
-          container.removeChild(templates[templates.length - 1]);
+          blue.removeChild(templates[templates.length - 1]);
         }
       }
         
