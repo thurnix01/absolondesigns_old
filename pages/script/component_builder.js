@@ -106,7 +106,7 @@
     var container = document.getElementById("container");
     var blue = document.getElementById("blue");
     var red = document.getElementById("red");
-       var called = false;
+    var called = false;
     function addTemplate3() {
       if (!called) {
             var container = document.getElementById("container");
@@ -114,6 +114,7 @@
             var template1 = document.createElement("div");
             template1.style.display = "flex";
             template1.style.flexWrap = "wrap";
+            template1.style.maxWidth = "600px";
             template1.id = "blue";
 
  
@@ -135,9 +136,6 @@
         template2.style.flexShrink = "0";
         template2.id = "red";
         template2.innerHTML = `
-
-
-
             <tr style="display: flex;flex-wrap: wrap;height: auto">
                 <td style="text-align: center;flex: auto">
         
@@ -155,10 +153,6 @@
         
                 </td>
             </tr>
-
-
-     
-            
         `;
         blue.appendChild(template2);
     }
