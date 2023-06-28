@@ -1,6 +1,4 @@
-       
-        
-      function addTemplate() {
+  function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
         var bodyCopy = document.getElementById("body-copy").value;
@@ -10,7 +8,7 @@
         var container = document.getElementById("container");
         var template = document.createElement("table");
         template.className = "_header-section";
-      template.vAlign = "top";
+      template.verticalAlign = "top";
       template.border = "0";
       template.cellPadding = "0";
       template.cellSpacing = "0";
@@ -91,7 +89,7 @@
         var container = document.getElementById("container");
         var template = document.createElement("table");
         template.className = "_section-title";
-      template.vAlign = "top";
+      template.verticalAlign = "top";
       template.border = "0";
       template.cellPadding = "0";
       template.cellSpacing = "0";
@@ -186,7 +184,7 @@
         var template = document.createElement("table");
         template.className = "_body-image";
         template.style.width = "100%";   
-      template.vAlign = "top";
+      template.verticalAlign = "top";
       template.border = "0";
       template.cellPadding = "0";
       template.cellSpacing = "0";
@@ -220,7 +218,7 @@
         var template = document.createElement("table");
         template.id = "blocks";  
         template.className = "_body-copy";
-      template.vAlign = "top";
+      template.verticalAlign = "top";
       template.border = "0";
       template.cellPadding = "0";
       template.cellSpacing = "0";
@@ -306,7 +304,7 @@
       template.style.maxWidth = "600px";
       template.style.margin = "0 auto";
       template.style.tableLayout = "fixed";
-      template.vAlign = "top";
+      template.verticalAlign = "top";
       template.border = "0";
       template.cellPadding = "0";
       template.cellSpacing = "0";
