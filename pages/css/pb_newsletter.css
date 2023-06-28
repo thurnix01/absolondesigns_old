@@ -20,8 +20,8 @@
                
 
 
-               #_header-section table,
-               #_double_section table {
+               table#_header-section ,
+               table#_double_section  {
                    width: 600px;
                    margin: 0 auto;
                }
