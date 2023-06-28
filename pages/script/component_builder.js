@@ -1,3 +1,4 @@
+       
         
       function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
@@ -9,10 +10,10 @@
         var container = document.getElementById("container");
         var template = document.createElement("table");
         template.className = "_header-section";
-      template.valign = "top";
+      template.vAlign = "top";
       template.border = "0";
-      template.cellpadding = "0";
-      template.cellspacing = "0";
+      template.cellPadding = "0";
+      template.cellSpacing = "0";
       template.role = "presentation";
         template.innerHTML = `
 
@@ -90,10 +91,10 @@
         var container = document.getElementById("container");
         var template = document.createElement("table");
         template.className = "_section-title";
-      template.valign = "top";
+      template.vAlign = "top";
       template.border = "0";
-      template.cellpadding = "0";
-      template.cellspacing = "0";
+      template.cellPadding = "0";
+      template.cellSpacing = "0";
       template.role = "presentation"; 
         template.style.width = "100%"; 
         template.innerHTML = `
@@ -185,10 +186,10 @@
         var template = document.createElement("table");
         template.className = "_body-image";
         template.style.width = "100%";   
-      template.valign = "top";
+      template.vAlign = "top";
       template.border = "0";
-      template.cellpadding = "0";
-      template.cellspacing = "0";
+      template.cellPadding = "0";
+      template.cellSpacing = "0";
       template.role = "presentation";
         template.innerHTML = `
 
@@ -219,10 +220,10 @@
         var template = document.createElement("table");
         template.id = "blocks";  
         template.className = "_body-copy";
-      template.valign = "top";
+      template.vAlign = "top";
       template.border = "0";
-      template.cellpadding = "0";
-      template.cellspacing = "0";
+      template.cellPadding = "0";
+      template.cellSpacing = "0";
       template.role = "presentation";
         template.innerHTML = `
 
@@ -305,10 +306,10 @@
       template.style.maxWidth = "600px";
       template.style.margin = "0 auto";
       template.style.tableLayout = "fixed";
-      template.valign = "top";
+      template.vAlign = "top";
       template.border = "0";
-      template.cellpadding = "0";
-      template.cellspacing = "0";
+      template.cellPadding = "0";
+      template.cellSpacing = "0";
       template.role = "presentation";
       template.align = "center";
       template.className = "_body-footer";
