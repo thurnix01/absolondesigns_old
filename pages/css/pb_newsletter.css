@@ -49,8 +49,8 @@
 
                @media only screen and (max-width: 599px) {
 
-                   #_header-section table,
-                   #_double_section table {
+                   table#_header-section ,
+                   table#_double_section  {
                        width: auto !important;
                        margin: 0 auto !important;
                    }
