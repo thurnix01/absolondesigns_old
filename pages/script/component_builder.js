@@ -16,7 +16,7 @@
         template.innerHTML = `
 
 
-        <tr><td><img src="${heroImage}" alt="Hero Image" style="max-width: 600px; width: 100%; min-height: 320px; max-height: 580px; display: flex; object-fit: cover; object-position: top;"></td></tr>
+        <tr><td><img src="${heroImage}" alt="Hero Image" style="max-width: 600px; width: 100%; min-height: 320px; max-height: 580px; display: flex; object-fit: cover; object-position: top;" border="0" ></td></tr>
         <tr><td><h1 style="font-size: 3.5rem; font-weight: 500 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase; margin: 32px 32px 0; line-height: 3.3rem; color: #000;">${introLine}</h1></td></tr>
         <tr><td><p style="font-size: 1rem; line-height: 1.5rem; font-weight: 500; font-family: 'UniversLTStd-Cn', 'verdana', sans-serif; text-align: left; margin: 0 32px 32px; color: #000;">${bodyCopy}</p></td></tr>
 
@@ -140,6 +140,7 @@
         var blue = document.getElementById("blue");
         var template2 = document.createElement("table");
         template2.className = "_double_section";
+        template.role = "presentation"; 
         template2.style.width = "295px"; 
         template2.style.flexGrow = "1";
         template2.style.flexShrink = "0";
@@ -148,10 +149,10 @@
             <tr style="display: flex;flex-wrap: wrap;height: auto">
                 <td style="text-align: center;flex: auto">
         
-            <a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width: 90%; margin: 0 auto; display: flex;"></a>
+            <a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width: 90%; margin: 0 auto; display: flex; height: 265px; object-fit: contain;" border="0"></a>
         <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.25rem; font-size: 1rem; text-align: center; margin: 1rem; color: #000;"> ${imageCopy1}</p>
                             <div style="margin:0 auto; width: 80%; margin-bottom: 16px;">
-                        <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border = "0" cellpadding = "0" cellspacing = "0" role = "presentation" border = "0" role = "presentation">
+                        <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation" >
                             <tbody>
                                 <tr>
                                     <td style="mso-padding-alt:16px 12px 12px; text-align:center;"> <a style="color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase;" href="${buttonHref1}" target="_blank">${buttonLabel1}</a> </td>
@@ -193,7 +194,7 @@
 
         
                <tr><td>
-          <img src="${image2}" alt="Lifestyle Image" style=" width: 90%; max-height: 300px; object-fit: cover; object-position: top; margin: 0 auto 15px; display: flex; border-radius: 8px;" >
+          <img src="${image2}" alt="Lifestyle Image" style=" width: 90%; max-height: 300px; object-fit: cover; object-position: top; margin: 0 auto 15px; display: flex; border-radius: 8px;" border="0">
              </td></tr>
 
         `;
@@ -317,10 +318,10 @@
 
   
             <tr style="width: 100%; max-width: 600px; display:flex; flex-wrap: wrap; margin: 0 auto;">
-                <td style="height: 300px; width: 292px;" class="_footer_block"><a href="${buttonHref3}" target="_blank"><img src="${image3}" style="width: 100%; height: 300px; object-fit: cover;" alt="Footer Promo image"></a></td>
+                <td style="height: 300px; width: 292px;" class="_footer_block"><a href="${buttonHref3}" target="_blank"><img src="${image3}" style="width: 100%; height: 300px; object-fit: cover;" alt="Footer Promo image" border="0" ></a></td>
 
             <td style="height: 300px; width: 292px;" class="_footer_block"><div style="background-color: #f9f9f9; height: 300px; width: 100%; display: flex;flex-direction: column; justify-content: center;">
-                <div style = "padding: 16px; display: inline-grid;  ">
+                <div style = "padding: 16px; display: inline-grid; justify-content: center;">
                 <h3 style="text-align: left; margin:32px 0 16px; font-size: 2rem; font-weight: 500; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-transform: uppercase; line-height: 2rem; color: #000;">${introBodyTitle2}</h3>
                 <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.5rem; font-size: 1rem; text-align: left; margin: 1rem 0; color: #000;">${imageCopy3}</p>
                 <a href="${buttonHref3}" target="_blank" style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.5rem; font-size: 1rem; text-align: left; margin: 1rem 0; color: #000; text-transform: uppercase; text-decoration: underline;">${buttonLabel3}</a>
