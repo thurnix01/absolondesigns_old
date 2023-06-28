@@ -140,7 +140,7 @@
         var blue = document.getElementById("blue");
         var template2 = document.createElement("table");
         template2.className = "_double_section";
-        template.role = "presentation"; 
+
         template2.style.width = "295px"; 
         template2.style.flexGrow = "1";
         template2.style.flexShrink = "0";
