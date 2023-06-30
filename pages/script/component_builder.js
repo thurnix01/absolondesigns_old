@@ -17,7 +17,7 @@
 
 
         <tr><td><img src="${heroImage}" alt="Hero Image" style="max-width: 600px; width: 100%; min-height: 320px; max-height: 580px; display: flex; object-fit: cover; object-position: top;" border="0" ></td></tr>
-        <tr><td><h1 style="font-size: 3.5rem; font-weight: 500 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase; margin: 32px 32px 16px; line-height: 3.3rem; color: #000;">${introLine}</h1></td></tr>
+        <tr><td><h1 style="font-size: 3.5rem; font-weight: 500 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase; margin: 32px 32px 0; line-height: 3.3rem; color: #000;">${introLine}</h1></td></tr>
         <tr><td><p style="font-size: 1rem; line-height: 1.5rem; font-weight: 500; font-family: 'UniversLTStd-Cn', 'verdana', sans-serif; text-align: left; margin: 0 32px 32px; color: #000;">${bodyCopy}</p></td></tr>
 
         `;
@@ -112,47 +112,46 @@
         
           //-------------------------------------------
         
-    var container = document.getElementById("container");
-    var blue = document.getElementById("blue");
-    var red = document.getElementById("red");
-    var called = false;
-    function addTemplate3() {
-      if (!called) {
-            var container = document.getElementById("container");
-            var blue = document.getElementById("blue");
-            var template1 = document.createElement("div");
-            template1.style.display = "flex";
-            template1.style.flexWrap = "wrap";
-            template1.style.maxWidth = "600px";
-            template1.id = "blue";
+  
+        var container = document.getElementById('container');
+        var className = 'product'; // Specify the className to remove
+        var divCount = 0;
+        var subContainer = document.getElementById("sub-container");
 
- 
-            container.appendChild(template1);
-                   called = true;
-      }
-    }
-    function addTemplate3Add() {
+      function addTemplate3() {
+          
+          
+          
+          
+        if (divCount % 2 === 0) {
+          subContainer = document.createElement("div");
+          subContainer.className = "sub-container";
+          subContainer.style.display = "flex";
+          subContainer.style.flexWrap = "wrap";
+          subContainer.style.marginBottom = "32px";
+          subContainer.style.flexBasis = "100%";  
+            
+          container.appendChild(subContainer);
+        }
         var image1 = document.getElementById("image-1").value;
         var imageCopy1 = document.getElementById("image-copy-1").value;
         var buttonLabel1 = document.getElementById("buttonLabel1").value;
-        var buttonHref1 = document.getElementById("buttonHref1").value;
-        var container = document.getElementById("container");
-        var blue = document.getElementById("blue");
-        var template2 = document.createElement("table");
-        template2.className = "_double_section";
+        var buttonHref1 = document.getElementById("buttonHref1").value;    
+        var template = document.createElement("table");
+        template.className = "product"; 
+        template.style.width = "295px"; 
+        template.style.flexGrow = "1";
+        template.style.flexShrink = "0";   
+         
+        template.innerHTML = `
 
-        template2.style.width = "295px"; 
-        template2.style.flexGrow = "1";
-        template2.style.flexShrink = "0";
-        template2.id = "red";
-        template2.innerHTML = `
-            <tr style="display: flex;flex-wrap: wrap;height: auto">
+                      <tr style="display: flex;flex-wrap: wrap;height: auto">
                 <td style="text-align: center;flex: auto">
         
-            <a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width: 90%; margin: 0 auto; display: flex; height: 265px; object-fit: contain;" border="0"></a>
+                   <a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width: 90%; margin: 0 auto; display: flex; height: 265px; object-fit: contain;" border="0"></a>
         <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.25rem; font-size: 1rem; text-align: center; margin: 1rem; color: #000;"> ${imageCopy1}</p>
                             <div style="margin:0 auto; width: 80%; margin-bottom: 16px;">
-                        <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation" >
+                        <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
                             <tbody>
                                 <tr>
                                     <td style="mso-padding-alt:16px 12px 12px; text-align:center;"> <a style="color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase;" href="${buttonHref1}" target="_blank">${buttonLabel1}</a> </td>
@@ -163,14 +162,21 @@
         
                 </td>
             </tr>
-        `;
-        blue.appendChild(template2);
-    }
-    function removeTemplate3() {
-        var blue = document.getElementById("blue");
-        var templates = blue.getElementsByClassName("_double_section");
-        if (templates.length > 0) {
-          blue.removeChild(templates[templates.length - 1]);
+
+          
+          
+          `;
+        subContainer.appendChild(template);
+
+        divCount++;
+      }
+      function removeTemplate3() {
+        var divsToRemove = document.getElementsByClassName("product");
+
+        if (divsToRemove.length > 0) {
+          var divToRemove = divsToRemove[divsToRemove.length - 1];
+          divToRemove.parentNode.removeChild(divToRemove);
+          divCount--;
         }
       }
                     
