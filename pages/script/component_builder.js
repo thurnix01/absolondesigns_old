@@ -113,31 +113,25 @@
         
           //-------------------------------------------
         
-  
-        var container = document.getElementById('container');
-        var className = 'product'; // Specify the className to remove
-        var divCount = 0;
-        var subContainer = document.getElementById("sub-container");
-
+        var container = document.getElementById("container");
+      var product = "product"; // Specify the className to remove
+      var subContainer = document.getElementById("sub-container");
       function addTemplate3() {
-          
-          
-          
-          
-        if (divCount % 2 === 0) {
+        if (!subContainer || subContainer.childElementCount >= 2) {
           subContainer = document.createElement("div");
           subContainer.className = "sub-container";
           subContainer.style.display = "flex";
           subContainer.style.flexWrap = "wrap";
-          subContainer.style.marginBottom = "32px";
-          subContainer.style.flexBasis = "100%";  
+          subContainer.style.flexBasis = "100%";     
             
           container.appendChild(subContainer);
         }
+
+          
         var image1 = document.getElementById("image-1").value;
         var imageCopy1 = document.getElementById("image-copy-1").value;
         var buttonLabel1 = document.getElementById("buttonLabel1").value;
-        var buttonHref1 = document.getElementById("buttonHref1").value;    
+        var buttonHref1 = document.getElementById("buttonHref1").value;      
         var template = document.createElement("table");
         template.className = "product"; 
         template.style.width = "295px"; 
@@ -166,21 +160,30 @@
 
           
           
-          `;
+          `;  
+          
+          
+          
+          
+          
+       
         subContainer.appendChild(template);
-
-        divCount++;
       }
       function removeTemplate3() {
-        var divsToRemove = document.getElementsByClassName("product");
+        var templates = document.getElementsByClassName(product);
 
-        if (divsToRemove.length > 0) {
-          var divToRemove = divsToRemove[divsToRemove.length - 1];
-          divToRemove.parentNode.removeChild(divToRemove);
-          divCount--;
+        if (templates.length > 0) {
+          var divToRemove = templates[templates.length - 1];
+          var template = divToRemove.parentNode;
+          template.removeChild(divToRemove);
+
+          if (template.childElementCount === 0) {
+            container.removeChild(template);
+            subContainer = null;
+          }
         }
       }
-                    
+        
           //-------------------------------------------
         
         
@@ -349,3 +352,54 @@
         }
       }        
         
+
+    </script>
+    
+ <!-----------------Button-Alternate---------------------------->
+    
+    
+    <script>
+        function buttonStyle() {
+        var myDiv = document.querySelector("._header-cta");
+
+            if (myDiv.classList.contains("active")) {
+                myDiv.classList.remove("active");
+            } else {
+                myDiv.classList.add("active");
+            }
+        }
+        function buttonStyleColor() {
+            var myDiv = document.querySelector("._header-cta");
+
+            if (myDiv.classList.contains("active")) {
+                myDiv.style.backgroundColor = "#464647";
+            } else {
+                myDiv.style.backgroundColor = "#E04F26";
+                myDiv.style.border = "2.5px solid #E04F26";
+            }
+        }
+
+
+
+
+        function buttonStyle2() {
+        var myDiv = document.querySelector("._body-cta");
+
+            if (myDiv.classList.contains("active")) {
+                myDiv.classList.remove("active");
+            } else {
+                myDiv.classList.add("active");
+            }
+        }
+
+        function buttonStyleColor2() {
+        var myDiv = document.querySelector("._body-cta");
+
+            if (myDiv.classList.contains("active")) {
+                myDiv.style.backgroundColor = "#464647";
+            } else {
+                myDiv.style.backgroundColor = "#E04F26";
+                myDiv.style.border = "2.5px solid #E04F26";
+            }
+        }
+
