@@ -1,4 +1,5 @@
-  function addTemplate() {
+   
+      function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
         var bodyCopy = document.getElementById("body-copy").value;
@@ -17,7 +18,7 @@
 
 
         <tr><td><img src="${heroImage}" alt="Hero Image" style="max-width: 600px; width: 100%; min-height: 320px; max-height: 580px; display: flex; object-fit: cover; object-position: top;" border="0" ></td></tr>
-        <tr><td><h1 style="font-size: 3.5rem; font-weight: 500 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase; margin: 32px 32px 0; line-height: 3.3rem; color: #000;">${introLine}</h1></td></tr>
+        <tr><td><h1 style="font-size: 3.5rem; font-weight: 500 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase; margin: 32px 32px 16px; line-height: 3.3rem; color: #000;">${introLine}</h1></td></tr>
         <tr><td><p style="font-size: 1rem; line-height: 1.5rem; font-weight: 500; font-family: 'UniversLTStd-Cn', 'verdana', sans-serif; text-align: left; margin: 0 32px 32px; color: #000;">${bodyCopy}</p></td></tr>
 
         `;
