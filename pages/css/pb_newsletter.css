@@ -1,4 +1,67 @@
+  :root {
+            color-scheme: light;
+            supported-color-schemes:  light;
+        }
 
+
+        @media (prefers-color-scheme: light) {
+
+            td.header,
+            td.main_1,
+            td.footer {
+                background-color: #ffffff;
+            }
+
+            body,
+            center {
+                background-color: #EFEFEF;
+            }
+
+            h1,
+            h2.main_1,
+            p.main_1 {
+                color: #000000;
+            }
+
+            h2.specification,
+            p.specification {
+                color: #595959;
+            }
+
+            td.specification {
+                background-color: #DADADA;
+            }
+
+        }
+
+        @media (prefers-color-scheme: dark) {
+
+            td.header,
+            td.main_1,
+            td.footer {
+                background-color: #1E1E1E;
+            }
+
+            body,
+            center {
+                background-color: #383838;
+            }
+
+            h1,
+            h2.main_1,
+            p.main_1 {
+                color: #ffffff;
+            }
+
+            td.specification {
+                background-color: #4D4D4D !important;
+            }
+
+            h2.specification,
+            p.specification {
+                color: #F6F6F6;
+            }
+        }
 
 
                table#_header-section ,
