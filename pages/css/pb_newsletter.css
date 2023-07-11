@@ -24,14 +24,21 @@
                    background-color: #fff !important;
                    border: 2.5px solid #464647;
                }
-
+        div, h1 {
+             font-family: 'tungsten', sans-serif ;
+        }
+       [style*="tungsten"] { font-family: 'tungsten', 'Helvetica', serif !important; }
+        
       
-                @media only screen and (min-width:600px) {
+                @media only screen and (min-width:599px) {
               .desktop-width-33pc { width:33.33% !important; }
               .desktop-width-50pc { width:50% !important; }
               .desktop-image-width { width:90% !important; }    
               .desktop-height-50pc  { height:50% !important; }      
-
+               td {
+                padding: 32px 0 0 !important;
+            }
+            
                 }
                 
 
