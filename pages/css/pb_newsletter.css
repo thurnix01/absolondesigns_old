@@ -30,14 +30,12 @@
        [style*="tungsten"] { font-family: 'tungsten', 'Helvetica', serif !important; }
         
       
-                @media only screen and (min-width:599px) {
+                @media only screen and (max-width:599px) {
               .desktop-width-33pc { width:33.33% !important; }
               .desktop-width-50pc { width:50% !important; }
               .desktop-image-width { width:90% !important; }    
               .desktop-height-50pc  { height:50% !important; }      
-               td {
-                padding: 32px 0 0 !important;
-            }
+               td {padding: 32px 0 0 !important;}
             
                 }
                 
