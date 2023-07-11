@@ -18,7 +18,7 @@
                    max-width: 600px;
                }
 
-              ._header-cta:hover{ filter: brightness(90%) !important; }
+              ._header-cta:hover, ._body-cta:hover { filter: brightness(90%) !important; }
             
 
                .active {
