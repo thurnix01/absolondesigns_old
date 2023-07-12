@@ -1,4 +1,5 @@
- function addTemplate() {
+
+    function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
         var bodyCopy = document.getElementById("body-copy").value;
@@ -61,7 +62,7 @@
         var buttonHref = document.getElementById("buttonHref").value;
             
         var content = document.getElementById('content');
-        var content = document.createComment(' [if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref}" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn">${buttonLabel}</center></v:roundrect><![endif] ');    
+        var content = document.createComment('[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref}" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn">${buttonLabel}</center></v:roundrect><![endif]');    
 
         var resultDiv = document.getElementById("container");
         var button = document.createElement("a");
@@ -328,41 +329,40 @@ ${buttonLabel}
         var buttonLabel2 = document.getElementById("buttonLabel2").value;
         var buttonHref2 = document.getElementById("buttonHref2").value;
         
-             var content = document.getElementById('content');
-        var content = document.createComment(' [if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn">${buttonLabel2}</center></v:roundrect><![endif] ');    
+             var content2 = document.getElementById('content2');
+        var content2 = document.createComment('[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn">${buttonLabel2}</center></v:roundrect><![endif]');    
 
         var resultDiv = document.getElementById("container");
-        var button = document.createElement("a");
+        var button2 = document.createElement("a");
 
-        button.href = buttonHref2;
+        button2.href = buttonHref2;
 
 
-        button.target = "_blank";
-        button.className = "_body-cta";
-        button.style.msoPaddingAlt = "16px 12px 12px";
-        button.style.font = "500 16px/1.5rem 'UniversLTStd-Cn', sans-serif";
-        button.style.padding = "16px 12px 12px";
-        button.style.textTransform = "uppercase";
-        button.style.textAlign = "center";
-        button.style.color = "#fff";
-        button.style.display = "block";
-        button.style.textDecoration = "none";
-        button.style.boxShadow = "0 3px 3px #00000029";
-        button.style.background = "#464647";
-        button.style.borderRadius = "4px";
-        button.style.border = "2.5px solid #464647";
-        button.style.width = "35%";
-        button.style.margin = "0 180px 16px 32px";
-        button.innerHTML = `
+        button2.target = "_blank";
+        button2.className = "_body-cta";
+        button2.style.msoPaddingAlt = "16px 12px 12px";
+        button2.style.font = "500 16px/1.5rem 'UniversLTStd-Cn', sans-serif";
+        button2.style.padding = "16px 12px 12px";
+        button2.style.textTransform = "uppercase";
+        button2.style.textAlign = "center";
+        button2.style.color = "#fff";
+        button2.style.display = "block";
+        button2.style.textDecoration = "none";
+        button2.style.boxShadow = "0 3px 3px #00000029";
+        button2.style.background = "#464647";
+        button2.style.borderRadius = "4px";
+        button2.style.border = "2.5px solid #464647";
+        button2.style.width = "35%";
+        button2.style.margin = "0 180px 16px 32px";
+        button2.innerHTML = `
 
-                <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn">${buttonLabel2}</center></v:roundrect><![endif]-->
                 ${buttonLabel2}
 
 
 
       `;
-        resultDiv.appendChild(content);
-         resultDiv.appendChild(button);
+        resultDiv.appendChild(content2);
+         resultDiv.appendChild(button2);
     }
 
     function removeTemplate6() {
