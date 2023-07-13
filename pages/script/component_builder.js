@@ -67,7 +67,6 @@
         button.cellPadding = "0";
         button.cellSpacing = "0";
         button.role = "presentation";
-        button.style.padding = "0 32px";
         button.style.marginBottom = "32px";
      
 
@@ -327,7 +326,6 @@
         button.cellPadding = "0";
         button.cellSpacing = "0";
         button.role = "presentation";
-        button.style.padding = "0 32px";
         button.style.marginBottom = "32px";
 
         button.className = "_body-cta";
@@ -409,3 +407,5 @@
             container.removeChild(templates[templates.length - 1]);
         }
     }
+    
+    
