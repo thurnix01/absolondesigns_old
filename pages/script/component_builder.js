@@ -1,4 +1,5 @@
 
+
     function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
@@ -63,6 +64,10 @@
         var button = document.createElement("table");
         button.style.maxWidth = "600px";
         button.width = "600";
+        button.border = "0";
+        button.cellPadding = "0";
+        button.cellSpacing = "0";
+        button.role = "presentation";
         button.style.padding = "0 32px";
      
 
@@ -317,6 +322,10 @@
         var button = document.createElement("table");
         button.style.maxWidth = "600px";
         button.width = "600";
+        button.border = "0";
+        button.cellPadding = "0";
+        button.cellSpacing = "0";
+        button.role = "presentation";
         button.style.padding = "0 32px";
 
         button.className = "_body-cta";
