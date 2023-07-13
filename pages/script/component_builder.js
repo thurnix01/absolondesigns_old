@@ -1,4 +1,5 @@
-  function addTemplate() {
+
+    function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
         var bodyCopy = document.getElementById("body-copy").value;
@@ -6,10 +7,10 @@
 
 
         var container = document.getElementById("container");
-        var template = document.createElement("div");
+        var template = document.createElement("table");
         template.className = "_header-section";
         template.verticalAlign = "top";
-        template.maxWidth = "600px";
+        template.style.maxWidth = "600px";
         template.width = "600";
         template.style.width = "100%";
         template.border = "0";
@@ -19,28 +20,23 @@
         template.innerHTML = `
 
 
+            <tr>
+                <td>
 
+                    <p style="margin:0; text-align:center; background-color:#fff;"><img src="${heroImage}" alt="Hero Image" style="display:block; margin:0 auto; max-width:600px; width:100%; min-height: 300px; object-fit: cover; object-position: center;" width="600" /></p>
+                </td>
+            </tr>
 
-
-
-
-        <p style="margin:0; text-align:center; background-color:#fff;"><img src="${heroImage}" alt="Hero Image" style="display:block; margin:0 auto; max-width:600px; width:100%; min-height: 300px; object-fit: cover; object-position: center;" width="600" /></p>
-        <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" style="width:100%; max-width:600px; margin:0 auto;" width="600">
             <tr>
                 <td style="padding:32px;">
+
                     <h1 style="margin:0 0 16px; color:#000; font:400 3.5rem/1 'tungsten', Helvetica, Arial, Tahoma, sans-serif; text-transform: uppercase; font-weight: 400; letter-spacing: 0.1rem">${introLine}</h1>
                     <p style="margin:0 0 16px; color:#000; font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;">
                         ${bodyCopy}
                     </p>
 
- 
-
-
-
                 </td>
             </tr>
-        </table>
-
 
 
         `;
@@ -65,7 +61,7 @@
 
     var resultDiv = document.getElementById("container");
         var button = document.createElement("div");
-        button.maxWidth = "600px";
+        button.style.maxWidth = "600px";
         button.width = "600";
         button.style.width = "100%";
         button.style.padding = "0 32px";
@@ -246,7 +242,7 @@
         var container = document.getElementById("container");
         var template = document.createElement("table");
         template.className = "_body-image";
-        template.maxWidth = "600px";
+        template.style.maxWidth = "600px";
         template.width = "600";
         template.style.width = "100%";
         template.verticalAlign = "top";
@@ -285,7 +281,7 @@
         template.id = "blocks";
         template.className = "_body-copy";
         template.verticalAlign = "top";
-        template.maxWidth = "600px";
+        template.style.maxWidth = "600px";
         template.width = "600";
         template.style.width = "100%";
         template.border = "0";
@@ -319,8 +315,8 @@
         var buttonHref2 = document.getElementById("buttonHref2").value;
 
         var resultDiv = document.getElementById("container");
-        var button = document.createElement("div");
-        button.maxWidth = "600px";
+        var button = document.createElement("table");
+        button.style.maxWidth = "600px";
         button.width = "600";
         button.style.width = "100%";
         button.style.padding = "0 32px";
@@ -360,7 +356,7 @@
 
         var container = document.getElementById("container");
         var template = document.createElement("table");
-        template.maxWidth = "600px";
+        template.style.maxWidth = "600px";
         template.width = "600";
         template.style.width = "100%";
         template.style.margin = "0 auto";
