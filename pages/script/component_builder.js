@@ -60,10 +60,9 @@
         var buttonHref = document.getElementById("buttonHref").value;
 
     var resultDiv = document.getElementById("container");
-        var button = document.createElement("div");
+        var button = document.createElement("table");
         button.style.maxWidth = "600px";
         button.width = "600";
-        button.style.width = "100%";
         button.style.padding = "0 32px";
      
 
@@ -318,7 +317,6 @@
         var button = document.createElement("table");
         button.style.maxWidth = "600px";
         button.width = "600";
-        button.style.width = "100%";
         button.style.padding = "0 32px";
 
         button.className = "_body-cta";
