@@ -1,5 +1,4 @@
-
-    function addTemplate() {
+   function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
         var bodyCopy = document.getElementById("body-copy").value;
@@ -22,11 +21,11 @@
 
 
 
-        <p style="margin:0; text-align:center; background-color:#111;"><img src="${heroImage}" class="desktop-height-50pc" alt="Hero Image" style="display:block; margin:0 auto; max-width:600px; width:100%; min-height: 300px; object-fit: cover; object-position: center;" width="600" /></p>
+        <p style="margin:0; text-align:center; background-color:#fff;"><img src="${heroImage}" alt="Hero Image" style="display:block; margin:0 auto; max-width:600px; width:100%; min-height: 300px; object-fit: cover; object-position: center;" width="600" /></p>
         <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" style="width:100%; max-width:600px; margin:0 auto;" width="600">
             <tr>
                 <td style="padding:32px;">
-                    <h1 style="margin:0 0 16px; color:#000; font:400 3.5rem/1 'tungsten', Helvetica, Arial, Tahoma, sans-serif; text-transform: uppercase; font-weight: 400; letter-spacing: 0.1rem" class="mobile-title">${introLine}</h1>
+                    <h1 style="margin:0 0 16px; color:#000; font:400 3.5rem/1 'tungsten', Helvetica, Arial, Tahoma, sans-serif; text-transform: uppercase; font-weight: 400; letter-spacing: 0.1rem">${introLine}</h1>
                     <p style="margin:0 0 16px; color:#000; font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;">
                         ${bodyCopy}
                     </p>
