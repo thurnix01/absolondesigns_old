@@ -1,5 +1,4 @@
-
-    function addTemplate() {
+  function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
         var bodyCopy = document.getElementById("body-copy").value;
@@ -10,6 +9,9 @@
         var template = document.createElement("div");
         template.className = "_header-section";
         template.verticalAlign = "top";
+        template.maxWidth = "600px";
+        template.width = "600";
+        template.style.width = "100%";
         template.border = "0";
         template.cellPadding = "0";
         template.cellSpacing = "0";
@@ -63,6 +65,9 @@
 
     var resultDiv = document.getElementById("container");
         var button = document.createElement("div");
+        button.maxWidth = "600px";
+        button.width = "600";
+        button.style.width = "100%";
         button.style.padding = "0 32px";
      
 
@@ -98,6 +103,9 @@
         template.className = "_section-title";
         template.verticalAlign = "top";
         template.border = "0";
+        template.maxWidth = "600px";
+        template.width = "600";
+        template.style.width = "100%";
         template.cellPadding = "0";
         template.cellSpacing = "0";
         template.role = "presentation";
@@ -239,6 +247,7 @@
         var template = document.createElement("table");
         template.className = "_body-image";
         template.maxWidth = "600px";
+        template.width = "600";
         template.style.width = "100%";
         template.verticalAlign = "top";
         template.border = "0";
@@ -276,6 +285,9 @@
         template.id = "blocks";
         template.className = "_body-copy";
         template.verticalAlign = "top";
+        template.maxWidth = "600px";
+        template.width = "600";
+        template.style.width = "100%";
         template.border = "0";
         template.cellPadding = "0";
         template.cellSpacing = "0";
@@ -308,6 +320,9 @@
 
         var resultDiv = document.getElementById("container");
         var button = document.createElement("div");
+        button.maxWidth = "600px";
+        button.width = "600";
+        button.style.width = "100%";
         button.style.padding = "0 32px";
 
         button.className = "_body-cta";
@@ -345,8 +360,9 @@
 
         var container = document.getElementById("container");
         var template = document.createElement("table");
+        template.maxWidth = "600px";
+        template.width = "600";
         template.style.width = "100%";
-        template.style.maxWidth = "600px";
         template.style.margin = "0 auto";
         template.style.tableLayout = "fixed";
         template.verticalAlign = "top";
