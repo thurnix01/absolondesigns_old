@@ -27,7 +27,7 @@
             <tr>
                 <td style="padding:32px;">
                     <h1 style="margin:0 0 16px; color:#000; font:400 3.5rem/1 'tungsten', Helvetica, Arial, Tahoma, sans-serif; text-transform: uppercase; font-weight: 400; letter-spacing: 0.1rem" class="mobile-title">${introLine}</h1>
-                    <p style="margin:0 0 16px; color:#000; font:400 1rem/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;">
+                    <p style="margin:0 0 16px; color:#000; font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;">
                         ${bodyCopy}
                     </p>
 
@@ -55,52 +55,28 @@
 
 
     //-------------------------------------------
-      
-      
-        function addTemplate1() {
+
+
+    function addTemplate1() {
         var buttonLabel = document.getElementById("buttonLabel").value;
         var buttonHref = document.getElementById("buttonHref").value;
-            
-        var content = document.getElementById('content');
-        var content = document.createComment('[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref}" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn">${buttonLabel}</center></v:roundrect><![endif]');    
 
-        var resultDiv = document.getElementById("container");
-        var button = document.createElement("a");
-        button.href = buttonHref;
+    var resultDiv = document.getElementById("container");
+        var button = document.createElement("div");
+     
 
-
-
-        button.target = "_blank";
         button.className = "_header-cta";
-        button.style.msoPaddingAlt = "16px 12px 12px";
-        button.style.font = "500 16px/1.5rem 'UniversLTStd-Cn', sans-serif";
-        button.style.padding = "16px 12px 12px";
-        button.style.textTransform = "uppercase";
-        button.style.textAlign = "center";
-        button.style.color = "#fff";
-        button.style.display = "block";
-        button.style.textDecoration = "none";
-        button.style.boxShadow = "0 3px 3px #00000029";
-        button.style.background = "#464647";
-        button.style.borderRadius = "4px";
-        button.style.border = "2.5px solid #464647";
-        button.style.width = "35%";
-        button.style.margin = "0 180px 16px 32px";
+      
+           button.innerHTML = `
 
-            
+        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref}" class="btn-style" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn">${buttonLabel}</center></v:roundrect><![endif]--> 
 
-
-        button.innerHTML = `
-${buttonLabel}
+        <a href="${buttonHref}" class="btn-style" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:inline-block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform:uppercase;width:220px;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn">${buttonLabel}</a>
 
       `;
-
-           resultDiv.appendChild(content);
-         resultDiv.appendChild(button);
-    }
-
-
-
+        resultDiv.appendChild(button);
+        }
+    
     function removeTemplate1() {
         var resultDiv = document.getElementById("container");
         var buttons = resultDiv.getElementsByClassName("_header-cta");
@@ -165,67 +141,35 @@ ${buttonLabel}
         var buttonHref1 = document.getElementById("buttonHref1").value;
         var template = document.createElement("table");
         template.className = "product";
-        template.style.width = "100%";
-        template.style.margin = "0 auto";
-        template.style.maxWidth = "295px";
+        template.style.width = "295px";
         template.style.flexGrow = "1";
         template.style.flexShrink = "0";
-        template.border = "0";
-        template.cellPadding = "0";
-        template.cellSpacing = "0";
-        template.role = "presentation";
-        template.align = "center";
 
         template.innerHTML = `
 
                       <tr style="display: flex;flex-wrap: wrap;height: auto">
                 <td style="text-align: center;flex: auto">
         
-                  
-                <!--[if true]> 
-                <style type="text/css"> 
-
-                td.two_Cln_1_6 {width:36em;} 
-                td.two_Cln_Rgt_Cln_4_6 {font-size:16px; width:15.5em !important;} 
-                td.gtr_1 {width:1em;} 
-
-                </style> 
-                <![endif]-->
-
-                <!-- Two Column 1-6 Open -->
-                <!--[if true]> 
-                <table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0"> 
-                <tr> 
-                <td class="two_Cln_1_6"> 
-                <![endif]-->
-                <div style="width: 100%; margin: 0 auto; max-width: 600px; " class="flexing">
-                    <!--[if true]> 
-                <table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0"> 
-                <tr> 
-                <td class="two_Cln_Rgt_Cln_4_6" valign="top"> 
-                <![endif]-->
-                    <div class="two_Cln_Rgt_Cln_4_6 ltr" style="text-align: center;">
-                        <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:1rem;font-weight: normal; color:#000;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:290px; margin: 0 auto; display: flex; height: 265px; object-fit: contain;" border="0" width="290"></a>${imageCopy1}</p>
-
-                        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref1}" style="height:52px; v-text-anchor:middle;width:220px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold; text-transform: uppercase;" class="_cta_btn">${buttonLabel1}</center></v:roundrect><![endif]--><a href="${buttonHref1}" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:inline-block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal; text-transform: uppercase;line-height:52px;text-align:center;text-decoration:none;width:220px;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn">${buttonLabel1}</a>
-
+                   <a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width: 90%; margin: 0 auto; display: flex; height: 265px; object-fit: contain;" border="0"></a>
+        <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.25rem; font-size: 1rem; text-align: center; margin: 1rem; color: #000;"> ${imageCopy1}</p>
+                            <div style="margin:0 auto; width: 80%; margin-bottom: 16px;">
+                        <table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #464647;width: 100%; border-radius: 4px" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                            <tbody>
+                                <tr>
+                                    <td style="mso-padding-alt:16px 12px 12px; text-align:center;"> <a style="color: #fff;display: block;padding: 16px 12px 12px; text-align: center;font: 500 16px/20px 'UniversLTStd-Cn', sans-serif;text-decoration: none;box-shadow: 0 3px 3px #00000029; text-transform:uppercase;" href="${buttonHref1}" target="_blank">${buttonLabel1}</a> </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <!--[if true]> 
-                </td> 
-
-
-                </tr> 
-                </table> 
-                <![endif]-->
-                </div>
-                <!--[if true]> 
-                </td> 
-                </tr> 
-                </table> 
-                <![endif]-->
-                <!-- Two Column 1-6 Close -->
-        </td>
+        
+                </td>
             </tr>
+
+          
+
+
+
+
           
           `;
 
@@ -272,7 +216,7 @@ ${buttonLabel}
 
         
                <tr><td>
-          <img src="${image2}" alt="Lifestyle Image" style=" width: 90%; max-height: 300px; object-fit: cover; object-position: top; margin: 32px auto 16px; display: flex; border-radius: 8px;" border="0">
+          <img src="${image2}" alt="Lifestyle Image" style=" width: 90%; max-height: 300px; object-fit: cover; object-position: top; margin: 0 auto 15px; display: flex; border-radius: 8px;" border="0">
              </td></tr>
 
         `;
@@ -328,41 +272,20 @@ ${buttonLabel}
     function addTemplate6() {
         var buttonLabel2 = document.getElementById("buttonLabel2").value;
         var buttonHref2 = document.getElementById("buttonHref2").value;
-        
-             var content2 = document.getElementById('content2');
-        var content2 = document.createComment('[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn">${buttonLabel2}</center></v:roundrect><![endif]');    
 
         var resultDiv = document.getElementById("container");
-        var button2 = document.createElement("a");
+        var button = document.createElement("div");
 
-        button2.href = buttonHref2;
+        button.className = "_body-cta";
 
+           button.innerHTML = `
 
-        button2.target = "_blank";
-        button2.className = "_body-cta";
-        button2.style.msoPaddingAlt = "16px 12px 12px";
-        button2.style.font = "500 16px/1.5rem 'UniversLTStd-Cn', sans-serif";
-        button2.style.padding = "16px 12px 12px";
-        button2.style.textTransform = "uppercase";
-        button2.style.textAlign = "center";
-        button2.style.color = "#fff";
-        button2.style.display = "block";
-        button2.style.textDecoration = "none";
-        button2.style.boxShadow = "0 3px 3px #00000029";
-        button2.style.background = "#464647";
-        button2.style.borderRadius = "4px";
-        button2.style.border = "2.5px solid #464647";
-        button2.style.width = "35%";
-        button2.style.margin = "0 180px 16px 32px";
-        button2.innerHTML = `
+        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" class="btn-style" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn">${buttonLabel2}</center></v:roundrect><![endif]--> 
 
-                ${buttonLabel2}
-
-
+        <a href="${buttonHref2}" class="btn-style" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:inline-block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform:uppercase;width:220px;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn">${buttonLabel2}</a>
 
       `;
-        resultDiv.appendChild(content2);
-         resultDiv.appendChild(button2);
+        resultDiv.appendChild(button);
     }
 
     function removeTemplate6() {
@@ -405,9 +328,9 @@ ${buttonLabel}
 
   
             <tr style="width: 100%; max-width: 600px; display:flex; flex-wrap: wrap; margin: 0 auto;">
-                <td style="height: 300px; width: 299px;" class="_footer_block"><a href="${buttonHref3}" target="_blank"><img src="${image3}" style="width: 100%; height: 300px; object-fit: cover;" alt="Footer Promo image" border="0" ></a></td>
+                <td style="height: 300px; width: 300px;" class="_footer_block"><a href="${buttonHref3}" target="_blank"><img src="${image3}" style="width: 100%; height: 300px; object-fit: cover;" alt="Footer Promo image" border="0" ></a></td>
 
-            <td style="height: 300px; width: 299px;" class="_footer_block"><div style="background-color: #f9f9f9; height: 300px; width: 100%; display: flex;flex-direction: column; justify-content: center;">
+            <td style="height: 300px; width: 300px;" class="_footer_block"><div style="background-color: #f9f9f9; height: 300px; width: 100%; display: flex;flex-direction: column; justify-content: center;">
                 <div style = "padding: 16px; display: inline-grid; justify-content: center;">
                 <h3 style="text-align: left; margin:32px 0 16px; font-size: 2rem; font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-transform: uppercase; line-height: 2rem; color: #000;">${introBodyTitle2}</h3>
                 <p style="font-family:'UniversLTStd-Cn', sans-serif;font-weight: 500; line-height:1.5rem; font-size: 1rem; text-align: left; margin: 1rem 0; color: #000;">${imageCopy3}</p>
