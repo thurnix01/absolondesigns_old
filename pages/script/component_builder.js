@@ -73,7 +73,8 @@
         button.className = "_header-cta";
       
            button.innerHTML = `
-    <tr><td>
+    <tr>
+   <td style="padding:32px;">
         <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref}" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn btn-style">${buttonLabel}</center></v:roundrect><![endif]--> 
 
         <a href="${buttonHref}" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:inline-block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform:uppercase;width:220px;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn btn-style">${buttonLabel}</a>
@@ -330,7 +331,8 @@
         button.className = "_body-cta";
 
            button.innerHTML = `
-    <tr><td>
+    <tr>
+        <td style="padding:32px;">
         <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}"  style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn btn-style1">${buttonLabel2}</center></v:roundrect><![endif]--> 
 
         <a href="${buttonHref2}"  style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:inline-block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform:uppercase;width:220px;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn btn-style1">${buttonLabel2}</a>
@@ -405,3 +407,67 @@
             container.removeChild(templates[templates.length - 1]);
         }
     }
+</script>
+
+<!-----------------Button-Alternate---------------------------->
+
+
+<script>
+      function buttonStyle() {
+    var myDiv = document.querySelector(".btn-style");
+
+    if (myDiv.classList.contains("active")) {
+      myDiv.style.backgroundColor = "#464647";
+      }  else {
+      myDiv.style.backgroundColor = "#fff";
+      myDiv.style.border = "2.5px solid #333";
+      myDiv.style.color = "#333";    
+    }
+      
+
+  }
+  
+
+    
+   function buttonStyleColor() {
+    var myDiv = document.querySelector(".btn-style");
+
+    if (myDiv.classList.contains("active")) {
+      myDiv.style.backgroundColor = "#464647";
+      }  else {
+      myDiv.style.backgroundColor = "#E04F26";
+      myDiv.style.border = "2.5px solid #E04F26";
+      myDiv.style.color = "#fff"; 
+    }
+  }
+
+
+
+
+      function buttonStyle2() {
+    var myDiv1 = document.querySelector(".btn-style1");
+
+    if (myDiv1.classList.contains("active")) {
+      myDiv1.style.backgroundColor = "#464647";
+      }  else {
+      myDiv1.style.backgroundColor = "#fff";
+      myDiv1.style.border = "2.5px solid #333";
+      myDiv1.style.color = "#333";    
+    }
+      
+
+  }
+  
+
+    
+   function buttonStyleColor2() {
+    var myDiv1 = document.querySelector(".btn-style1");
+
+    if (myDiv1.classList.contains("active")) {
+      myDiv1.style.backgroundColor = "#464647";
+      }  else {
+      myDiv1.style.backgroundColor = "#E04F26";
+      myDiv1.style.border = "2.5px solid #E04F26";
+      myDiv1.style.color = "#fff"; 
+    }
+  }
