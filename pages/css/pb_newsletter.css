@@ -38,6 +38,8 @@
               .desktop-image-width { width:90% !important; }    
               .desktop-height-50pc  { height:50% !important; }      
                td {padding: 32px 0 0 !important;}
+               div._header-cta, div._body-cta {padding: 0 !important;}
+                  
             
                 }
                 
@@ -51,11 +53,7 @@
                        margin: 0 auto !important;
                    }
 
-                   ._header-cta,
-                   ._body-cta {
-                       width: 83% !important;
-                       margin: 32px auto 16px !important;
-                   }
+
 
                     h1, h3{
                        margin: 32px 0px 0px  !important;
