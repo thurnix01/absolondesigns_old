@@ -38,7 +38,7 @@
               .desktop-image-width { width:90% !important; }    
               .desktop-height-50pc  { height:50% !important; }      
                td {padding: 32px 0 0 !important;}
-               div._header-cta, div._body-cta {padding: 0 !important;}
+               table._header-cta, table._body-cta {padding: 0 !important;}
                   
             
                 }
