@@ -325,7 +325,7 @@
         button.cellPadding = "0";
         button.cellSpacing = "0";
         button.role = "presentation";
-        button.style.marginBottom = "32px";
+        button.style.margin = "0 auto 32px";
 
         button.className = "_body-cta";
 
