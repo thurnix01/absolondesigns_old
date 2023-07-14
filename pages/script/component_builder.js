@@ -18,6 +18,11 @@
         template.cellSpacing = "0";
         template.role = "presentation";
         template.innerHTML = `
+          <!--[if mso]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" valign="middle" width="100%">
+  <![endif]-->
 
 
                 <tr>
@@ -38,6 +43,11 @@
                     </td>
                 </tr>
 
+  <!--[if mso]>
+      </td>
+    </tr>
+  </table>
+  <![endif]-->
 
         `;
         container.appendChild(template);
@@ -55,7 +65,7 @@
     //-------------------------------------------
 
 
- function addTemplate1() {
+    function addTemplate1() {
         var buttonLabel = document.getElementById("buttonLabel").value;
         var buttonHref = document.getElementById("buttonHref").value;
 
@@ -108,8 +118,6 @@
 
 
 
-
-
     //-------------------------------------------
 
 
@@ -129,7 +137,20 @@
         template.style.width = "100%";
         template.innerHTML = `
 
+          <!--[if mso]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" valign="middle" width="100%">
+  <![endif]-->
+
         <tr><td><h3 style="font-size: 2.5rem; font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px 16px; color: #000;">${introBodyTitle}</h3></td></tr>
+
+ <!--[if mso]>
+      </td>
+    </tr>
+  </table>
+  <![endif]-->
+
 
         `;
         container.appendChild(template);
@@ -272,7 +293,11 @@
         template.role = "presentation";
         template.innerHTML = `
 
-        
+          <!--[if mso]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" valign="middle" width="100%">
+  <![endif]-->
                <tr><td>
 
           <!--[if mso]>
@@ -293,7 +318,11 @@
           <![endif]-->
 
              </td></tr>
-
+ <!--[if mso]>
+      </td>
+    </tr>
+  </table>
+  <![endif]-->
 
 
         `;
@@ -329,12 +358,21 @@
         template.role = "presentation";
         template.innerHTML = `
 
-  
+  <!--[if mso]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" valign="middle" width="100%">
+  <![endif]-->
 
         <tr>
         <td style="padding: 0 32px;" class="_introline">
         <p style="font-size: 1rem; line-height: 1.5rem; font-weight: 500; font-family: 'UniversLTStd-Cn', 'verdana', sans-serif; text-align: left; margin: 0 0 32px; color: #000;">${imageCopy2}</p></td></tr>
 
+ <!--[if mso]>
+      </td>
+    </tr>
+  </table>
+  <![endif]-->
         `;
         container.appendChild(template);
     }
