@@ -20,24 +20,23 @@
         template.innerHTML = `
 
 
-            <tr>
-                <td>
+                <tr>
+                    <td>
 
-                    <p style="margin:0; text-align:center; background-color:#fff;"><img src="${heroImage}" alt="Hero Image" style="display:block; margin:0 auto; max-width:600px; width:100%; min-height: 300px; object-fit: cover; object-position: center;" width="600" /></p>
-                </td>
-            </tr>
+                        <p style="margin:0; text-align:center; background-color:#fff;"><img src="${heroImage}" alt="Hero Image" style="display:block; margin:0 auto; max-width:600px; width:100%; min-height: 300px; object-fit: cover; object-position: center;" width="600" /></p>
+                    </td>
+                </tr>
 
-            <tr>
-                <td style="padding:32px;"  class="_introline">
+                <tr>
+                    <td style="padding:32px;"  class="_introline">
 
-                    <h1 style="margin:0 0 16px; color:#000; font:400 3.5rem/1 'tungsten', Helvetica, Arial, Tahoma, sans-serif; text-transform: uppercase; font-weight: 400; letter-spacing: 0.1rem">${introLine}</h1>
-                    <p style="margin:0 0 16px; color:#000; font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; " class="_introline">
-                        ${bodyCopy}
-                    </p>
+                        <h1 style="margin:0 0 16px; color:#000; font:400 3.5rem/1 'tungsten', Helvetica, Arial, Tahoma, sans-serif; text-transform: uppercase; font-weight: 400; letter-spacing: 0.1rem">${introLine}</h1>
+                        <p style="margin:0 0 16px; color:#000; font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; " class="_introline">
+                            ${bodyCopy}
+                        </p>
 
-                </td>
-            </tr>
-
+                    </td>
+                </tr>
 
 
         `;
@@ -61,23 +60,40 @@
         var buttonHref = document.getElementById("buttonHref").value;
 
     var resultDiv = document.getElementById("container");
-        var button = document.createElement("table");
-        button.border = "0";
-        button.cellPadding = "0";
-        button.cellSpacing = "0";
-        button.role = "presentation";
-        button.style.marginBottom = "32px";
+        var button = document.createElement("div");
+          button.role = "presentation";
+        button.style.marginBottom = "0 0 32px";
      
 
         button.className = "_header-cta";
       
            button.innerHTML = `
-    <tr>
-   <td style="padding: 0 32px;" class="_introline">
-        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref}" target="_blank"  style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn btn-style">${buttonLabel}</center></v:roundrect><![endif]--> 
 
-        <a href="${buttonHref}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:inline-block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform:uppercase;width:220px;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn btn-style">${buttonLabel}</a>
-    </td></tr>
+<!--[if mso]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="left" valign="middle" width="100%">
+  <![endif]-->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="left" valign="middle">
+        <div class="button-container">
+          <!--[if mso]>
+          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn btn-style1">${buttonLabel}</center></v:roundrect>
+          <![endif]-->
+          <!--[if !mso]><!-->
+          <a href="${buttonHref}" target="_blank"  style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:inline-block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform:uppercase;width:220px;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn btn-style1">${buttonLabel}</a>
+          <!--<![endif]-->
+        </div>
+      </td>
+    </tr>
+  </table>
+  <!--[if mso]>
+      </td>
+    </tr>
+  </table>
+  <![endif]-->
+
       `;
         resultDiv.appendChild(button);
         }
@@ -291,9 +307,6 @@
     }
 
 
-
-
-
     //-------------------------------------------
 
 
@@ -341,23 +354,46 @@
         var buttonHref2 = document.getElementById("buttonHref2").value;
 
         var resultDiv = document.getElementById("container");
-        var button = document.createElement("table");
-        button.border = "0";
-        button.cellPadding = "0";
-        button.cellSpacing = "0";
+        var button = document.createElement("div");
+
         button.role = "presentation";
         button.style.margin = "0 auto 32px";
 
         button.className = "_body-cta";
 
            button.innerHTML = `
-    <tr>
-        <td style="padding: 0 32px;" class="_introline">
-        <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn btn-style1">${buttonLabel2}</center></v:roundrect><![endif]--> 
 
-        <a href="${buttonHref2}" target="_blank"  style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:inline-block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform:uppercase;width:220px;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn btn-style1">${buttonLabel2}</a>
-        </td>
-        </tr>
+
+<!--[if mso]>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" valign="middle" width="100%">
+  <![endif]-->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" valign="middle">
+        <div class="button-container">
+          <!--[if mso]>
+          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn btn-style1">${buttonLabel2}</center></v:roundrect>
+          <![endif]-->
+          <!--[if !mso]><!-->
+          <a href="${buttonHref2}" target="_blank"  style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:inline-block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform:uppercase;width:220px;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn btn-style1">${buttonLabel2}</a>
+          <!--<![endif]-->
+        </div>
+      </td>
+    </tr>
+  </table>
+  <!--[if mso]>
+      </td>
+    </tr>
+  </table>
+  <![endif]-->
+    
+
+
+
+
+
       `;
         resultDiv.appendChild(button);
     }
@@ -427,5 +463,4 @@
             container.removeChild(templates[templates.length - 1]);
         }
     }
-    
     
