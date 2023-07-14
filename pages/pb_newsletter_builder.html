@@ -7,178 +7,177 @@
       <link rel="stylesheet" href="https://thurnix01.github.io/absolondesigns/pages/css/pb_newsletter.css">
 
   </head>
-   <body class="_body_style">
-      <div class="component-builder">
-       
-            <div style="width: 100%;display: flex; justify-content: flex-end; margin-right: 10px; color: #999; font-family: sans-serif;">
-<!--            <span onclick="addStyle()" style="margin-right: 24px; cursor: pointer;">Add CSS</span>-->
+ <body class="_body_style">
+    <div class="component-builder">
+
+        <div style="width: 100%;display: flex; justify-content: flex-end; margin-right: 10px; color: #999; font-family: sans-serif;">
+            <!--            <span onclick="addStyle()" style="margin-right: 24px; cursor: pointer;">Add CSS</span>-->
             <span onclick="toggleView()" style="width: 100px; margin-right: 8px; cursor: pointer;">View HTML</span>
-              <span onclick="copyToClipboard()" style="cursor: pointer;">Copy Code</span>
-                
+            <span onclick="copyToClipboard()" style="cursor: pointer;">Copy Code</span>
+
+        </div>
+
+
+
+
+
+        <h3>Header Section</h3>
+
+        <label for="hero-image">Hero Image Link:</label>
+        <input type="text" id="hero-image" placeholder="Enter URL">
+
+        <label for="intro-line">Intro Line:</label>
+        <input type="text" id="intro-line" placeholder="Enter Intro Line">
+
+
+        <label for="body-copy">Intro Copy:</label>
+        <textarea id="body-copy" rows="4" placeholder="Enter Intro Copy"></textarea>
+
+
+
+
+        <div style="margin-bottom: 20px;">
+            <button onclick="addTemplate()">Add Header</button>
+            <button onclick="removeTemplate()">Remove Header</button>
+        </div>
+
+        <div style="display: flex; gap: 2rem;">
+            <div style=" display: grid">
+                <label for="buttonLabel">Button Label:</label>
+                <input type="text" id="buttonLabel" name="buttonLabel" placeholder="Enter CTA">
             </div>
-            
-            
-
-            
-        
-               <h3>Header Section</h3>
-         
-          <label for="hero-image">Hero Image Link:</label>
-          <input type="text" id="hero-image" placeholder="Enter URL">
-         
-          <label for="intro-line">Intro Line:</label>
-          <input type="text" id="intro-line" placeholder="Enter Intro Line">
-
-         
-          <label for="body-copy">Intro Copy:</label>
-          <textarea id="body-copy" rows="4" placeholder="Enter Intro Copy"></textarea>
-                                
-
-   
-            
-               <div style="margin-bottom: 20px;">
-          <button onclick="addTemplate()">Add Header</button>
-          <button onclick="removeTemplate()">Remove Header</button>
+            <div style="display: grid; max-width: 360px; width: 100%;">
+                <label for="buttonHref">Link:</label>
+                <input type="url" id="buttonHref" name="buttonHref" style="width: 100%;" placeholder="Enter link">
             </div>
-            
-             <div style="display: flex; gap: 2rem;">
-                 <div style=" display: grid">
-                     <label for="buttonLabel">Button Label:</label>
-                     <input type="text" id="buttonLabel" name="buttonLabel" placeholder="Enter CTA">
-                 </div>
-                 <div style="display: grid; max-width: 360px; width: 100%;">
-                     <label for="buttonHref">Link:</label>
-                     <input type="url" id="buttonHref" name="buttonHref" style="width: 100%;" placeholder="Enter link">
-                 </div>
-             </div>
-          
-         <div>
-          <button onclick="addTemplate1()">Add Button</button>
-          <button onclick="removeTemplate1()">Remove Button</button>
-           <button onclick="buttonStyle()">Change Style</button>
-              <button onclick="buttonStyleColor()">Color</button>
+        </div>
+
+        <div>
+            <button onclick="addTemplate1()">Add Button</button>
+            <button onclick="removeTemplate1()">Remove Button</button>
+            <button onclick="buttonStyle()">Change Style</button>
+            <button onclick="buttonStyleColor()">Color</button>
+        </div>
+
+
+
+        <h3>Body Section</h3>
+
+        <label for="intro-body-title">Section Title</label>
+        <input type="text" id="intro-body-title" placeholder="Enter Section Title">
+
+        <div style="margin-bottom: 20px;">
+            <button onclick="addTemplate2()">Add Title</button>
+            <button onclick="removeTemplate2()">Remove Title</button>
+        </div>
+
+
+        <label for="image-1">Image Link:</label>
+        <input type="text" id="image-1" placeholder="Enter URL">
+
+        <label for="image-copy-1">Product Name:</label>
+        <input type="text" id="image-copy-1" placeholder="Enter Product Name">
+
+
+        <div style="display: flex; gap: 2rem;">
+            <div style=" display: grid">
+                <label for="buttonLabel1">Button Label:</label>
+                <input type="text" id="buttonLabel1" name="buttonLabel1" placeholder="Enter CTA">
             </div>
-
-
-            
-                    <h3>Body Section</h3>
-
-             <label for="intro-body-title">Section Title</label>
-          <input type="text" id="intro-body-title" placeholder="Enter Section Title">
-          
-            <div style="margin-bottom: 20px;">
-          <button onclick="addTemplate2()">Add Title</button>
-          <button onclick="removeTemplate2()">Remove Title</button>
+            <div style="display: grid; max-width: 360px; width: 100%;">
+                <label for="buttonHref1">Link:</label>
+                <input type="url" id="buttonHref1" name="buttonHref1" style="width: 100%;" placeholder="Enter link">
             </div>
-            
-            
-            <label for="image-1">Image Link:</label>
-            <input type="text" id="image-1" placeholder="Enter URL">
-
-            <label for="image-copy-1">Product Name:</label>
-            <input type="text" id="image-copy-1" placeholder="Enter Product Name">
+        </div>
 
 
-            <div style="display: flex; gap: 2rem;">
-                <div style=" display: grid">
-                    <label for="buttonLabel1">Button Label:</label>
-                    <input type="text" id="buttonLabel1" name="buttonLabel1" placeholder="Enter CTA">
-                </div>
-                <div style="display: grid; max-width: 360px; width: 100%;">
-                    <label for="buttonHref1">Link:</label>
-                    <input type="url" id="buttonHref1" name="buttonHref1" style="width: 100%;" placeholder="Enter link">
-                </div>
-            </div>
+        <div>
+            <button onclick="addTemplate3()">Add Product</button>
+            <button onclick="removeTemplate3()">Remove Product</button>
+        </div>
 
-            <div>
-                <button onclick="addTemplate3()">Add Product</button>
-                <button onclick="removeTemplate3()">Remove Product</button>
-            </div>
-            
-            
-
-            <h3>Additional Image</h3>
+        <h3>Additional Image</h3>
 
 
-            <label for="image-2">Image Link:</label>
-            <input type="text" id="image-2" placeholder="Enter URL">
+        <label for="image-2">Image Link:</label>
+        <input type="text" id="image-2" placeholder="Enter URL">
 
 
-           
-                     <div>
-          <button onclick="addTemplate4()">Add Image</button>
-          <button onclick="removeTemplate4()">Remove Image</button>
-            </div>
-           
-            
-             <h3>Additional Copy</h3>
 
-          <label for="body-copy-2">Body Copy:</label>
-          <textarea id="body-copy-2" rows="4" placeholder="Enter Body of Copy"></textarea>
- 
+        <div>
+            <button onclick="addTemplate4()">Add Image</button>
+            <button onclick="removeTemplate4()">Remove Image</button>
+        </div>
 
-             <div>
-          <button onclick="addTemplate5()">Add Copy</button>
-          <button onclick="removeTemplate5()">Remove Copy</button>
-            </div>
-            
-            
-            
-            
+
+        <h3>Additional Copy</h3>
+
+        <label for="body-copy-2">Body Copy:</label>
+        <textarea id="body-copy-2" rows="4" placeholder="Enter Body of Copy"></textarea>
+
+
+        <div>
+            <button onclick="addTemplate5()">Add Copy</button>
+            <button onclick="removeTemplate5()">Remove Copy</button>
+        </div>
+
+
+
+
         <h3>Additional CTA</h3>
-            <div style="display: flex; gap: 2rem;">
-                <div style=" display: grid">
-                    <label for="buttonLabel2">Button Label:</label>
-                    <input type="text" id="buttonLabel2" name="buttonLabel2" placeholder="Enter CTA">
-                </div>
-                <div style="display: grid; max-width: 360px; width: 100%;">
-                    <label for="buttonHref2">Link:</label>
-                    <input type="url" id="buttonHref2" name="buttonHref2" style="width: 100%;" placeholder="Enter link">
-                </div>
+        <div style="display: flex; gap: 2rem;">
+            <div style=" display: grid">
+                <label for="buttonLabel2">Button Label:</label>
+                <input type="text" id="buttonLabel2" name="buttonLabel2" placeholder="Enter CTA">
             </div>
-            
-
-            <div style="display: flex; align-items: center; gap: 0.4rem;">
-                <button onclick="addTemplate6()">Add Button</button>
-                <button onclick="removeTemplate6()">Remove Button</button>
-                <button onclick="buttonStyle2()">Change Style</button>
-                 <button onclick="buttonStyleColor2()">Color</button>
+            <div style="display: grid; max-width: 360px; width: 100%;">
+                <label for="buttonHref2">Link:</label>
+                <input type="url" id="buttonHref2" name="buttonHref2" style="width: 100%;" placeholder="Enter link">
             </div>
-            
-            <h3>Footer</h3>
-            
-          <label for="image-3">Image Link:</label>
-            <input type="text" id="image-3" placeholder="Enter URL">    
-                        
-         <label for="intro-body-title-2">Section Title</label>
-          <input type="text" id="intro-body-title-2" placeholder="Enter Section Title">
+        </div>
 
 
-          <label for="body-copy-3">Body Copy:</label>
-          <textarea id="body-copy-3" rows="4" placeholder="Enter Body of Copy"></textarea>
-          
-                      <div style="display: flex; gap: 2rem;">
-                <div style=" display: grid">
-                    <label for="buttonLabel3">Button Label:</label>
-                    <input type="text" id="buttonLabel3" name="buttonLabel3" placeholder="Enter CTA">
-                </div>
-                <div style="display: grid; max-width: 360px; width: 100%;">
-                    <label for="buttonHref3">Link:</label>
-                    <input type="url" id="buttonHref3" name="buttonHref3" style="width: 100%;" placeholder="Enter link">
-                </div>
-            </div>
- 
+        <div style="display: flex; align-items: center; gap: 0.4rem;">
+            <button onclick="addTemplate6()">Add Button</button>
+            <button onclick="removeTemplate6()">Remove Button</button>
+            <button onclick="buttonStyle2()">Change Style</button>
+            <button onclick="buttonStyleColor2()">Color</button>
+        </div>
 
-             <div>
-          <button onclick="addTemplate7()">Add Footer</button>
-          <button onclick="removeTemplate7()">Remove Footer</button>
+        <h3>Footer</h3>
+
+        <label for="image-3">Image Link:</label>
+        <input type="text" id="image-3" placeholder="Enter URL">
+
+        <label for="intro-body-title-2">Section Title</label>
+        <input type="text" id="intro-body-title-2" placeholder="Enter Section Title">
+
+
+        <label for="body-copy-3">Body Copy:</label>
+        <textarea id="body-copy-3" rows="4" placeholder="Enter Body of Copy"></textarea>
+
+        <div style="display: flex; gap: 2rem;">
+            <div style=" display: grid">
+                <label for="buttonLabel3">Button Label:</label>
+                <input type="text" id="buttonLabel3" name="buttonLabel3" placeholder="Enter CTA">
             </div>
-            
-      
-      
-      </div>
-   
-  <div id="editor" contenteditable="true">
+            <div style="display: grid; max-width: 360px; width: 100%;">
+                <label for="buttonHref3">Link:</label>
+                <input type="url" id="buttonHref3" name="buttonHref3" style="width: 100%;" placeholder="Enter link">
+            </div>
+        </div>
+
+
+        <div>
+            <button onclick="addTemplate7()">Add Footer</button>
+            <button onclick="removeTemplate7()">Remove Footer</button>
+        </div>
+
+
+
+    </div>
+
+    <div id="editor" contenteditable="true">
 
         <div id="container" style=" margin:0; -webkit-text-size-adjust:none; text-size-adjust:none; background-color:#fff; width: 100%; margin: 0 auto; max-width: 600px;" width="600">
 
@@ -206,7 +205,6 @@
                         }
 
                     }
-                         [style*="tungsten"] { font-family: 'tungsten', 'Helvetica', serif !important; }
 
                     .two_Cln_1_6 {
                         padding: 0 2em !important;
@@ -227,15 +225,16 @@
                     ._cta_btn:hover {
                         background-color: #333 !important;
                     }
-          
+
+                    }
                 </style>
 
             </head>
         </div>
+    </div>
 
-    
-     
-  </body>
+
+</body>
    
    
     <!-------------------------------------Script Start----------------------------------------------->
