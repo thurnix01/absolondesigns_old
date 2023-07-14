@@ -61,8 +61,6 @@
 
     var resultDiv = document.getElementById("container");
         var button = document.createElement("table");
-        button.style.maxWidth = "600px";
-        button.width = "600";
         button.border = "0";
         button.cellPadding = "0";
         button.cellSpacing = "0";
@@ -320,8 +318,6 @@
 
         var resultDiv = document.getElementById("container");
         var button = document.createElement("table");
-        button.style.maxWidth = "600px";
-        button.width = "600";
         button.border = "0";
         button.cellPadding = "0";
         button.cellSpacing = "0";
