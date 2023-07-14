@@ -238,7 +238,7 @@
     //-------------------------------------------
 
 
-    function addTemplate4() {
+      function addTemplate4() {
 
 
         var image2 = document.getElementById("image-2").value;
@@ -256,8 +256,24 @@
 
         
                <tr><td>
-          <img src="${image2}" alt="Lifestyle Image" style=" width: 90%; height: 300px; object-fit: cover; object-position: top; margin: 0 auto 15px; display: block; border-radius: 8px;" border="0">
+
+          <!--[if mso]>
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="536">
+            <tr>
+              <td>
+          <![endif]-->
+          <div class="image-container" style="max-width: 536px; height: 300px; margin: 0 auto;">
+            <img src="${image2}" alt="Lifestyle Image" width="100%" style="display: block; object-fit: cover; object-position: top;border-radius: 8px; ">
+          </div>
+          <!--[if mso]>
+              </td>
+            </tr>
+          </table>
+          <![endif]-->
+
              </td></tr>
+
+
 
         `;
         container.appendChild(template);
