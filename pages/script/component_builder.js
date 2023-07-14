@@ -62,7 +62,7 @@
     var resultDiv = document.getElementById("container");
         var button = document.createElement("div");
           button.role = "presentation";
-        button.style.marginBottom = "0 0 32px";
+        button.style.margin = "0 0 32px";
      
 
         button.className = "_header-cta";
