@@ -237,7 +237,7 @@
     }
     //-------------------------------------------
 
-   function addTemplate4() {
+     function addTemplate4() {
 
 
         var image2 = document.getElementById("image-2").value;
@@ -257,13 +257,16 @@
                <tr><td>
 
           <!--[if mso]>
-          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="536">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0">
             <tr>
               <td>
           <![endif]-->
-          <div class="image-container" style="max-width: 536px; height: 300px; margin: 0 auto 32px;">
-            <img src="${image2}" alt="Lifestyle Image" width="100%" style="display: block; object-fit: cover; object-position: top;border-radius: 8px;height:300px; width: 100%;">
-          </div>
+          <tr class="image-container" style="max-width: 536px; height: 300px;">
+
+        <td style="padding: 0 32px;" class="_introline">
+            <img src="${image2}" alt="Lifestyle Image" width="100%" style="display: block; object-fit: cover; object-position: top;border-radius: 8px;height:300px;">
+        </td>
+          </tr>
           <!--[if mso]>
               </td>
             </tr>
@@ -285,6 +288,7 @@
             container.removeChild(templates[templates.length - 1]);
         }
     }
+
 
 
 
