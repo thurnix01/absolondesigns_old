@@ -262,10 +262,10 @@
             <tr>
               <td>
           <![endif]-->
-          <tr class="image-container" style="max-width: 536px; height: 300px; margin-bottom: 32px;">
+          <tr class="image-container" style="max-width: 536px; height: 300px; ">
 
-        <td style="padding: 0 32px;" class="_introline">
-            <img src="${image2}" alt="Lifestyle Image" width="100%" style="display: block; object-fit: cover; object-position: top;border-radius: 8px;height:300px; max-width: 536px; margin: 0 auto;">
+        <td style="margin-bottom: 32px;" class="_introline">
+            <img src="${image2}" alt="Lifestyle Image" width="100%" style="display: block; object-fit: cover; object-position: top;border-radius: 8px;height:300px; max-width: 536px; margin: 0 auto 32px;">
         </td>
           </tr>
           <!--[if mso]>
@@ -289,6 +289,7 @@
             container.removeChild(templates[templates.length - 1]);
         }
     }
+
 
 
 
