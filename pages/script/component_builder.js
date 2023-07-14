@@ -297,7 +297,7 @@
 
         <tr>
         <td style="padding: 0 32px;" class="_introline">
-        <p style="font-size: 1rem; line-height: 1.5rem; font-weight: 500; font-family: 'UniversLTStd-Cn', 'verdana', sans-serif; text-align: left; margin: 0 32px 32px; color: #000;">${imageCopy2}</p></td></tr>
+        <p style="font-size: 1rem; line-height: 1.5rem; font-weight: 500; font-family: 'UniversLTStd-Cn', 'verdana', sans-serif; text-align: left; margin: 0 0 32px; color: #000;">${imageCopy2}</p></td></tr>
 
         `;
         container.appendChild(template);
