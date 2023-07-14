@@ -1,17 +1,4 @@
 
-
-
-               table#_header-section ,
-               table#_double_section  {
-                   width: 600px;
-                   margin: 0 auto;
-               }
-
-               table._header-section {
-                   width: 100%;
-                   margin: 0 auto;
-               }
-
                table._section-title {
                    width: 100%;
                    margin: 0 auto;
@@ -28,9 +15,7 @@
                }
         div, h1 {
              font-family: 'tungsten', sans-serif ;
-        }
-       [style*="tungsten"] { font-family: 'tungsten', 'Helvetica', serif !important; }
-        
+        }     
       
                 @media only screen and (max-width:599px) {
               .desktop-width-33pc { width:33.33% !important; }
@@ -40,23 +25,15 @@
                td {padding: 32px 0 0 !important;}
                table._header-cta, table._body-cta {padding: 0 !important;}
                   
-            
-                }
-                
-
-
-               @media only screen and (max-width: 599px) {
-
                    table#_header-section ,
                    table#_double_section  {
                        width: auto !important;
                        margin: 0 auto !important;
+                       padding: 0 !important; 
                    }
 
-
-
                     h1, h3{
-                       margin: 32px 0px 0px  !important;
+                       margin: 0 !important;
                        padding: 0 !important;
                      }
 
@@ -68,10 +45,6 @@
                      table._body-image img{
                        margin:32px 0px 0px !important;
                        padding: 0px !important;
-                       width: 100% !important;
                      }
-                     td._footer_block{
-                      width: 100% !important;
-                           }
-                   
+                                 
                }
