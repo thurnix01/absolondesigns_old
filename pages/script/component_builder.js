@@ -261,7 +261,7 @@
             <tr>
               <td>
           <![endif]-->
-          <tr class="image-container" style="max-width: 536px; height: 300px;">
+          <tr class="image-container" style="max-width: 536px; height: 300px; margin-bottom: 32px;">
 
         <td style="padding: 0 32px;" class="_introline">
             <img src="${image2}" alt="Lifestyle Image" width="100%" style="display: block; object-fit: cover; object-position: top;border-radius: 8px;height:300px;">
