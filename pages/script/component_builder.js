@@ -55,7 +55,7 @@
     //-------------------------------------------
 
 
-    function addTemplate1() {
+ function addTemplate1() {
         var buttonLabel = document.getElementById("buttonLabel").value;
         var buttonHref = document.getElementById("buttonHref").value;
 
@@ -76,7 +76,7 @@
   <![endif]-->
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-      <td align="left" valign="middle">
+      <td align="left" valign="middle" style="padding: 0 32px;" class="_introline">
         <div class="button-container">
           <!--[if mso]>
           <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn btn-style1">${buttonLabel}</center></v:roundrect>
@@ -105,6 +105,8 @@
             resultDiv.removeChild(buttons[buttons.length - 1]);
         }
     }
+
+
 
 
 
