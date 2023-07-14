@@ -28,15 +28,16 @@
             </tr>
 
             <tr>
-                <td style="padding:32px;" class="_introline">
+                <td style="padding:32px;"  class="_introline">
 
                     <h1 style="margin:0 0 16px; color:#000; font:400 3.5rem/1 'tungsten', Helvetica, Arial, Tahoma, sans-serif; text-transform: uppercase; font-weight: 400; letter-spacing: 0.1rem">${introLine}</h1>
-                    <p style="margin:0 0 16px; color:#000; font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;">
+                    <p style="margin:0 0 16px; color:#000; font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; " class="_introline">
                         ${bodyCopy}
                     </p>
 
                 </td>
             </tr>
+
 
 
         `;
