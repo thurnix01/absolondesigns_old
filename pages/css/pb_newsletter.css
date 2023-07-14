@@ -13,9 +13,9 @@
                    background-color: #fff !important;
                    border: 2.5px solid #464647;
                }
-        div, h1 {
-             font-family: 'tungsten', helvetica,verdana, sans-serif ;
-        }     
+         h1 {
+             font-family: 'tungsten', helvetica , verdana, sans-serif ;
+            }     
       
                 @media only screen and (max-width:599px) {
               .desktop-width-33pc { width:33.33% !important; }
