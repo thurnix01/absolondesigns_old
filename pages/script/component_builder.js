@@ -237,8 +237,7 @@
     }
     //-------------------------------------------
 
-
-      function addTemplate4() {
+   function addTemplate4() {
 
 
         var image2 = document.getElementById("image-2").value;
@@ -246,7 +245,7 @@
         var template = document.createElement("table");
         template.className = "_body-image";
         template.style.maxWidth = "600px";
-        template.width = "600";
+        template.style.width = "100%";
         template.verticalAlign = "top";
         template.border = "0";
         template.cellPadding = "0";
@@ -263,7 +262,7 @@
               <td>
           <![endif]-->
           <div class="image-container" style="max-width: 536px; height: 300px; margin: 0 auto 32px;">
-            <img src="${image2}" alt="Lifestyle Image" width="100%" style="display: block; object-fit: cover; object-position: top;border-radius: 8px;height:300px; ">
+            <img src="${image2}" alt="Lifestyle Image" width="100%" style="display: block; object-fit: cover; object-position: top;border-radius: 8px;height:300px; width: 100%;">
           </div>
           <!--[if mso]>
               </td>
@@ -286,7 +285,6 @@
             container.removeChild(templates[templates.length - 1]);
         }
     }
-
 
 
 
