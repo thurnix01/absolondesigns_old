@@ -257,7 +257,7 @@
 
         
                <tr><td>
-          <img src="${image2}" alt="Lifestyle Image" style=" width: 90%; max-height: 300px; object-fit: cover; object-position: top; margin: 0 auto 15px; display: flex; border-radius: 8px;" border="0">
+          <img src="${image2}" alt="Lifestyle Image" style=" width: 90%; max-height: 300px; object-fit: cover; object-position: top; margin: 0 auto 15px !important; display: flex; border-radius: 8px;" border="0">
              </td></tr>
 
         `;
