@@ -179,15 +179,11 @@
 
     </div>
 
-    <div id="editor" contenteditable="true">
+<div id="editor" contenteditable="true">
 
-        <div id="container" style=" margin:0; -webkit-text-size-adjust:none; text-size-adjust:none; background-color:#fff; width: 100%; margin: 0 auto; max-width: 600px;" width="600">
-
-
+        <table role="article" aria-roledescription="email" lang="en" id="container" style=" margin:0; -webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#ffffff; width: 100%; margin: 0 auto; max-width: 600px;" width="600">
 
 
-            <head>
-                <link rel="stylesheet" type="text/css" href="https://thurnix01.github.io/absolondesigns/pages/css/pb_newsletter.css">
                 <style>
                     @media screen {
                         @font-face {
@@ -205,34 +201,49 @@
                             src: local('UniversLTStd-Cn Regular'), local('UniversLTStd-Cn-Regular'), url(https://www.performancebike.com/content/skins/performancebike/fonts/UniversLTStd-Cn.woff2) format('woff');
                             font-display: swap;
                         }
-
-                    }
-
-                    .two_Cln_1_6 {
-                        padding: 0 2em !important;
-                    }
-
-                    .two_Cln_Rgt_Cln_4_6.ltr {
-                        float: left !important;
-                        text-align: center;
-                    }
-
-                    @media only screen and (max-width: 599px) {
-                        .flexing {
-                            display: flex;
-                            flex-direction: column;
                         }
-                    }
+
+                        @media only screen and (max-width: 599px) {
+                        .flexing {
+                        display: flex;
+
+                        }
+                        }
+
 
                     ._cta_btn:hover {
-                        background-color: #333 !important;
-                    }
+                        filter: brightness(85%);
+                    
+                  </style>
 
-                    }
-                </style>
 
-            </head>
-        </div>
+
+                <!--[if mso]>
+           
+               <style type="text/css">
+                   table {
+                       border-collapse: collapse;
+                       border: 0;
+                       border-spacing: 0;
+                       margin: 0;
+                   }
+
+                   div,
+                   td {
+                       padding: 0;
+                   }
+
+                   div {
+                       margin: 0 !important;
+                   }
+                   
+                 #container {
+                      color: #000 !important;
+                      background-color: #fff !important;
+                       }
+               </style>
+               <![endif]-->
+        </table>
     </div>
 
 
