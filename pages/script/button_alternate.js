@@ -1,5 +1,5 @@
-    function buttonStyle() {
-    var myDiv = document.querySelector(".btn-style");
+   function buttonStyle() {
+    var myDiv = document.querySelector(".btn-style1");
 
     if (myDiv.classList.contains("active")) {
       myDiv.style.backgroundColor = "#464647";
@@ -15,7 +15,7 @@
 
     
    function buttonStyleColor() {
-    var myDiv = document.querySelector(".btn-style");
+    var myDiv = document.querySelector(".btn-style1");
 
     if (myDiv.classList.contains("active")) {
       myDiv.style.backgroundColor = "#464647";
@@ -25,12 +25,10 @@
       myDiv.style.color = "#fff"; 
     }
   }
-
-
-
-
-      function buttonStyle2() {
-    var myDiv = document.querySelector(".btn-style");
+    
+    
+        function buttonStyle2() {
+    var myDiv = document.querySelector(".btn-style2");
 
     if (myDiv.classList.contains("active")) {
       myDiv.style.backgroundColor = "#464647";
@@ -46,7 +44,7 @@
 
     
    function buttonStyleColor2() {
-    var myDiv = document.querySelector(".btn-style");
+    var myDiv = document.querySelector(".btn-style2");
 
     if (myDiv.classList.contains("active")) {
       myDiv.style.backgroundColor = "#464647";
@@ -56,3 +54,4 @@
       myDiv.style.color = "#fff"; 
     }
   }
+  
