@@ -74,7 +74,7 @@
         var buttonHref = document.getElementById("buttonHref").value;
 
     var resultDiv = document.getElementById("container");
-        var button = document.createElement("div");
+        var button = document.createElement("table");
         button.style.maxWidth = "600px";
         button.width = "600";
         button.style.width = "100%";
