@@ -9,7 +9,7 @@
  
 
   </head>
- <body class="_body_style">
+<body class="_body_style">
     <div class="component-builder">
 
         <div style="width: 100%;display: flex; justify-content: flex-end; margin-right: 10px; color: #999; font-family: sans-serif;">
@@ -46,7 +46,7 @@
         <div style="display: flex; gap: 2rem;">
             <div style=" display: grid">
                 <label for="buttonLabel">Button Label:</label>
-                <input type="text" id="buttonLabel" name="buttonLabel" placeholder="Enter CTA">
+                <input type="text" id="buttonLabel" name="buttonLabel" placeholder="Enter CTA" style="text-transform:uppercase">
             </div>
             <div style="display: grid; max-width: 360px; width: 100%;">
                 <label for="buttonHref">Link:</label>
@@ -84,7 +84,7 @@
         <div style="display: flex; gap: 2rem;">
             <div style=" display: grid">
                 <label for="buttonLabel1">Button Label:</label>
-                <input type="text" id="buttonLabel1" name="buttonLabel1" placeholder="Enter CTA">
+                <input type="text" id="buttonLabel1" name="buttonLabel1" placeholder="Enter CTA" style="text-transform:uppercase">
             </div>
             <div style="display: grid; max-width: 360px; width: 100%;">
                 <label for="buttonHref1">Link:</label>
@@ -130,7 +130,7 @@
         <div style="display: flex; gap: 2rem;">
             <div style=" display: grid">
                 <label for="buttonLabel2">Button Label:</label>
-                <input type="text" id="buttonLabel2" name="buttonLabel2" placeholder="Enter CTA">
+                <input type="text" id="buttonLabel2" name="buttonLabel2" placeholder="Enter CTA" style="text-transform:uppercase">
             </div>
             <div style="display: grid; max-width: 360px; width: 100%;">
                 <label for="buttonHref2">Link:</label>
@@ -161,7 +161,7 @@
         <div style="display: flex; gap: 2rem;">
             <div style=" display: grid">
                 <label for="buttonLabel3">Button Label:</label>
-                <input type="text" id="buttonLabel3" name="buttonLabel3" placeholder="Enter CTA">
+                <input type="text" id="buttonLabel3" name="buttonLabel3" placeholder="Enter CTA" style="text-transform:uppercase">
             </div>
             <div style="display: grid; max-width: 360px; width: 100%;">
                 <label for="buttonHref3">Link:</label>
@@ -179,9 +179,9 @@
 
     </div>
 
-<div id="editor" contenteditable="true">
+    <div id="editor" contenteditable="true">
 
-        <table role="article" aria-roledescription="email" lang="en" id="container" style=" margin:0; -webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#ffffff; width: 100%; margin: 0 auto; max-width: 600px;" width="600">
+        <div role="article" aria-roledescription="email" lang="en" id="container" style=" margin:0; -webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#ffffff; width: 100%; margin: 0 auto; max-width: 600px;" width="600">
 
 
                 <style>
@@ -190,7 +190,7 @@
                             font-family: 'tungsten';
                             font-style: normal;
                             src: local('tungsten Regular'), local('tungsten-Regular'), url(https://www.performancebike.com/content/skins/performancebike/fonts/Tungsten-Medium.woff) format('woff');
-                            font-display: swap;
+
                         }
                     }
 
@@ -199,16 +199,33 @@
                             font-family: 'UniversLTStd-Cn';
                             font-style: normal;
                             src: local('UniversLTStd-Cn Regular'), local('UniversLTStd-Cn-Regular'), url(https://www.performancebike.com/content/skins/performancebike/fonts/UniversLTStd-Cn.woff2) format('woff');
-                            font-display: swap;
+                
                         }
                         }
-
-                        @media only screen and (max-width: 599px) {
-                        .flexing {
-                        display: flex;
-
+                    
+                    
+                        @media only screen and (max-width:479px) {
+                        .floating {
+                        float: none !important;
+												width: 50% !important;
+                        max-width: 100% !important;
                         }
+                        ._introline{
+                        padding: 0 16px 16px !important;
+                          margin-left: 0 !important;
                         }
+                            .button-container{
+                                margin-left: 16px !important;
+                            }
+                          ._body-image{
+                            margin: 0 0 16px !important;
+                          }
+                        }
+                    
+                    body{
+                        margin: 0;
+                        padding: 0;
+                    }
 
 
                     ._cta_btn:hover {
@@ -236,19 +253,22 @@
                    div {
                        margin: 0 !important;
                    }
-                   
-                 #container {
-                      color: #000 !important;
-                      background-color: #fff !important;
-                       }
+
+                   #container {
+                       color: #000 !important;
+                       background-color: #fff !important;
+                   }
+
+                   .button-text {
+                       text-transform: uppercase !important;
+                   }
                </style>
                <![endif]-->
-        </table>
+        </div>
     </div>
 
 
 </body>
-       
     <!-------------------------------------Script Start----------------------------------------------->
 
     <script type="text/javascript" src="https://thurnix01.github.io/absolondesigns/pages/script/component_builder.js"></script>
