@@ -49,7 +49,7 @@
                                  <!--[if (gte mso 9) | (IE)]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px;"><![endif]-->
 
                                
-                          			<h1 style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase;line-height: 3rem; color: #000;">${introLine}</h1>
+                          			<h1 style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 300 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase;line-height: 3rem; color: #000;">${introLine}</h1>
                                 <p style="margin:8px 16px 0; padding: 16px 0; color:#000; font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: left;" class="_introline">${bodyCopy}</p>
                           <!--[if (gte mso 9) | (IE)]></td></tr></table><![endif]-->
                         </td>
@@ -149,7 +149,7 @@
                       <td align="center" valign="middle" width="100%">
                   <![endif]-->
 
-                      <h3 style="font-size: 3rem; mso-ansi-font-size:32px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px 16px; color: #000; padding-top: 32px;">${introBodyTitle}</h3>
+                      <h3 style="font-size: 3rem; mso-ansi-font-size:32px;font-weight: 300 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px 16px; color: #000; padding-top: 32px;">${introBodyTitle}</h3>
 
                  <!--[if (gte mso 9) | (IE)]>
                       </td>
@@ -263,7 +263,7 @@
         template.style.flexShrink = "0";   
          
         template.innerHTML = `
-        <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:1rem;font-weight: normal; color:#000;"><img src="${image1}" alt="Product Image" style="width:290px; margin: 0 auto; display: flex; height: 265px; object-fit: contain;" border="0" width="290">${imageCopy1}</p>
+        <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:1rem;font-weight: normal; color:#000;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:290px; margin: 0 auto; display: flex; height: 265px; object-fit: contain;" border="0" width="290"></a>${imageCopy1}</p>
 
             <!--[if mso]>
                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref1}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;text-transform: uppercase;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647">
@@ -515,7 +515,8 @@
                 <![endif]-->
         <td align="center" style="display: flex;max-width: 280px;width: 50%;text-align: center;margin: 0 auto;justify-content: center;float: left;" class="floating">
             <span style="margin: 0 auto; width: 100%;">
-                <img src="${image3}" alt="Product Image" style="width:100%; margin: 0 auto; display: flex; height: 300px; object-fit: cover;" border="0" width="280"></span>
+            <a href="${buttonHref3}" target="_blank" >
+                <img src="${image3}" alt="Product Image" style="width:100%; margin: 0 auto; display: flex; height: 300px; object-fit: cover;" border="0" width="280"></a></span>
 
 
 
@@ -532,7 +533,7 @@
                 <h3 style="font-size: 50px;mso-ansi-font-size:50px"> 
                 <![endif]-->
 
-            <h3 style="color: #000000 !important;font-size: 2.5rem;font-weight: 400;text-transform: uppercase;margin: 16px 0;mso-ansi-font-size: 24px;font-family: 'tungsten', 'verdana', sans-serif !important;">${introBodyTitle2}</h3>
+            <h3 style="color: #000000 !important;font-size: 2.2rem;font-weight: 300;text-transform: uppercase;margin: 16px 0;mso-ansi-font-size: 24px;font-family: 'tungsten', 'verdana', sans-serif !important; text-align: left; line-height: 2rem;     letter-spacing: 0.1rem;">${introBodyTitle2}</h3>
 
         <!--[if true]> 
                 </h3> 
@@ -547,6 +548,7 @@
                 </td> 
                 <![endif]-->
     </tr>
+    <tr height="24"></td>
 
     <!--[if (mso)|(IE)]>
      </table>
@@ -563,4 +565,5 @@
             container.removeChild(templates[templates.length - 1]);
         }
     }
+    
     
