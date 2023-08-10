@@ -263,7 +263,7 @@
         template.style.flexShrink = "0";   
          
         template.innerHTML = `
-        <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:1rem;font-weight: normal; color:#000;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:290px; margin: 0 auto; display: flex; height: 265px; object-fit: contain;" border="0" width="290"></a>${imageCopy1}</p>
+             <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:1rem;font-weight: normal; color:#000; height:238px;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:272px; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="272"></a>${imageCopy1}</p>
 
             <!--[if mso]>
                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref1}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;text-transform: uppercase;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647">
@@ -273,7 +273,7 @@
                 <![endif]-->
                 
                 <a href="${buttonHref1}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 auto;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn"><span class="button-text">${buttonLabel1}</span></a>
-        `;  
+      `;  
      
         subContainer.appendChild(template);
           
