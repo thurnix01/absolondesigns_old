@@ -62,7 +62,7 @@
                         @media only screen and (max-width:479px) {
                         .floating {
                         float: none !important;
-												width: 50% !important;
+			width: 50% !important;
                         max-width: 100% !important;
                         }
                         ._introline{
@@ -86,11 +86,11 @@
                     ._cta_btn:hover {
                         filter: brightness(85%);
                     }
-                  </style>
+            
 
                 <!--[if mso]>
            
-               <style type="text/css">
+     
                    table {
                        border-collapse: collapse;
                        border: 0;
@@ -115,5 +115,5 @@
                    .button-text {
                        text-transform: uppercase !important;
                    }
-               </style>
+
                <![endif]-->
