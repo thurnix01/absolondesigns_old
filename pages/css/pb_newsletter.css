@@ -1,46 +1,4 @@
-
-               table._section-title {
-                   width: 100%;
-                   margin: 0 auto;
-                   max-width: 600px;
-               }
-
-         
-            
-
-         h1 {
-             font-family: 'tungsten', helvetica , verdana, sans-serif ;
-            }     
-      
-                @media only screen and (max-width:599px) {
-
-               td._introline {padding: 32px 0 0 !important;}
-               table._header-cta, table._body-cta {padding: 0 !important;}
-                  
-                   table#_header-section ,
-                   table#_double_section  {
-                       width: auto !important;
-                       margin: 0 auto !important;
-                       padding: 0 !important; 
-                   }
-
-                    h1, h3{
-                       margin: 0 !important;
-                       padding: 0 !important;
-                     }
-
-                   p._introline {
-                       margin: 16px 0px !important;
-                       padding: 0 !important;
-                     }
-
-                     table._body-image img{
-                       margin:32px 0px 0px !important;
-                       padding: 0px !important;
-                     }
-                                 
-               }
-  			@media screen {
+			@media screen {
                         @font-face {
                             font-family: 'tungsten';
                             font-style: normal;
