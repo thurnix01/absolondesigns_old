@@ -49,7 +49,7 @@
                                  <!--[if (gte mso 9) | (IE)]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px;"><![endif]-->
 
                                
-                          			<h1 style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 300 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase;line-height: 3rem; color: #000;">${introLine}</h1>
+                          			<h1 style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase;line-height: 3rem; color: #000;">${introLine}</h1>
                                 <p style="margin:8px 16px 0; padding: 16px 0; color:#000; font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: left;" class="_introline">${bodyCopy}</p>
                           <!--[if (gte mso 9) | (IE)]></td></tr></table><![endif]-->
                         </td>
@@ -149,7 +149,7 @@
                       <td align="center" valign="middle" width="100%">
                   <![endif]-->
 
-                      <h3 style="font-size: 3rem; mso-ansi-font-size:32px;font-weight: 300 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px 16px; color: #000; padding-top: 32px;">${introBodyTitle}</h3>
+                      <h3 style="font-size: 3rem; mso-ansi-font-size:32px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px 16px; color: #000; padding-top: 32px;">${introBodyTitle}</h3>
 
                  <!--[if (gte mso 9) | (IE)]>
                       </td>
