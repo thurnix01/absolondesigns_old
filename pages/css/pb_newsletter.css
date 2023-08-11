@@ -87,33 +87,3 @@
                         filter: brightness(85%);
                     }
             
-
-                <!--[if mso]>
-           
-     
-                   table {
-                       border-collapse: collapse;
-                       border: 0;
-                       border-spacing: 0;
-                       margin: 0;
-                   }
-
-                   div,
-                   td {
-                       padding: 0;
-                   }
-
-                   div {
-                       margin: 0 !important;
-                   }
-
-                   #container {
-                       color: #000 !important;
-                       background-color: #fff !important;
-                   }
-
-                   .button-text {
-                       text-transform: uppercase !important;
-                   }
-
-               <![endif]-->
