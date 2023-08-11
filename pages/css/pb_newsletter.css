@@ -40,3 +40,80 @@
                      }
                                  
                }
+  @media screen {
+                        @font-face {
+                            font-family: 'tungsten';
+                            font-style: normal;
+                            src: local('tungsten Regular'), local('tungsten-Regular'), url(https://www.performancebike.com/content/skins/performancebike/fonts/Tungsten-Medium.woff) format('woff');
+
+                        }
+                    }
+
+                    @media screen {
+                        @font-face {
+                            font-family: 'UniversLTStd-Cn';
+                            font-style: normal;
+                            src: local('UniversLTStd-Cn Regular'), local('UniversLTStd-Cn-Regular'), url(https://www.performancebike.com/content/skins/performancebike/fonts/UniversLTStd-Cn.woff2) format('woff');
+                
+                        }
+                        }
+                    
+                    
+                        @media only screen and (max-width:479px) {
+                        .floating {
+                        float: none !important;
+												width: 50% !important;
+                        max-width: 100% !important;
+                        }
+                        ._introline{
+                        padding: 0 16px 16px !important;
+                          margin-left: 0 !important;
+                        }
+                            .button-container{
+                                margin-left: 16px !important;
+                            }
+                          ._body-image{
+                            margin: 0 0 16px !important;
+                          }
+                        }
+                    
+                    body{
+                        margin: 0;
+                        padding: 0;
+                    }
+
+
+                    ._cta_btn:hover {
+                        filter: brightness(85%);
+                    }
+                  </style>
+
+                <!--[if mso]>
+           
+               <style type="text/css">
+                   table {
+                       border-collapse: collapse;
+                       border: 0;
+                       border-spacing: 0;
+                       margin: 0;
+                   }
+
+                   div,
+                   td {
+                       padding: 0;
+                   }
+
+                   div {
+                       margin: 0 !important;
+                   }
+
+                   #container {
+                       color: #000 !important;
+                       background-color: #fff !important;
+                   }
+
+                   .button-text {
+                       text-transform: uppercase !important;
+                   }
+               </style>
+               <![endif]-->
