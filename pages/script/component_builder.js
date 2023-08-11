@@ -14,7 +14,7 @@
         template.width = "600";
         template.style.width = "100%";
         template.style.backgroundColor = "#fffff";
-        template.style.margin = "0";
+        template.style.margin = "0 auto";
         template.style.padding = "0";
          template.border = "0";
          template.cellPadding = "0"; 
@@ -345,7 +345,7 @@
         var template = document.createElement("table");
         template.className = "_body-image";
         template.style.maxWidth = "568px";
-        template.style.margin = "0 auto 0 16px";
+        template.style.margin = "0 auto";
         template.style.padding = "0 16px";
         template.style.width = "100%";
         template.verticalAlign = "top";
