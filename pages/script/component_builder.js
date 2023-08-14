@@ -35,7 +35,7 @@
             <div align="center" style="margin: 0;padding:0;">
                     <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px;line-height:0px;"><td style="padding-right: 0px; padding-left: 0px;" align="center"><![endif]-->
                    
-                        <img align="center" border="0" src="${heroImage}" alt="Hero Image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px" width="600">
+                        <img align="center" border="0" src="${heroImage}" alt="Hero Image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px" width="600" id="imageAlt1">
            
                     <!--[if mso]></td></tr></table><![endif]-->
                 </div>
@@ -363,7 +363,7 @@
             <div align="center" style="margin: 0;padding:0;">
                     <!--[if mso]><table width="536" cellpadding="0" cellspacing="0" border="0" align="center"><tr style="line-height:0px;line-height:0px;"><td style="padding-right: 0px; padding-left: 0px; width:536px; margin: 0 auto;" align="center"><![endif]-->
                    
-                        <img align="center" border="0" src="${image2}" alt="Lifestyle product image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;width: 100%;max-width: 536px" width="536">
+                        <img align="center" border="0" src="${image2}" alt="Lifestyle product image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;width: 100%;max-width: 536px" width="536" id="imageAlt2">
                
                     <!--[if mso]></td></tr></table><![endif]-->
                 </div>
