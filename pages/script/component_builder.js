@@ -539,7 +539,7 @@
                 <![endif]-->
             <div style="color:#2C2C2C; font-family:'UniversLTStd-Cn', Helvetica Neue, Helvetica, Verdana, Arial, sans-serif; font-size:16px; line-height:26px; padding-top:18px;">${imageCopy3}</div>
 
-                       <div style="color:#333;  font-size:18px; line-height:26px; padding-bottom:0px;padding-top:16px; margin: 0;"><a href="${buttonHref3}" target="_blank" style="color:#333; font-weight:bold; text-decoration:underline;font-family:'UniversLTStd-Cn', Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;text-transform: uppercase;">${buttonLabel3}<span style="position: relative; bottom: 0.1rem;"> ></span></a></div>
+                       <div style="color:#333;  font-size:18px; line-height:26px; padding-bottom:0px;padding-top:16px; margin: 0;"><a href="${buttonHref3}" target="_blank" style="color:#333; font-weight:bold; text-decoration:underline;font-family:'UniversLTStd-Cn', Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;text-transform: uppercase;">${buttonLabel3}</a><span style="position: relative; bottom: 0.1rem;"> ></span></div>
 
         </td>
         <!--[if true]> 
