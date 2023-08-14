@@ -13,6 +13,9 @@
 <body class="_body_style">
     <div class="component-builder">
 
+
+
+
         <div style="width: 100%;display: flex; justify-content: flex-end; margin-right: 10px; color: #999; font-family: sans-serif;">
             <span style="width: 100px; margin-right: 50%; cursor: pointer;"><a style="text-decoration: none; color: #999;" href="https://thurnix01.github.io/absolondesigns/">Back To Main</a></span>
             <!--            <span onclick="addStyle()" style="margin-right: 24px; cursor: pointer;">Add CSS</span>-->
@@ -20,13 +23,34 @@
             <span onclick="copyToClipboard()" style="cursor: pointer;">Copy Code</span>
 
         </div>
-	    
-<div style="width:140px; height: auto; margin: 0 auto; display: flex;"><a href="https://www.performancebike.com" target="_blank"><img src="https://thurnix01.github.io/absolondesigns/pages/images/Performance_Short.png" alt="Performance Bicycle Logo" style="width: 100%; height: auto;"></a></div>
+
+        <div style="width:140px; height: auto; margin: 0 auto; display: flex;"><a href="https://www.performancebike.com" target="_blank"><img src="https://thurnix01.github.io/absolondesigns/pages/images/Performance_Short.png" alt="Performance Bicycle Logo" style="width: 100%; height: auto;"></a></div>
+
+        <div id="myModal1" class="modal">
+            <div class="modal-content">
+                <input type="text" id="altText1" placeholder="Alt text goes here" onkeydown="handleAltTextKeyPress1(event)">
+
+                <button onclick="addAltText1(), closeModal1()"> done!</button>
+
+            </div>
+        </div>
 
         <h3>Header Section</h3>
 
         <label for="hero-image">Hero Image Link:</label>
-        <input type="text" id="hero-image" placeholder="Enter URL">
+        <div>
+            <input type="text" id="hero-image" placeholder="Enter URL" style="width: 80%">
+
+            <button class="tooltip" onclick="openModal1()">Add Alt<span class="tooltiptext">Insert after adding the header</span></button>
+            <div id="myModal1" class="modal">
+                <div class="modal-content">
+                    <input type="text" id="altText1" placeholder="Enter alt text for the image" onkeydown="handleAltTextKeyPress1(event)">
+                    <button onclick="addAltText1(), closeModal1()">Apply Alt Text</button>
+
+                </div>
+            </div>
+        </div>
+
 
         <label for="intro-line">Intro Line:</label>
         <input type="text" id="intro-line" placeholder="Enter Intro Line">
@@ -60,6 +84,7 @@
             <button onclick="buttonStyle()">Change Style</button>
             <button onclick="buttonStyleColor()">Color</button>
         </div>
+
 
 
 
@@ -102,13 +127,22 @@
 
 
         <label for="image-2">Image Link:</label>
-        <input type="text" id="image-2" placeholder="Enter URL">
-
+        <div>
+            <input type="text" id="image-2" placeholder="Enter URL" style="width: 80%">
+            <button class="tooltip" onclick="openModal2()">add alt<span class="tooltiptext">Insert after adding the image</span></button>
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <input type="text" id="altText2" placeholder="Enter alt text for the image" onkeydown="handleAltTextKeyPress2(event)">
+                    <button onclick="addAltText2(), closeModal2()">Apply Alt Text</button>
+                </div>
+            </div>
+        </div>
 
 
         <div>
             <button onclick="addTemplate4()">Add Image</button>
             <button onclick="removeTemplate4()">Remove Image</button>
+            <button onclick="addTemplate4()">Add alt text</button>
         </div>
 
 
