@@ -363,7 +363,7 @@
             <div align="center" style="margin: 0;padding:0;">
                     <!--[if mso]><table width="536" cellpadding="0" cellspacing="0" border="0" align="center"><tr style="line-height:0px;line-height:0px;"><td style="padding-right: 0px; padding-left: 0px; width:536px; margin: 0 auto;" align="center"><![endif]-->
                    
-                        <img align="center" border="0" src="${image2}" alt="Lifestyle product image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;border-radius: 8px;height: auto;float: none;width: 100%;max-width: 536px; height: 280px; object-fit: cover; object-position: center;" width="536" id="imageAlt2">
+                        <img align="center" border="0" src="${image2}" alt="Lifestyle product image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;border-radius: 8px;height: auto;float: none;width: 100%;max-width: 536px; height: 280px; object-fit: contain; object-position: center;" width="536" id="imageAlt2">
                
                     <!--[if mso]></td></tr></table><![endif]-->
                 </div>
