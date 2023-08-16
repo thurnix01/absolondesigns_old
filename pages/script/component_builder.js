@@ -1,4 +1,14 @@
 
+        function toggleButton1() {
+    var item1 = document.querySelector(".item-align1");
+
+    if (item1.classList.contains(".item-align1")) {
+      item1.style.textAlign = "left";
+      }  else {
+      item1.style.textAlign = "center";
+             }
+          }
+
     function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
@@ -557,27 +567,5 @@
         }
     }
 
-        function toggleButton1() {
-    var item1 = document.querySelector(".item-align1");
 
-    if (item1.classList.contains(".item-align1")) {
-      item1.style.textAlign = "left";
-      }  else {
-      item1.style.textAlign = "center";
-
-    }
-  }
-    
-        function toggleButton2() {
-    var item2 = document.querySelector(".item-align2");
-
-    if (item2.classList.contains(".item-align2")) {
-      item2.style.margin = "0";
-      }  else {
-      item2.style.margin = "0 auto";
-
-    }
-  }
-
-    
     
