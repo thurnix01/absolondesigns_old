@@ -3,10 +3,6 @@
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
         var bodyCopy = document.getElementById("body-copy").value;
-
-        
-
-
         var container = document.getElementById("container");
         var template = document.createElement("table");
         template.className = "_header-section";
@@ -412,7 +408,7 @@
                         <td align="center" valign="middle" width="100%">
                                  <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px 32px 16px;"><![endif]-->
 
-                               <p style="margin: 0 16px 0;padding: 16px;color:#000;font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;text-align: left;" class="_introline">${imageCopy2}</p>
+                               <p style="margin: 0 16px 0;padding: 16px;color:#000;font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;text-align: left;" class="_introline item-align1">${imageCopy2}</p>
                               
                           <!--[if mso]></td></tr></table><![endif]-->
                         </td>
@@ -458,7 +454,7 @@
           <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn btn-style2">${buttonLabel2}</center></v:roundrect>
           <![endif]-->
           <!--[if !mso]><!-->
-          <a href="${buttonHref2}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn btn-style2"><span class="button-text">${buttonLabel2}</span></a>
+          <a href="${buttonHref2}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn btn-style2 item-align2"><span class="button-text">${buttonLabel2}</span></a>
           <!--<![endif]-->
         </div>
 
@@ -563,5 +559,28 @@
             container.removeChild(templates[templates.length - 1]);
         }
     }
+
+        function toggleButton1() {
+    var item1 = document.querySelector(".item-align1");
+
+    if (item1.classList.contains(".item-align1")) {
+      item1.style.textAlign = "left";
+      }  else {
+      item1.style.textAlign = "center";
+
+    }
+  }
+    
+        function toggleButton2() {
+    var item2 = document.querySelector(".item-align2");
+
+    if (item2.classList.contains(".item-align2")) {
+      item2.style.margin = "0";
+      }  else {
+      item2.style.margin = "0 auto";
+
+    }
+  }
+
     
     
