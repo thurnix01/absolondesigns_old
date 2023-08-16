@@ -9,6 +9,17 @@
              }
           }
 
+        function toggleButton2() {
+    var item2 = document.querySelector(".item-align2");
+
+    if (item2.classList.contains(".item-align2")) {
+      item2.style.margin = "0";
+      }  else {
+      item2.style.margin = "0 auto";
+
+            }
+          }
+
     function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
@@ -461,7 +472,7 @@
           <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn btn-style2">${buttonLabel2}</center></v:roundrect>
           <![endif]-->
           <!--[if !mso]><!-->
-          <a href="${buttonHref2}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn btn-style2"><span class="button-text">${buttonLabel2}</span></a>
+          <a href="${buttonHref2}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn btn-style2 item-align2"><span class="button-text">${buttonLabel2}</span></a>
           <!--<![endif]-->
         </div>
 
