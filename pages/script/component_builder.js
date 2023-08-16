@@ -408,7 +408,7 @@
                         <td align="center" valign="middle" width="100%">
                                  <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px 32px 16px;"><![endif]-->
 
-                               <p style="margin: 0 16px 0;padding: 16px;color:#000;font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;text-align: left;" class="_introline item-align1">${imageCopy2}</p>
+                                                              <p style="margin: 0 16px 0;padding: 16px;color:#000;font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;" class="_introline item-align1">${imageCopy2}</p>
                               
                           <!--[if mso]></td></tr></table><![endif]-->
                         </td>
