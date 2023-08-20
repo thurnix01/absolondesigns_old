@@ -447,56 +447,128 @@
     //-------------------------------------------
 
 
-    function addTemplate6() {
+  
+        var outterBlock = document.getElementById("outterBlock");
+
+        function addTemplate6() {
+        var outterBlock = document.getElementById("outterBlock");
+        var outterBlock = document.createElement('div');
+        outterBlock.setAttribute('id', 'outterBlock');
+        outterBlock.style.maxWidth = "600px";
+        outterBlock.width = "600";
+        outterBlock.style.width = "100%";
+        outterBlock.style.margin = "0 auto";
+        outterBlock.role = "presentation";
+
+
+
+        if (outterBlock){
         var buttonLabel2 = document.getElementById("buttonLabel2").value;
         var buttonHref2 = document.getElementById("buttonHref2").value;
 
-        var resultDiv = document.getElementById("container");
-        var button = document.createElement("div");
-        button.style.maxWidth = "600px";
-        button.width = "600";
-        button.style.width = "100%";
-        button.style.margin = "0 auto";
-        button.role = "presentation";
-        button.style.margin = "0 auto 32px";
-        button.className = "_body-cta";
+        const button = document.createElement('a');
+        button.classList.add('_cta-btn');
+        button.style.backgroundColor = "#464647";
+        button.style.border = "1px solid #464647";
+        button.style.borderRadius = "5px";
+        button.style.color = "#ffffff";
+        button.style.display = "block";
+        button.style.fontFamily = "'UniversLTStd-Cn', sans-serif";
+        button.style.fontSize = " 1rem";
+        button.style.fontWeight = "normal";
+        button.style.lineHeight = "56px";
+        button.style.textAlign = "center";
+        button.style.textDecoration = "none";
+        button.style.textTransform = "uppercase";
+        button.style.width = "220px";
+        button.style.height = " 52px";
+        button.style.margin = "0";
+        button.target = "_blank";
+        button.href = `${buttonHref2}`;
+
         button.innerHTML = `
-<!--[if mso]>
-  <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;" width="600">
-    <tr>
-      <td align="center" valign="middle" width="100%">
-  <![endif]-->
+        <!--[if mso]>
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;" width="600">
+                <tr>
+                  <td align="center" valign="middle" width="100%">
+              <![endif]-->
 
-              <div class="button-container" style="padding:0 16px; margin: 0 32px;">
-          <!--[if mso]>
-          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn btn-style2">${buttonLabel2}</center></v:roundrect>
-          <![endif]-->
-          <!--[if !mso]><!-->
-          <a href="${buttonHref2}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn btn-style2 item-align2"><span class="button-text">${buttonLabel2}</span></a>
-          <!--<![endif]-->
-        </div>
 
-  <!--[if mso]>
-      </td>
-    </tr>
-  </table>
-  <![endif]-->
-    `;
-        resultDiv.appendChild(button);
-    }
+        <!--[if mso]>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn button-text">${buttonLabel2}</center></v:roundrect>
+                      <![endif]-->
+        <!--[if !mso]><!-->
 
-    function removeTemplate6() {
-        var resultDiv = document.getElementById("container");
-        var buttons = resultDiv.getElementsByClassName("_body-cta");
-        if (buttons.length > 0) {
-            resultDiv.removeChild(buttons[buttons.length - 1]);
+        <span class="_cta_btn button-text">${buttonLabel2}</span>
+
+        <!--<![endif]-->
+
+
+        <!--[if mso]>
+                  </td>
+                </tr>
+              </table>
+              <![endif]-->
+
+        `;
+
+
+
+
+        // Remove the "edit-item" class from the previous edit item
+        const editItem = container.querySelector('.edit-item');
+        if (editItem) {
+        editItem.classList.remove('edit-item');
         }
 
-    }
+        outterBlock.appendChild(button);
+
+        // Apply the "edit-item" class to the newly added item
+        button.classList.add('edit-item');
+        }
+        container.appendChild(outterBlock);
+
+        }
+
+        function removeTemplate6(){
+        var container = document.getElementById('container');
+        var outterBlock = document.getElementById("outterBlock");
+
+        const btnToRemove = container.querySelector('.edit-item');
+        if (btnToRemove) {
+        btnToRemove.remove();
+        }
+        }
+
+        function buttonStyle2(){
+        var container = document.getElementById('container');
+        var outterBlock = document.getElementById("outterBlock");
+
+        const buttonStyle2 = container.querySelector('.edit-item');
+        buttonStyle2.style.backgroundColor = "#fff";
+
+        buttonStyle2.style.color = "#333";
+        buttonStyle2.style.outline = "3px solid rgb(51, 51, 51)";
+        buttonStyle2.style.outlineOffset = "-3px";
+        }
+
+        function buttonColor2() {
+
+        const buttonColor2 = container.querySelector('.edit-item');
+        buttonColor2.style.backgroundColor = "#E04F26";
+        buttonColor2.style.border = "1px solid #E04F26";
+        buttonColor2.style.color = "#fff";
+        buttonColor2.style.outline = "none";
+        buttonColor2.style.outlineOffset = "none";
+        }
+
+        function btnAlign2() {
+        const btnAlign2 = container.querySelector('.edit-item');
+        btnAlign2.style.margin = "0 auto";
+        }
 
 
-
-
+   //-------------------------------------------
 
     function addTemplate7() {
         var image3 = document.getElementById("image-3").value;
