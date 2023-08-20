@@ -9,16 +9,6 @@
              }
           }
 
-        function toggleButton2() {
-    var item2 = document.querySelector(".item-align2");
-
-    if (item2.classList.contains(".item-align2")) {
-      item2.style.margin = "0";
-      }  else {
-      item2.style.margin = "0 auto";
-
-            }
-          }
 
     function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
