@@ -462,7 +462,7 @@
         var buttonHref2 = document.getElementById("buttonHref2").value;
 
         const button = document.createElement('a');
-        button.classList.add('_cta-btn');
+        button.classList.add('button-container');
         button.style.backgroundColor = "#464647";
         button.style.border = "1px solid #464647";
         button.style.borderRadius = "5px";
