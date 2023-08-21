@@ -1,15 +1,4 @@
 
-        function toggleButton1() {
-    var item1 = document.querySelector(".item-align1");
-
-    if (item1.classList.contains(".item-align1")) {
-      item1.style.textAlign = "left";
-      }  else {
-      item1.style.textAlign = "center";
-             }
-          }
-
-
     function addTemplate() {
         var heroImage = document.getElementById("hero-image").value;
         var introLine = document.getElementById("intro-line").value;
