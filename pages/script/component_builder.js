@@ -477,7 +477,7 @@
         button.style.textTransform = "uppercase";
         button.style.width = "220px";
         button.style.height = " 52px";
-        button.style.margin = "0 48px";
+        button.style.margin = "0 16px";
         button.setAttribute('id','_cta_btn');
         button.target = "_blank";
         button.href = `${buttonHref2}`;
