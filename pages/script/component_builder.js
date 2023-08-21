@@ -474,7 +474,6 @@
         button.style.height = " 52px";
         button.style.margin = "0 48px";
         button.setAttribute('id','_cta_btn');
-        button.style.margin = "0";
         button.target = "_blank";
         button.href = `${buttonHref2}`;
 
