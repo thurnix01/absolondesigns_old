@@ -452,7 +452,7 @@
         outterBlock.style.maxWidth = "600px";
         outterBlock.width = "600";
         outterBlock.style.width = "100%";
-        outterBlock.style.margin = "0 auto 32px";
+        outterBlock.style.margin = "0 32px 32px";
         outterBlock.role = "presentation";
 
 
