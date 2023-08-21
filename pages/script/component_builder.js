@@ -392,47 +392,63 @@
     //-------------------------------------------
 
 
-    function addTemplate5() {
-        var imageCopy2 = document.getElementById("body-copy-2").value;
+           function addTemplate5() {
+            var container = document.getElementById('container');
+            var imageCopy2 = document.getElementById("body-copy-2").value;
+            var template = document.getElementById("template");
+            var template = document.createElement('div');
+            template.classList.add('_body_copy')
+            template.setAttribute('id', 'template');
+            template.style.maxWidth = "600px";
+            template.width = "600";
+            template.style.width = "100%";
+            template.style.margin = "0 auto";
+            template.role = "presentation";
 
-        var container = document.getElementById("container");
-        var template = document.createElement("table");
-        template.id = "blocks";
-        template.className = "_body-copy";
-          template.style.maxWidth = "600px";
-        template.width = "600";
-        template.style.width = "100%";
-        template.style.margin = "0 auto";
-        template.style.display = "block";
-        template.verticalAlign = "top";
-        template.border = "0";
-        template.cellPadding = "0";
-        template.cellSpacing = "0";
-        template.role = "presentation";
-        template.align = "center";
- 
-        template.innerHTML = `
-        <tr style="padding:0 16px 0; display: block;"  class="_introline">
+            
+            template.innerHTML = `
+                               <tr style="padding:0 16px 0; display: block;"  class="_introline">
                         <td align="center" valign="middle" width="100%" style="width:600px;">
                                  <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px 32px 16px;"><![endif]-->
 
-                               <p style="margin: 0 18px 0;padding: 16px;color:#000;font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; position: relative; top: 4px" class="_introline item-align1">${imageCopy2}</p>
+                               <p style="margin: 0 18px 0;padding: 16px;color:#000;font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; position: relative; top: 4px;" class="_introline">${imageCopy2} </p>
                               
                           <!--[if mso]></td></tr></table><![endif]-->
                         </td>
                 </tr>
-        `;
-        container.appendChild(template);
-    }
+                                        
+                    `;
+            
+            
+            
 
-    function removeTemplate5() {
-        var container = document.getElementById("container");
-        var templates = container.getElementsByClassName("_body-copy");
-        if (templates.length > 0) {
-            container.removeChild(templates[templates.length - 1]);
+            // Remove the "edit-item1" class from the previous edit item
+            const editItem1 = container.querySelector('.edit-item1');
+            if (editItem1) {
+                editItem1.classList.remove('edit-item1');
+            }
+
+            container.appendChild(template);
+            
+            // Apply the "edit-item1" class to the newly added item
+            template.classList.add('edit-item1');
         }
-    }
+        function removeTemplate5(){
+            var container = document.getElementById('container');
+            var template = document.getElementById("template");
 
+            const btnToRemove = container.querySelector('.edit-item1');
+            if (btnToRemove) {
+            btnToRemove.remove();
+            }
+            
+
+        }
+        function textAlign1() {
+           const textAlign1 = container.querySelector('.edit-item1');
+              textAlign1.style.margin = "0 auto"; 
+             textAlign1.style.textAlign = "center"; 
+      }
 
     //-------------------------------------------
 
@@ -447,7 +463,7 @@
         outterBlock.style.maxWidth = "600px";
         outterBlock.width = "600";
         outterBlock.style.width = "100%";
-        outterBlock.style.margin = "0 auto";
+        outterBlock.style.margin = "0 auto 32px";
         outterBlock.role = "presentation";
 
 
