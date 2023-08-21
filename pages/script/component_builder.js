@@ -449,7 +449,7 @@
         var outterBlock = document.getElementById("outterBlock");
         var outterBlock = document.createElement('div');
         outterBlock.setAttribute('id', 'outterBlock');
-        outterBlock.style.maxWidth = "600px";
+        outterBlock.style.maxWidth = "536px";
         outterBlock.width = "600";
         outterBlock.style.width = "100%";
         outterBlock.style.margin = "0 32px 32px";
