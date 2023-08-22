@@ -359,7 +359,7 @@
             <div align="center" style="margin: 0;padding:0; border-radius: 8px; overflow: hidden;">
                     <!--[if mso]><table width="536" cellpadding="0" cellspacing="0" border="0" align="center"><tr style="line-height:0px;line-height:0px;"><td style="padding-right: 0px; padding-left: 0px; width:536px; margin: 0 auto;" align="center"><![endif]-->
                    
-                        <img align="center" border="0" src="${image2}"  style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none; float: none;width: 100%;max-width: 502px; height: 280px; object-fit: contain; object-position: center;mix-blend-mode: darken; background-color: #f9f9f9;" width="536" id="imageAlt2">
+                        <img align="center" border="0" src="${image2}"  style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none; float: none;width: 100%;max-width: 502px; height: 280px; object-fit: contain; object-position: center;mix-blend-mode: darken; background-color: #f9f9f9; border-radius: 8px; overflow: hidden;" width="536" id="imageAlt2">
                
                     <!--[if mso]></td></tr></table><![endif]-->
                 </div>
