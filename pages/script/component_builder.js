@@ -328,7 +328,15 @@
 
     }
 
+       function toggleDisplay(className) {
+            const elements = document.getElementsByClassName(className);
+            const displayValue = document.querySelector('input[name="displayToggle"]:checked').value;
 
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = (displayValue === 'show') ? 'block' : 'none';
+            }
+        }
+      
       
     //-------------------------------------------
 
