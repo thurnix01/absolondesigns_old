@@ -97,7 +97,7 @@
           <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform:uppercase;" id="_cta_btn" class="btn-style1">${buttonLabel}</center></v:roundrect>
           <![endif]-->
           <!--[if !mso]><!-->
-          <a href="${buttonHref}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" id="_cta_btn" class="btn-style1"><span class="button-text">${buttonLabel}</span></a>
+          <a href="${buttonHref}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" id="_cta_btn" class="btn-style1 _cta_btn"><span class="button-text">${buttonLabel}</span></a>
           <!--<![endif]-->
         </div>
 
@@ -268,7 +268,7 @@
                 </v:roundrect>
                 <![endif]-->
                 
-                <a href="${buttonHref1}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 auto;-webkit-text-size-adjust:none;mso-hide:all;" id="_cta_btn" class="remove-btn"><span class="button-text">${buttonLabel1}</span></a>
+                <a href="${buttonHref1}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 auto;-webkit-text-size-adjust:none;mso-hide:all;" id="_cta_btn" class="remove-btn _cta_btn"><span class="button-text">${buttonLabel1}</span></a>
       `;  
      
         subContainer.appendChild(template);
@@ -470,7 +470,7 @@
         var buttonHref2 = document.getElementById("buttonHref2").value;
 
         const button = document.createElement('a');
-        button.classList.add('button-container');
+        button.classList.add('_cta_btn');
         button.style.backgroundColor = "#464647";
         button.style.border = "1px solid #464647";
         button.style.borderRadius = "5px";
@@ -511,6 +511,7 @@
         <!--[if mso]>
                   </td>
                 </tr>
+                    <tr height="36"></tr>
               </table>
               <![endif]-->
 
