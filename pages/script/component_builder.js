@@ -550,11 +550,10 @@
 
         const buttonStyle2 = container.querySelector('.edit-item');
         buttonStyle2.style.backgroundColor = "#fff";
-        buttonStyle2.style.border = "2px solid #464647";
+        buttonStyle2.style.border = "3px solid #464647";
         buttonStyle2.style.borderRadius = "5px";
         buttonStyle2.style.color = "#333";
-        buttonStyle2.style.outline = "3px solid rgb(51, 51, 51)";
-        buttonStyle2.style.outlineOffset = "-3px";
+
         }
 
         function buttonColor2() {
