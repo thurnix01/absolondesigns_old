@@ -201,6 +201,7 @@
         // Create comments for before and after Sub
         commentBeforeSub = document.createComment(`[if (gte mso 9) | (IE)]>
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width:600px;" width="600">
+             <tr width="600"></tr>
                 <tr> 
                 <![endif]`);
         commentAfterSub = document.createComment(`[if (gte mso 9) | (IE)]>
@@ -231,7 +232,7 @@
           
     
         commentBeforeDivs = document.createComment(`[if true]>
-                <td style="width: 290px;" valign="top" width="290"> 
+                <td colspan="2" style="width: 290px; text-align: center; margin: 0 auto;" valign="top" width="290"> 
                 <![endif]`);
         commentAfterDivs = document.createComment(`[if true]> 
                 </td> 
@@ -259,17 +260,17 @@
         template.style.flexShrink = "0";   
          
         template.innerHTML = `
-             <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:1rem;font-weight: normal; color:#000; height:auto;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:272px; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300"></a>${imageCopy1}</p>
+        <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:1rem;font-weight: normal; color:#000; height:238px;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:272px; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300"></a>${imageCopy1}</p>
 
             <!--[if mso]>
                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref1}" target="_blank" style="v-text-anchor:middle;width:220px;height: 52px;text-transform: uppercase;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647">
                     <w:anchorlock />
-                    <center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform: uppercase !important;" id="_cta_btn"><span class="button-text">${buttonLabel1}</span></center>
+                    <center style="color:#ffffff;font-family:'UniversLTStd-Cn', sans-serif;font-size:16px;font-weight:bold;text-transform: uppercase !important;" class="_cta_btn"><span class="button-text">${buttonLabel1}</span></center>
                 </v:roundrect>
                 <![endif]-->
                 
-                <a href="${buttonHref1}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 auto;-webkit-text-size-adjust:none;mso-hide:all;" id="_cta_btn" class="remove-btn _cta_btn"><span class="button-text">${buttonLabel1}</span></a>
-      `;  
+                <a href="${buttonHref1}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 auto;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn remove-btn" ><span class="button-text">${buttonLabel1}</span></a>
+        `;  
      
         subContainer.appendChild(template);
           
