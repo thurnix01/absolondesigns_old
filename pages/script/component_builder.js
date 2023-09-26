@@ -31,7 +31,7 @@
             <div align="center" style="margin: 0;padding:0;">
                     <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px;line-height:0px;"><td style="padding-right: 0px; padding-left: 0px;" align="center"><![endif]-->
                    
-                        <img align="center" border="0" src="${heroImage}" alt="Hero Image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px" width="600" id="imageAlt1">
+                        <img align="center" border="0" src="${heroImage}" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px" width="600" id="imageAlt1">
            
                     <!--[if mso]></td></tr></table><![endif]-->
                 </div>
@@ -45,14 +45,15 @@
                                  <!--[if (gte mso 9) | (IE)]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px;"><![endif]-->
 
                                
-                          			<h1 style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase;line-height: 3rem; color: #000;">${introLine}</h1>
-                                <p style="margin:8px 16px 0; padding: 16px 0; color:#000; font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: left;" class="_introline">${bodyCopy}</p>
+                          			<h1 style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten', 'verdana', sans-serif; text-align: left; text-transform: uppercase;line-height: 2.5rem; color: #000;">${introLine}</h1>
+                                <p style="margin:0 16px ; padding: 16px 0; color:#000; font:300 17px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: left;">${bodyCopy}</p>
                           <!--[if (gte mso 9) | (IE)]></td></tr></table><![endif]-->
                         </td>
                 </tr>
             `;
         container.appendChild(template);
     }
+
 
     function removeTemplate() {
         var container = document.getElementById("container");
@@ -260,7 +261,7 @@
         template.style.flexShrink = "0";   
          
         template.innerHTML = `
-        <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:1rem;font-weight: normal; color:#000; height:238px;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:272px; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300"></a>${imageCopy1}</p>
+        <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:238px;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:272px; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300"></a>${imageCopy1}</p>
 
             <!--[if mso]>
                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref1}" target="_blank" style="v-text-anchor:middle;width:220px;height: 52px;text-transform: uppercase;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647">
@@ -410,7 +411,7 @@
                         <td align="center" valign="middle" width="100%" style="width:600px;">
                                  <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px 32px 16px; text-align: center;"><![endif]-->
 
-                               <p style="margin: 0 32px 0;padding: 16px;color:#000;font:300 16px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; position: relative; top: 4px; text-align: inherit; " class="_introline">${imageCopy2} </p>
+                                  <p style="margin: 0 32px;padding:0 0 16px;color:#000;font:300 17px/1.5  'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; position: relative; top: 4px; ">${imageCopy2} </p>
                               
                           <!--[if mso]></td></tr></table><![endif]-->
                         </td>
