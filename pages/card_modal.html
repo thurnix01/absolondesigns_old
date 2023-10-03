@@ -72,7 +72,7 @@
             font-family: sans-serif;
             display: flex;
             flex-direction: column;
-            cursor: default;
+            
 
         }
 
@@ -80,6 +80,7 @@
             text-transform: uppercase;
             font-size: 1.2rem;
             margin-bottom: 12px;
+            cursor: default;
         }
 
         .info_block p {
@@ -100,6 +101,7 @@
             text-decoration: none;
             font-size: .85rem;
             border-radius: 5px;
+            cursor: pointer;
         }
         
             .info_block a:hover{
@@ -111,7 +113,8 @@
 </head>
 
 <body>
-   <div class="wrapper">
+   <div class="wrapper" id="editor" contenteditable="true">
+   
    <div class="block_01">
        <img src="https://thurnix01.github.io/absolondesigns/pages/images/car_image.png" alt="">
    </div>
@@ -121,7 +124,7 @@
         <h3>Racing Line</h3>
         <p>Follow along as we make training plans, formulate race strategies, and take on the rigors of Pacific Island bike racing.
         
-        
+        <br>
         </p>
         <a href="#">Learn more</a>
         </div>
