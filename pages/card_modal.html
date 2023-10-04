@@ -22,7 +22,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
         
-            .wrapper:hover{
+            #wrapper:hover{
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 
     }
@@ -284,15 +284,18 @@
 
     
     function modelImageInsert(){
+      
     var wrapper = document.getElementById('wrapper_container');
         
-        wrapper
-        
+
+       
     var modalInsert = document.getElementById('model-insert');
     var modalImage = document.getElementById('modal-image').value;
     var modalInsert = document.createElement('div');
     modalInsert.setAttribute('class' , 'wrapper');
     modalInsert.setAttribute('id', 'wrapper');
+      
+                
     modalInsert.style.backgroundImage = `url('${modalImage}')`;
     modalInsert.innerHTML = `
 
@@ -315,9 +318,10 @@
         
     
     wrapper.appendChild(modalInsert);
-        
+            }
     
-    }
+
+
     
 </script>
 
