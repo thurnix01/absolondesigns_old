@@ -6,13 +6,13 @@
     <title>Modal Card</title>
     
     <style>
-        .wrapper {
+        #wrapper {
             width: 300px;
             height: auto;
-            margin: 160px auto 0 auto;
+            margin: 80px auto 0 auto;
             position: relative;
             background-color: whitesmoke;
-            background-image: url(https://thurnix01.github.io/absolondesigns/pages/images/car_image.png);
+
             background-size: 100%;
             background-repeat: no-repeat;
             border-radius: 20px;
@@ -264,10 +264,40 @@
         
     </div>
     
-   <div class="wrapper" >
+    
+    
+
+    <div style="margin: 0 auto; text-align: center;margin-top: 60px;">   <input type="text" id="modal-image" placeholder="image url">
+    <button onclick="modelImageInsert()">Insert Image</button></div>
+   <div id="wrapper_container" >
    
+
+    </div>
+      
+  </div>
+    
+    
+</body>
+
+<script>
+    
+
+    
+    function modelImageInsert(){
+    var wrapper = document.getElementById('wrapper_container');
+        
+        wrapper
+        
+    var modalInsert = document.getElementById('model-insert');
+    var modalImage = document.getElementById('modal-image').value;
+    var modalInsert = document.createElement('div');
+    modalInsert.setAttribute('class' , 'wrapper');
+    modalInsert.setAttribute('id', 'wrapper');
+    modalInsert.style.backgroundImage = `url('${modalImage}')`;
+    modalInsert.innerHTML = `
+
    <div class="block_01">
-       <img src="https://thurnix01.github.io/absolondesigns/pages/images/car_image.png" alt="Modal image">
+       <img src="${modalImage}" alt="Modal image">
    </div>
         <div class="back_block"> </div>
    <div class="block_02" >
@@ -280,14 +310,24 @@
         <a href="#">Learn more</a>
         </div>
    </div>
-    </div>
-      
-  </div>
+`;
     
+        
     
-</body>
+    wrapper.appendChild(modalInsert);
+        
+    
+    }
+    
+</script>
+
+
 </html>
 
+<!--
+
+https://thurnix01.github.io/absolondesigns/pages/images/car_image.png
+-->
 
 
 
