@@ -130,24 +130,39 @@
         <h3>Additional Image</h3>
 
 
-        <label for="image-2">Image Link:</label>
-        <div>
-            <input type="text" id="image-2" placeholder="Enter URL" style="width: 80%">
-            <button class="tooltip" onclick="openModal2()">add alt<span class="tooltiptext">Insert after adding the image</span></button>
+               <div>
+                   <label for="image-4">Image Link:</label>
+                   <input type="text" id="image-4" placeholder="Enter URL" style="width: 100%; max-width: 500px;">
+               </div>
+               <label for="image-copy-4">Product Description:</label>
+
+               <textarea type="text" rows="2" id="image-copy-4" placeholder="Enter Product Description"></textarea>
+
+               <div style="display: flex; gap: 2rem;">
+                   <div style=" display: grid">
+                       <label for="buttonLabel4">Button Label:</label>
+                       <input type="text" id="buttonLabel4" name="buttonLabel4" placeholder="Enter CTA" style="text-transform:uppercase">
+                   </div>
+                   <div style="display: grid; max-width: 360px; width: 100%;">
+                       <label for="buttonHref4">Link:</label>
+                       <input type="url" id="buttonHref4" name="buttonHref4" style="width: 100%;" placeholder="Enter link">
+                   </div>
+               </div>
+
+
+               <div>
+                   <button onclick="addTemplate8()">Add Product</button>
+                   <button onclick="removeTemplate8()">Remove Product</button>
+                 <button class="tooltip" onclick="openModal2()">add alt<span class="tooltiptext">Insert after adding the image</span></button>
             <div id="myModal2" class="modal">
                 <div class="modal-content">
                     <input type="text" id="altText2" placeholder="Enter alt text for the image" onkeydown="handleAltTextKeyPress2(event)">
                     <button onclick="addAltText2(), closeModal2()">done!</button>
                 </div>
             </div>
-        </div>
-
-
-        <div>
-            <button onclick="addTemplate4()">Add Image</button>
-            <button onclick="removeTemplate4()">Remove Image</button>
-
-        </div>
+              
+              
+               </div>
 
 
         <h3>Additional Copy</h3>
