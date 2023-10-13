@@ -369,7 +369,7 @@
             <div align="center" style="margin: 0;padding:0; border-radius: 8px; overflow: hidden;">
                     <!--[if mso]><table width="536" cellpadding="0" cellspacing="0" border="0" align="center"><tr style="line-height:0px;line-height:0px;"><td style="padding-right: 0px; padding-left: 0px; width:536px; margin: 0 auto;" align="center"><![endif]-->
                    
-                        <img align="center" border="0" src="${image2}"  style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none; float: none;width: 100%;max-width: 502px; height: 280px; object-fit: contain; object-position: center; border-radius: 8px; overflow: hidden;" width="536" id="imageAlt2">
+                        <img align="center" border="0" src="${image2}"  style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none; float: none;width: 100%;max-width: 502px; height: 280px; object-fit: contain; object-position: center; border-radius: 8px; overflow: hidden;" width="536" >
                
                     <!--[if mso]></td></tr></table><![endif]-->
                 </div>
@@ -658,5 +658,52 @@
         }
     }
 
+
+                function addTemplate8() {
+           var container = document.getElementById("container");
+           var product = "product"; // Specify the className to remove
+          
+          
+        var image4 = document.getElementById("image-4").value;
+        var imageCopy4 = document.getElementById("image-copy-4").value;
+        var buttonLabel4 = document.getElementById("buttonLabel4").value;
+        var buttonHref4 = document.getElementById("buttonHref4").value;      
+        var template = document.createElement("td");
+        template.className = "product"; 
+        template.align = "center";
+        template.style.display = "grid";  
+        template.style.width = "100%"; 
+        template.style.margin = "0 auto"; 
+        template.style.maxWidth = "502px"; 
+        template.style.textAlign = "center";   
+        template.style.flexGrow = "1";
+        template.style.flexShrink = "0";   
+         
+        template.innerHTML = `
+        <a href="${buttonHref4}" target="_blank"><img src="${image4}" alt="" style="width:100%; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300" id="imageAlt2"></a>
+        <p style="margin: 0 auto 12px; width: 100%; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:auto; padding-top: 16px;" >${imageCopy4}</p>
+
+            <!--[if mso]>
+                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref4}" target="_blank" style="v-text-anchor:middle;width:220px;height: 52px;text-transform: uppercase;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647">
+                    <w:anchorlock />
+                    <center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto Condensed','', sans-serif; font-size:16px;font-weight:bold;text-transform: uppercase !important;" class="_cta_btn"><span class="button-text">${buttonLabel4}</span></center>
+                </v:roundrect>
+                <![endif]-->
+                
+                <a href="${buttonHref4}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn','Roboto Condensed','', sans-serif; font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 auto;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn remove-btn" ><span class="button-text">${buttonLabel4}</span></a>
+        `;  
+     
+        container.appendChild(template);
+
+      }
+
+
+        function removeTemplate8() {
+        var container = document.getElementById("container");
+        var templates = container.getElementsByClassName("product");
+        if (templates.length > 0) {
+            container.removeChild(templates[templates.length - 1]);
+        }
+    }
 
     
