@@ -670,15 +670,12 @@
         var buttonHref4 = document.getElementById("buttonHref4").value;      
 
        var template = document.createElement("table");
-        template.className = "product"; 
-        template.style.maxWidth = "600px";
-        template.width = "600";
-        template.style.width = "100%";
+        template.className = "_body-image";
+        template.style.maxWidth = "568px";
         template.style.margin = "0 auto";
-        template.style.height = "auto";
-        template.style.padding = "0px";
-        template.style.tableLayout = "fixed";
-        template.style.verticalAlign = "top";
+        template.style.padding = "0 16px";
+        template.style.width = "100%";
+        template.verticalAlign = "top";
         template.border = "0";
         template.cellPadding = "0";
         template.cellSpacing = "0";
@@ -689,10 +686,14 @@
         template.innerHTML = `
 
 
-        <tr align="center">     
-        <td align="center" style="display: grid; width: 100%; margin: 0px auto; max-width: 502px; text-align: center; flex-grow: 1; flex-shrink: 0;">
+        <tr style="vertical-align: top">
+            <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top; margin: 0;padding:0 ;">
+                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" style="background-color: #FFFFFF;margin: 0;padding:0;"><![endif]-->
 
-        <a href="${buttonHref4}" target="_blank"><img src="${image4}" alt="" style="width:100%; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300" id="imageAlt2"></a>
+            <div align="center" style="margin: 0;padding:0; border-radius: 8px;  overflow: hidden;">
+                    <!--[if mso]><table width="536" cellpadding="0" cellspacing="0" border="0" align="center"><tr style="line-height:0px;line-height:0px;"><td style="padding-right: 0px; padding-left: 0px; width:536px; margin: 0 auto;" align="center"><![endif]-->
+
+        <a href="${buttonHref4}" target="_blank"><img align="center" border="0" src="${image4}" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none; float: none;width: 100%;max-width: 536px;  object-fit: contain; object-position: center;mix-blend-mode: darken;" width="536" id="imageAlt2"></a>
         <p style="margin: 0 auto 12px; width: 100%; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:auto; padding-top: 16px;" >${imageCopy4}</p>
 
             <!--[if mso]>
@@ -703,9 +704,13 @@
                 <![endif]-->
                 
                 <a href="${buttonHref4}" target="_blank" style="background-color:#464647;border-radius:5px;color:#ffffff;display:table;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size: 1rem;font-weight:normal;line-height:52px;text-align:center;text-decoration:none;text-transform: uppercase !important;min-width:240px;width:auto;margin:0 auto;padding: 5px 16px 0;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn remove-btn" ><span class="button-text">${buttonLabel4}</span></a><br>
-        </td>
-        </tr>
-        `;  
+                           <!--[if mso]></td></tr></table><![endif]-->
+                </div>
+             <!--[if (mso)|(IE)]></td></tr>  </table><![endif]-->
+                </td></tr>
+
+
+    `;  
      
         container.appendChild(template);
 
@@ -714,7 +719,7 @@
 
         function removeTemplate8() {
         var container = document.getElementById("container");
-        var templates = container.getElementsByClassName("product");
+        var templates = container.getElementsByClassName("_body-image");
         if (templates.length > 0) {
             container.removeChild(templates[templates.length - 1]);
         }
