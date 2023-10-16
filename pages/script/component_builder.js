@@ -671,12 +671,14 @@
 
        var template = document.createElement("table");
         template.className = "product"; 
-        template.style.maxWidth = "600px";
+         template.style.maxWidth = "600px";
         template.width = "600";
         template.style.width = "100%";
         template.style.margin = "0 auto";
         template.style.height = "auto";
-        template.verticalAlign = "top";
+        template.style.padding = "0px";
+        template.style.tableLayout = "fixed";
+        template.style.verticalAlign = "top";
         template.border = "0";
         template.cellPadding = "0";
         template.cellSpacing = "0";
@@ -686,7 +688,8 @@
          
         template.innerHTML = `
 
-        <tr align="center" style="width: 100%; margin:0 auto; max-width: 502px; text-align: center;">
+
+        <tr align="center">
 
         <a href="${buttonHref4}" target="_blank"><img src="${image4}" alt="" style="width:100%; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300" id="imageAlt2"></a>
         <p style="margin: 0 auto 12px; width: 100%; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:auto; padding-top: 16px;" >${imageCopy4}</p>
