@@ -690,7 +690,7 @@
 
 
         <tr align="center">     
-        <td class="product" align="center" style="display: grid; width: 100%; margin: 0px auto; max-width: 502px; text-align: center; flex-grow: 1; flex-shrink: 0;">
+        <td align="center" style="display: grid; width: 100%; margin: 0px auto; max-width: 502px; text-align: center; flex-grow: 1; flex-shrink: 0;">
 
         <a href="${buttonHref4}" target="_blank"><img src="${image4}" alt="" style="width:100%; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300" id="imageAlt2"></a>
         <p style="margin: 0 auto 12px; width: 100%; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:auto; padding-top: 16px;" >${imageCopy4}</p>
