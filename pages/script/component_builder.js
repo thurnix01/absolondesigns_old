@@ -698,11 +698,11 @@
             <!--[if mso]>
                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref4}" target="_blank" style="v-text-anchor:middle;width:260px;height: 52px;text-transform: uppercase;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647">
                     <w:anchorlock />
-                    <center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto Condensed','', sans-serif; font-size:16px;font-weight:bold;text-transform: uppercase !important;" class="_cta_btn"><span class="button-text">${buttonLabel4}</span></center>
+                    <center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px;font-weight:bold;text-transform: uppercase !important;" class="_cta_btn"><span class="button-text">${buttonLabel4}</span></center>
                 </v:roundrect>
                 <![endif]-->
                 
-                <a href="${buttonHref4}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:table;font-family:'UniversLTStd-Cn','Roboto Condensed','', sans-serif; font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;min-width:204px;width:auto;margin:0 auto;padding: 5px 16px 0;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn remove-btn" ><span class="button-text">${buttonLabel4}</span></a><br><br>
+                <a href="${buttonHref4}" target="_blank" style="background-color:#464647;border-radius:5px;color:#ffffff;display:table;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size: 1rem;font-weight:normal;line-height:52px;text-align:center;text-decoration:none;text-transform: uppercase !important;min-width:204px;width:auto;margin:0 auto;padding: 5px 16px 0;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn remove-btn" ><span class="button-text">${buttonLabel4}</span></a><br>
         </td>
         </tr>
         `;  
