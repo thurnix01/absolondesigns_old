@@ -671,10 +671,10 @@
 
        var template = document.createElement("table");
         template.className = "_body-image";
-        template.style.maxWidth = "568px";
-        template.style.margin = "0 auto";
-        template.style.padding = "0 16px";
-        template.style.width = "100%";
+        template.style.maxWidth = "572px";
+        template.style.margin = "0 32px";
+        template.style.padding = "0";
+        template.style.width = "auto";
         template.verticalAlign = "top";
         template.border = "0";
         template.cellPadding = "0";
