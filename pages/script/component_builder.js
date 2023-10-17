@@ -683,16 +683,16 @@
         template.align = "center";
  
          
-         template.innerHTML = `
+        template.innerHTML = `
 
         <tr style="vertical-align: top">
-            <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top; margin: 0;padding:0 16px;">
+            <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top; margin: 0;padding:0;">
                 <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" style="background-color: #FFFFFF;margin: 0;padding:0;"><![endif]-->
 
             <div align="center" style="margin: 0;padding:0; border-radius: 8px;  overflow: hidden;">
                     <!--[if mso]><table width="536" cellpadding="0" cellspacing="0" border="0" align="center"><tr style="line-height:0px;line-height:0px;"><td style="padding-right: 0px; padding-left: 0px; width:536px; margin: 0 auto;" align="center"><![endif]-->
 
-        <a href="${buttonHref4}" target="_blank"><img align="center" border="0" src="${image4}" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none; float: none;width: 100%;max-width: 502px;  object-fit: contain; object-position: center; border-radius: 8px; overflow: hidden;" width="536" id="imageAlt2"></a>
+        <a href="${buttonHref4}" target="_blank"><img align="center" border="0" src="${image4}" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none; float: none;width: 100%;max-width: 572px;  object-fit: contain; object-position: center; border-radius: 8px; overflow: hidden;" width="536" id="imageAlt2"></a>
 
 
         <p style="margin: 0 auto 12px; width: 100%; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:auto; padding-top: 16px;" >${imageCopy4}</p>
