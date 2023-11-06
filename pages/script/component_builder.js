@@ -45,8 +45,8 @@
                                  <!--[if (gte mso 9) | (IE)]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px;"><![endif]-->
 
                                
-                          			<h1 style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto Condensed', sans-serif; text-align: left; text-transform: uppercase;line-height: 2.85rem; color: #000;">${introLine}</h1>
-                                <p style="margin:0 16px ; padding: 16px 0; color:#000; font:300 17px/1.5  'UniversLTStd-Cn','Roboto Condensed', sans-serif; text-align: left;">${bodyCopy}</p>
+                          			<h1 style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto', sans-serif; text-align: left; text-transform: uppercase;line-height: 2.85rem; color: #000;">${introLine}</h1>
+                                <p style="margin:0 16px ; padding: 16px 0; color:#000; font:300 17px/1.5  'UniversLTStd-Cn','Roboto', sans-serif; text-align: left;">${bodyCopy}</p>
                           <!--[if (gte mso 9) | (IE)]></td></tr></table><![endif]-->
                         </td>
                 </tr>
@@ -98,7 +98,7 @@
           <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px;font-weight:bold;text-transform:uppercase;" id="_cta_btn" class="btn-style1">${buttonLabel}</center></v:roundrect>
           <![endif]-->
           <!--[if !mso]><!-->
-          <a href="${buttonHref}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" id="_cta_btn" class="btn-style1 _cta_btn"><span class="button-text"><nobr>${buttonLabel}</nobr></span></a>
+          <a href="${buttonHref}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn','Roboto', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" id="_cta_btn" class="btn-style1 _cta_btn"><span class="button-text"><nobr>${buttonLabel}</nobr></span></a>
           <!--<![endif]-->
         </div>
 
@@ -146,7 +146,7 @@
                       <td align="center" valign="middle" width="100%">
                   <![endif]-->
 
-                      <h3 style="font-size: 3rem; mso-ansi-font-size:32px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto Condensed', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px 16px; color: #000; padding-top: 32px;">${introBodyTitle}</h3>
+                      <h3 style="font-size: 3rem; mso-ansi-font-size:32px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px 16px; color: #000; padding-top: 32px;">${introBodyTitle}</h3>
 
                  <!--[if (gte mso 9) | (IE)]>
                       </td>
@@ -267,11 +267,11 @@
             <!--[if mso]>
                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref1}" target="_blank" style="v-text-anchor:middle;width:220px;height: 52px;text-transform: uppercase;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647">
                     <w:anchorlock />
-                    <center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px;font-weight:bold;text-transform: uppercase !important;" class="_cta_btn"><span class="button-text">${buttonLabel1}</span></center>
+                    <center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto', sans-serif; font-size:16px;font-weight:bold;text-transform: uppercase !important;" class="_cta_btn"><span class="button-text">${buttonLabel1}</span></center>
                 </v:roundrect>
                 <![endif]-->
                 
-                <a href="${buttonHref1}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 auto;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn remove-btn" ><span class="button-text">${buttonLabel1}</span></a>
+                <a href="${buttonHref1}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn','Roboto', sans-serif; font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 auto;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn remove-btn" ><span class="button-text">${buttonLabel1}</span></a>
         `;  
      
         subContainer.appendChild(template);
@@ -412,7 +412,7 @@
                         <td align="center" valign="middle" width="100%" style="width:600px;">
                                  <!--[if mso]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px 32px 16px; text-align: center;"><![endif]-->
 
-                                  <p style="margin: 0 32px;padding:0 0 16px;color:#000;font:300 17px/1.5  'UniversLTStd-Cn','Roboto Condensed', sans-serif; position: relative; top: 4px; ">${imageCopy2} </p>
+                                  <p style="margin: 0 32px;padding:0 0 16px;color:#000;font:300 17px/1.5  'UniversLTStd-Cn','Roboto', sans-serif; position: relative; top: 4px; ">${imageCopy2} </p>
                               
                           <!--[if mso]></td></tr></table><![endif]-->
                         </td>
@@ -479,7 +479,7 @@
         button.style.borderRadius = "5px";
         button.style.color = "#ffffff";
         button.style.display = "block";
-        button.style.fontFamily = "'UniversLTStd-Cn','Roboto Condensed', sans-serif";
+        button.style.fontFamily = "'UniversLTStd-Cn','Roboto', sans-serif";
         button.style.fontSize = " 1rem";
         button.style.fontWeight = "normal";
         button.style.lineHeight = "56px";
@@ -502,7 +502,7 @@
 
 
         <!--[if mso]>
-                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn button-text">${buttonLabel2}</center></v:roundrect>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref2}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto', sans-serif; font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn button-text">${buttonLabel2}</center></v:roundrect>
                       <![endif]-->
         <!--[if !mso]><!-->
 
@@ -626,14 +626,14 @@
                 <h3 style="font-size: 50px;mso-ansi-font-size:50px"> 
                 <![endif]-->
 
-            <h3 style="color: #000000 !important;font-size: 2.2rem;font-weight: 300;text-transform: uppercase;margin: 0;mso-ansi-font-size: 24px;font-family: 'tungsten','Roboto Condensed', sans-serif !important; text-align: left; line-height: 2rem;     letter-spacing: 0.1rem;">${introBodyTitle2}</h3>
+            <h3 style="color: #000000 !important;font-size: 2rem;font-weight: 300;text-transform: uppercase;margin: 0;mso-ansi-font-size: 24px;font-family: 'tungsten','Roboto', sans-serif !important; text-align: left; line-height: 2rem; letter-spacing: 0.1rem;">${introBodyTitle2}</h3>
 
         <!--[if true]> 
                 </h3> 
                 <![endif]-->
             <div style="color:#2C2C2C; font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px; line-height:26px; padding-top:18px;">${imageCopy3}</div>
 
-             <div style="color:#333;font-size:18px; line-height:26px; padding-bottom:0px;padding-top:16px; margin: 0;"><a href="${buttonHref3}" target="_blank" style="color:#333; font-weight:bold; text-decoration:underline;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; text-transform: uppercase;" class="footer_cta">${buttonLabel3}<span style="position: relative; bottom: 0.05rem;"> ></span></a></div>
+             <div style="color:#333;font-size:18px; line-height:26px; padding-bottom:0px;padding-top:16px; margin: 0;"><a href="${buttonHref3}" target="_blank" style="color:#333; font-weight:bold; text-decoration:underline;font-family:'UniversLTStd-Cn','Roboto', sans-serif; text-transform: uppercase;" class="footer_cta">${buttonLabel3}<span style="position: relative; bottom: 0.05rem;"> ></span></a></div>
 
 
         </td>
@@ -701,7 +701,7 @@
             <!--[if mso]>
                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref4}" target="_blank" style="v-text-anchor:middle;width:260px;height: 52px;text-transform: uppercase;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647">
                     <w:anchorlock />
-                    <center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px;font-weight:bold;text-transform: uppercase !important;" class="_cta_btn"><span class="button-text">${buttonLabel4}</span></center>
+                    <center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto', sans-serif; font-size:16px;font-weight:bold;text-transform: uppercase !important;" class="_cta_btn"><span class="button-text">${buttonLabel4}</span></center>
                 </v:roundrect>
                 <![endif]-->
                 
