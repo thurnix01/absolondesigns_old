@@ -705,7 +705,7 @@
                 </v:roundrect>
                 <![endif]-->
                 
-                <a href="${buttonHref4}" target="_blank" style="background-color:#464647;border-radius:5px;color:#ffffff;display:table;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size: 1rem;font-weight:normal;line-height:52px;text-align:center;text-decoration:none;text-transform: uppercase !important;min-width:240px;width:auto;margin:0 auto;padding: 5px 16px 0;height: 52px;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn remove-btn" ><span class="button-text">${buttonLabel4}</span></a><br>
+                <a href="${buttonHref4}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn','Roboto', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" class="_cta_btn remove-btn" ><span class="button-text">${buttonLabel4}</span></a><br>
                            <!--[if mso]></td></tr></table><![endif]-->
                 </div>
              <!--[if (mso)|(IE)]></td></tr>  </table><![endif]-->
