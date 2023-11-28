@@ -621,7 +621,7 @@
         <!--[if true]>
                 <td style="width: 260px;" valign="top" width="260"> 
                 <![endif]-->
-        <td align="center" style="display: grid;max-width: 224px;width: 100%;text-align: left;padding: 16px 0 16px 16px;float: left;height: 240px;align-content: center;"  class="floating">
+        <td align="center" style="display: grid;max-width: 224px;width: 100% !important;text-align: left;padding: 16px 0 16px 16px;float: left;height: 240px;align-content: center;"  class="floating">
         <!--[if mso]>
                 <h3 style="font-size: 50px;mso-ansi-font-size:50px"> 
                 <![endif]-->
