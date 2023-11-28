@@ -606,7 +606,7 @@
         <!--[if true]>
                 <td style="width: 260px;" valign="top" width="260"> 
                 <![endif]-->
-        <td align="center" style="display: flex;max-width: 280px;width: 50%;text-align: center;margin: 0 auto;justify-content: center;float: left;" class="floating">
+        <td align="center" style="display: table-cell;max-width: 280px;width: 50%;text-align: center;margin: 0 auto;justify-content: center;" class="floating">
             <span style="margin: 0 auto; width: 100%;">
             <a href="${buttonHref3}" target="_blank" >
                 <img src="${image3}" alt="Product Image" style="width:100%; margin: 0 auto; display: flex; height: 272px; object-fit: cover;" border="0" width="272"></a></span>
@@ -621,7 +621,7 @@
         <!--[if true]>
                 <td style="width: 260px;" valign="top" width="260"> 
                 <![endif]-->
-        <td align="center" style="display: grid;max-width: 224px;width: 50%;text-align: left;padding: 16px 0 16px 16px;float: left;height: 240px;align-content: center;"  class="floating">
+        <td align="center" style="display: grid;max-width: 224px;width: 100%;text-align: left;padding: 16px 0 16px 16px;float: left;height: 240px;align-content: center;"  class="floating">
         <!--[if mso]>
                 <h3 style="font-size: 50px;mso-ansi-font-size:50px"> 
                 <![endif]-->
@@ -631,7 +631,7 @@
         <!--[if true]> 
                 </h3> 
                 <![endif]-->
-            <div style="color:#2C2C2C; font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px; line-height:26px; padding-top:18px;">${imageCopy3}</div>
+            <div style="color:#2C2C2C; font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px; padding-top:18px;">${imageCopy3}</div>
 
              <div style="color:#333;font-size:18px; line-height:26px; padding-bottom:0px;padding-top:16px; margin: 0;"><a href="${buttonHref3}" target="_blank" style="color:#333; font-weight:bold; text-decoration:underline;font-family:'UniversLTStd-Cn','Roboto', sans-serif; text-transform: uppercase;" class="footer_cta">${buttonLabel3}<span style="position: relative; bottom: 0.05rem;"> ></span></a></div>
 
