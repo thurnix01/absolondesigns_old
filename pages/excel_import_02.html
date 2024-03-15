@@ -20,26 +20,28 @@
 #products-articles-toggle {
   justify-content: center;
   border-bottom: 1px solid #857D96;
-      transition-duration: 5s;
-  transition-delay: 2s;
+
 }
 
 #products-articles-toggle h3 {
   margin: 0 20px;
   padding: 20px;
   color: #464647;
-        font-family: 'tungsten',sans-serif;
+ font-family: 'tungsten',sans-serif;
+    text-transform: uppercase;
 }
 
 #products-articles-toggle h3:hover {
   cursor: pointer;
+    
 }
 
 .selected {
-  border-bottom: 2px solid #DD5030;
-  color: #000000 !important;
-}
-
+      border-bottom: 4px solid #DD5030;
+      color: #000000 !important;
+      transition-duration: 0.2s;
+      transition-delay: 0.1s;
+  }
 .products-article {
   width: 100%;
   max-width: 240px;
@@ -82,14 +84,19 @@
 
  
  <div id="products-articles-toggle">
-  <h3 class="selected">Products (45)</h3>
-  <h3>Learn More (4)</h3>
+  <h3 class="selected">Products</h3>
+  <h3 id="rowCount"></h3>
 </div>
+
 <div id="products-articles-container" class="hide">
 
 
+
+
+<div class="container" id="content"></div>
+
 <style>
-    .container {
+      .container {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -99,11 +106,19 @@
     }
     .item {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin: 32px;
         text-align: left;
-        flex-direction: column;
         font-family: 'univers lt std', sans-serif;
-        width: 500px;
+        width: 100%;
+    }
+    
+    .blockInfo{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .item img {
@@ -118,7 +133,7 @@
         letter-spacing: 2.6px;
         padding: 0;
         font-weight: 400;
-        margin: 0;
+        margin: 16px 0 0 0;
             }
     #outterBlock{
         display: flex;
@@ -134,68 +149,72 @@
         object-fit: cover;
     }
     
+    #rowCount {
+        text-align: center;
+        margin-top: 20px;
+    }
 </style>
 
-<div class="container" id="content"></div>
+
+<div class="container" id="content">
+    
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
 <script>
-    // Function to parse Excel data and display text and images
+    // Function to parse Excel data and display text, hyperlinks, and images
     function displayDataFromExcel(data) {
         const contentContainer = document.getElementById('content');
         data.forEach(item => {
-            
-                  
-        const outterBlock = document.createElement('div');
-        outterBlock.setAttribute('id', 'outterBlock');
- 
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('item');
+
             // Create and append image element
             const img = document.createElement('img');
             img.src = item.imageURL;
-            outterBlock.appendChild(img);
+            itemDiv.appendChild(img);
 
-
-        if (outterBlock){
-            const itemDiv = document.createElement('div');
-            itemDiv.classList.add('item');
-            
-
-            // Create and append text element
+                 if (itemDiv){
+                
+             const blockItems = document.createElement('div');
+            blockItems.classList.add('blockInfo');
+                     
+                        // Create and append text element
             const title = document.createElement('h2');
             title.textContent = item.title;
-            itemDiv.appendChild(title);
-            
+            blockItems.appendChild(title);
+                     
+                     
             // Create and append text element
-            const info = document.createElement('p');
-            info.textContent = item.info;
-            itemDiv.appendChild(info);
+            const synopsis = document.createElement('p');
+            synopsis.textContent = item.synopsis;
+            blockItems.appendChild(synopsis);         
+            
+            // Create and append hyperlink element
+            const hyperlink = document.createElement('a');
+            hyperlink.href = item.pageLink;
+            hyperlink.textContent = 'LEARN MORE';
+            blockItems.appendChild(hyperlink);
 
-            
-            // Create and append text element
-            const ctaLink = document.createElement('a');
-            const pageLink = document.getElementById('pageLink');
-            
-            
-            ctaLink.textContent = item.ctaLink;
-            itemDiv.appendChild(ctaLink);
-            ctaLink.innerHTML = 'LEARN MORE';
-           
-            ctaLink.target = '_blank';
-            ctaLink.href = `${pageLink}`;
+
+                     
+                     itemDiv.appendChild(blockItems);
+                 }
             
             
+            
+
             // Append itemDiv to contentContainer
-            outterBlock.appendChild(itemDiv);
-            
-        }
-            
-                     // Append itemDiv to contentContainer
-            contentContainer.appendChild(outterBlock);
+            contentContainer.appendChild(itemDiv);
         });
+
+        // Display the number of rows of content
+        const rowCount = document.getElementById('rowCount');
+        rowCount.textContent = `LEARN MORE (${data.length})`;
     }
 
     // Function to read Excel file and parse data
-    function readExcelFileAndDisplayData() {
+    function parseExcelAndDisplayData() {
         // Replace 'YOUR_FILE_PATH' with the path to your Excel file
         fetch('https://thurnix01.github.io/absolondesigns/pages/files/blog_data.xlsx')
             .then(response => response.arrayBuffer())
@@ -205,13 +224,12 @@
                 const worksheet = workbook.Sheets[sheetName];
                 const jsonData = XLSX.utils.sheet_to_json(worksheet);
 
-                // Extract text and image URLs from Excel data
+                // Extract text, hyperlinks, and image URLs from Excel data
                 const parsedData = jsonData.map(item => ({
-                    title: item.PageTitle, // Assuming column name is "PageTitle"
-                    info: item.Synopsis, // Assuming column name is "Synopsis"
-                    imageURL: item.ImageURL, // Assuming column name is "ImageURL"
-                    ctaLink: item.pageLink, // Assuming column name is "ImageURL"
-                    
+                    synopsis: item.Synopsis, // Assuming column name is "Text"
+                    title: item.PageTitle, // Assuming column name is "LinkText"
+                    pageLink: item.pageLink, // Assuming column name is "LinkURL"
+                    imageURL: item.ImageURL // Assuming column name is "ImageURL"
                 }));
 
                 // Display data
@@ -223,10 +241,8 @@
     }
 
     // Call the function to read Excel file and display data
-    readExcelFileAndDisplayData();
+    parseExcelAndDisplayData();
 </script>
-
-
  
 </div>
 
