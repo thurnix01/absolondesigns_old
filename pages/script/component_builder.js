@@ -727,4 +727,58 @@
         }
     }
 
+
+          //-------------------------------------------
+       
+        function addTemplate9() {
+        var fullHeroImage = document.getElementById("full-body-img").value;
+        var container = document.getElementById("container");
+        var template = document.createElement("table");
+        template.className = "_full-img-section";
+        template.style.maxWidth = "600px";
+        template.width = "600";
+        template.style.width = "100%";
+        template.style.backgroundColor = "#fffff";
+        template.style.margin = "0 auto";
+        template.style.padding = "0";
+         template.border = "0";
+         template.cellPadding = "0"; 
+         template.cellSpacing = "0"; 
+         template.role = "presentation";
+         template.align = "center";
+
+        template.borderCollapse = "collapse";
+        template.style.tableLayout = "fixed";
+        template.style.verticalAlign = "top";
+    
+        template.innerHTML = `
+
+<tr style="vertical-align: top">
+            <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top; margin: 0;padding:0;">
+                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #FFFFFF;margin: 0;padding:0;"><![endif]-->
+
+            <div align="center" style="margin: 0;padding:0;">
+                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px;line-height:0px;"><td style="padding-right: 0px; padding-left: 0px;" align="center"><![endif]-->
+                   
+                        <img align="center" border="0" src="${fullHeroImage}" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px" width="600" id="imageAlt3">
+           
+                    <!--[if mso]></td></tr></table><![endif]-->
+                </div>
+             <!--[if (mso)|(IE)]></td></tr>  </table>
+              <![endif]-->
+                </td></tr>
+                
+ 
+            `;
+        container.appendChild(template);
+    }
+
+        function removeTemplate9() {
+        var container = document.getElementById("container");
+        var templates = container.getElementsByClassName("_full-img-section");
+        if (templates.length > 0) {
+            container.removeChild(templates[templates.length - 1]);
+        }
+    }
+
     
