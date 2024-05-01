@@ -71,4 +71,41 @@
         closeModal2();
       }
     }
+
+         //---------------------------------------------------------
+            function openModal3() {
+      var modal3 = document.getElementById('myModal3');
+      var altText3 = document.getElementById('altText3');
+      modal3.style.display = 'block';
+      altText3.focus();
+    }
+
+    function closeModal3() {
+      var modal3 = document.getElementById('myModal3');
+      var altText3 = document.getElementById('altText3');
+      modal3.style.display = 'none';
+      altText3.value = '';
+      enterKeyPressCount = 0;
+    }
+
+    function addAltText3() {
+      var altText3 = document.getElementById('altText3').value;
+      var imageAlt3 = document.getElementById('imageAlt3');
+      if (altText3 !== '') {
+        imageAlt3.alt = altText3;
+        closeModal3();
+      }
+    }
+        
+    function handleAltTextKeyPress3(event) {
+      if (event.key === 'Enter') {
+        enterKeyPressCount++;
+        if (enterKeyPressCount >= 1) {
+          addAltText3();
+        }
+      } else if (event.key === 'Escape') {
+        closeModal3();
+      }
+    }
+
       
