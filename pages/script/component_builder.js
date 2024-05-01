@@ -45,8 +45,8 @@
                                  <!--[if (gte mso 9) | (IE)]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px;"><![endif]-->
 
                                
-                          			<h1 style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto', sans-serif; text-align: left; text-transform: uppercase;line-height: 2.85rem; color: inherit;">${introLine}</h1>
-                                <p style="margin:0 16px ; padding: 16px 0; color: inherit; font:300 17px/1.5  'UniversLTStd-Cn','Roboto', sans-serif; text-align: left;">${bodyCopy}</p>
+                          			<h1 style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto', sans-serif; text-align: left; text-transform: uppercase;line-height: 2.85rem; color: inherit !important;">${introLine}</h1>
+                                <p style="margin:0 16px ; padding: 16px 0; color: inherit !important; font:300 17px/1.5  'UniversLTStd-Cn','Roboto', sans-serif; text-align: left;">${bodyCopy}</p>
                           <!--[if (gte mso 9) | (IE)]></td></tr></table><![endif]-->
                         </td>
                 </tr>
