@@ -223,7 +223,25 @@
             <button onclick="removeTemplate7()">Remove Footer</button>
         </div>
 
+           <h3>Full Body Image</h3>
 
+        <label for="full-body-img">Full Body Image Link:</label>
+        <div>
+            <input type="text" id="full-body-img" placeholder="Enter URL" style="width: 80%">
+
+            <button class="tooltip" onclick="openModal3()">Add Alt<span class="tooltiptext">Insert after adding the header</span></button>
+            <div id="myModal3" class="modal">
+                <div class="modal-content">
+                    <input type="text" id="altText3" placeholder="Enter alt text for the image" onkeydown="handleAltTextKeyPress3(event)">
+                    <button onclick="addAltText3(), closeModal3()">done!</button>
+
+                </div>
+            </div>
+        </div>
+                <div style="margin-bottom: 20px;">
+            <button onclick="addTemplate9()">Add Full body Img</button>
+            <button onclick="removeTemplate9()">Remove Full body Img</button>
+        </div>
 
     </div>
 
