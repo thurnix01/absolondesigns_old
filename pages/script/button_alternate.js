@@ -28,9 +28,6 @@
 
     
  <!-----------------Background-Color-Alternate----------------->
-   
-    <script>   
-        
         
         function backColor() {
     var myDiv = document.querySelectorAll('._header-section, ._header-cta');
@@ -46,8 +43,6 @@
         }
     }
 }
-  
- </script>
     
     
  
