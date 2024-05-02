@@ -30,19 +30,19 @@
  <!-----------------Background-Color-Alternate----------------->
         
         function backColor() {
-    var myDiv = document.querySelectorAll('._header-section, ._header-cta');
-    
-    for (var i = 0; i < myDiv.length; i++) {
-        if (myDiv[i].classList.contains('_header-section')) {
-            myDiv[i].style.backgroundColor = '#000';
-            myDiv[i].style.color = '#fff';
-        } else if (myDiv[i].classList.contains('_header-cta')) {
-            myDiv[i].style.backgroundColor = '#000';
-             myDiv[i].style.color = '#fff';
-            myDiv[i].style.paddingBottom = '32px';
+            var myDiv = document.querySelectorAll('._header-section, ._header-cta');
+
+            for (var i = 0; i < myDiv.length; i++) {
+                if (myDiv[i].classList.contains('_header-section')) {
+                    myDiv[i].style.backgroundColor = '#000';
+                    myDiv[i].style.color = '#fff';
+                } else if (myDiv[i].classList.contains('_header-cta')) {
+                    myDiv[i].style.backgroundColor = '#000';
+                    myDiv[i].style.color = '#fff';
+                    myDiv[i].style.paddingBottom = '32px';
+                    myDiv[i].style.marginBottom = '0px';
+                }         
+            }
         }
-    }
-}
-    
     
  
