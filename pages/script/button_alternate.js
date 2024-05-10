@@ -45,4 +45,15 @@
             }
         }
     
- 
+      <!-----------------Full-Background-Color-change----------------->
+    
+
+        function changeBackgroundColor() {
+            var hexCode = document.getElementById('colorInput').value;
+            var elements = document.getElementsByClassName('bgColorChange');
+
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.backgroundColor = hexCode;
+            }
+        }
+
