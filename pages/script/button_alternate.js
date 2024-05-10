@@ -45,7 +45,7 @@
             }
         }
     
-      <!-----------------Full-Background-Color-change----------------->
+      <!-----------------Full-Background-Color---------------->
     
 
         function changeBackgroundColor() {
