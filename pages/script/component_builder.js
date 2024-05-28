@@ -146,7 +146,7 @@
                       <td align="center" valign="middle" width="100%">
                   <![endif]-->
 
-                      <h3 style="font-size: 3rem; mso-ansi-font-size:32px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px 16px; color: #000; padding-top: 32px;">${introBodyTitle}</h3>
+                      <h3 style="font-size: 3rem; mso-ansi-font-size:32px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px; color: #000; padding-top: 32px;">${introBodyTitle}</h3>
 
                  <!--[if (gte mso 9) | (IE)]>
                       </td>
@@ -259,11 +259,11 @@
         template.style.textAlign = "center";   
         template.style.flexGrow = "1";
         template.style.flexShrink = "0"; 
-        template.style.paddingTop = "32px"; 
+        template.style.paddingTop = "8px"; 
         template.style.margin = "0 auto"; 
          
         template.innerHTML = `
-        <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn','Roboto Condensed', sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:238px; background-color: #fff;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:272px; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300"></a>${imageCopy1}</p>
+        <p style="margin: 0 auto; width: 290px; font-family: 'UniversLTStd-Cn','Roboto Condensed', sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:238px; background-color: #fff;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:272px; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300"></a>${imageCopy1}</p>
 
             <!--[if mso]>
                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref1}" target="_blank" style="v-text-anchor:middle;width:220px;height: 52px;text-transform: uppercase;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647">
