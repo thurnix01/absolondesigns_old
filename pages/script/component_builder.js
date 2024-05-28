@@ -260,7 +260,7 @@
         template.style.flexGrow = "1";
         template.style.flexShrink = "0"; 
         template.style.paddingTop = "32px"; 
-        template.style.margin = " 0 auto 0 0"; 
+        template.style.margin = "0 auto 0 0"; 
          
         template.innerHTML = `
         <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn','Roboto Condensed', sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:238px; background-color: #fff;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:272px; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300"></a>${imageCopy1}</p>
