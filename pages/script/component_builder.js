@@ -782,4 +782,200 @@
         }
     }
 
-    
+       //-------------------------------------------
+
+
+ function createFullWidthColumn() {
+            const container = document.getElementById('tableContainer');
+            var buttonLabel3 = document.getElementById("buttonLabel3").value;
+            var buttonHref3 = document.getElementById("buttonHref3").value;
+            
+            let table = document.getElementById('dynamicTable');
+            if (!table) {
+                table = document.createElement('table');
+                table.id = 'dynamicTable';
+                table.border="0" ;
+                table.cellpadding="0" ;
+                table.cellspacing="0";
+                table.width = "600";
+                table.style.maxWidth = "574px";
+                table.role = "presentation";
+                table.style.width = "100%";
+                table.style.borderSpacing = "10px";
+                table.style.borderCollapse = "separate";
+                table.style.padding = "0";
+                table.style.margin = "margin: 0px auto";
+                 container.appendChild(table);
+            }
+            
+            let newRow = table.insertRow();
+            newRow.align = 'center';
+            newRow.style.display = 'flex';
+            newRow.style.flexWrap = 'wrap';
+            newRow.style.justifyContent = 'space-between';
+            
+            const newCell = newRow.insertCell();
+            newCell.className = 'full-width';
+
+            newCell.style.boxSizing = 'border-box';
+            newCell.style.marginBottom = '10px';
+            newCell.style.display = 'grid'; 
+            newCell.style.textAlign = 'center'; 
+            newCell.style.flexGrow = '1'; 
+            newCell.style.flexShrink = '0'; 
+            newCell.style.minWidth = '215px';
+            newCell.style.width = '100%';
+            newCell.style.marginBottom = '16px';
+            
+            
+              newCell.innerHTML = `
+        <!--[if mso]>
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;" width="600">
+                <tr valign="top">
+                  <td align="center" valign="middle" width="100%">
+              <![endif]-->
+
+
+        <!--[if mso]>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref3}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto', sans-serif; font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn button-text">${buttonLabel3}</center></v:roundrect>
+                      <![endif]-->
+        <!--[if !mso]><!-->
+
+        <a href="${buttonHref3}" style="background-color: #f2f2f2; color: #333;font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;text-align: center;font-size: 1rem;font-weight: normal;height: auto;text-transform: uppercase;text-decoration: none; padding: 24px 32px 20px;" target="_blank">${buttonLabel3}</a>
+   
+
+        <!--<![endif]-->
+
+
+        <!--[if mso]>
+                  </td>
+                </tr>
+                    <tr height="36"></tr>
+              </table>
+              <![endif]-->
+
+        `;
+            
+        }
+        
+
+        function createHalfWidthColumn() {
+            const container = document.getElementById('tableContainer');
+            var buttonLabel3 = document.getElementById("buttonLabel3").value;
+            var buttonHref3 = document.getElementById("buttonHref3").value;
+            
+            let table = document.getElementById('dynamicTable');
+            if (!table) {
+                table = document.createElement('table');
+                table.id = 'dynamicTable';
+                table.border="0" ;
+                table.cellpadding="0" ;
+                table.cellspacing="0";
+                table.width = "600";
+                table.style.maxWidth = "574px";
+                table.role = "presentation";
+                table.style.width = "100%";
+                table.style.borderSpacing = "10px";
+                table.style.borderCollapse = "separate";
+                table.style.padding = "0";
+                table.style.margin = "margin: 0px auto ";
+                container.appendChild(table);
+            }
+            
+            let lastRow = table.rows[table.rows.length - 1];
+            if (!lastRow || lastRow.cells.length === 2 || lastRow.cells[0].className === 'full-width') {
+                lastRow = table.insertRow();
+                  
+            lastRow.align = 'center';
+            lastRow.style.display = 'flex';
+            lastRow.style.flexWrap = 'wrap';
+            lastRow.style.justifyContent = 'space-between';
+                
+            lastRow.style.width = '100%'; 
+            lastRow.style.textAlign = 'center';  
+            lastRow.style.flexBasis = '100%';
+            }
+            
+
+            
+            const newCell = lastRow.insertCell();
+            newCell.className = '_remove_margin';
+            newCell.style.boxSizing = 'border-box';
+            newCell.style.display = 'grid'; 
+            newCell.style.textAlign = 'center'; 
+            newCell.style.flexGrow = '1'; 
+            newCell.style.flexShrink = '0'; 
+            newCell.style.minWidth = '215px';
+            newCell.style.maxWidth = '268px';
+            newCell.style.width = '100%';
+            newCell.style.marginBottom = '16px';
+
+
+
+
+            
+            newCell.innerHTML = `
+        <!--[if mso]>
+              <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:600px;" width="600">
+                <tr>
+                  <td align="center" valign="middle" width="100%">
+              <![endif]-->
+
+
+        <!--[if mso]>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref3}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto', sans-serif; font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn button-text">${buttonLabel3}</center></v:roundrect>
+                      <![endif]-->
+        <!--[if !mso]><!-->
+
+        <a href="${buttonHref3}" style="height: auto; width: 100%; max-width: 268px; text-align: center; justify-content: center; margin: 0 auto 0 0; background-color: #f2f2f2;border: none; text-decoration: none; text-transform: uppercase; color: #333; font-family: 'UniversLTStd-Cn','Roboto', sans-serif; font-size: 1rem; font-weight: normal; padding: 24px 0 20px; "target="_blank">${buttonLabel3}</a>
+
+        <!--<![endif]-->
+
+
+        <!--[if mso]>
+                  </td>
+                </tr>
+                    <tr height="36"></tr>
+              </table>
+              <![endif]-->
+
+        `;
+
+                 if (lastRow.cells.length === 1) {
+                newCell.style.marginRight = '16px';
+            }
+
+            if (lastRow.cells.length === 3) {
+                createFullWidthColumn();
+            }
+        }
+
+        function removeColumn() {
+            const table = document.getElementById('dynamicTable');
+            if (!table) return;
+
+            const rows = table.rows;
+            if (rows.length === 0) return;
+
+            let lastRow = rows[rows.length - 1];
+            if (lastRow.cells.length > 0) {
+                lastRow.deleteCell(-1);
+                if (lastRow.cells.length === 0) {
+                    table.deleteRow(-1);
+                }
+            } else if (rows.length > 1) {
+                table.deleteRow(-1);
+                lastRow = rows[rows.length - 1];
+                lastRow.deleteCell(-1);
+            }
+
+            if (table.rows.length === 0) {
+                table.remove();
+            }
+        }
+
+        document.getElementById('addFullWidthBtn').addEventListener('click', createFullWidthColumn);
+        document.getElementById('addHalfWidthBtn').addEventListener('click', createHalfWidthColumn);
+        document.getElementById('removeColumnBtn').addEventListener('click', removeColumn);
+
+       //-------------------------------------------
