@@ -803,7 +803,7 @@
                 table.style.borderSpacing = "10px";
                 table.style.borderCollapse = "separate";
                 table.style.padding = "0";
-                table.style.margin = "margin: 0px auto";
+                table.style.margin = "0 auto";
                  container.appendChild(table);
             }
             
@@ -877,7 +877,7 @@
                 table.style.borderSpacing = "10px";
                 table.style.borderCollapse = "separate";
                 table.style.padding = "0";
-                table.style.margin = "margin: 0px auto ";
+                table.style.margin = "0 auto";
                 container.appendChild(table);
             }
             
