@@ -57,3 +57,18 @@
             }
         }
 
+    
+    <!-----------------Header Centering---------------->
+
+            function centerHeader() {
+            var myDiv = document.querySelectorAll('._header-centering, ._header-cta-centering');
+
+            for (var i = 0; i < myDiv.length; i++) {
+                if (myDiv[i].classList.contains('_header-centering')) {
+                    myDiv[i].style.textAlign = 'center';
+                } else if (myDiv[i].classList.contains('_header-cta-centering')) {
+                    myDiv[i].style.margin = '0 auto';
+                }         
+            }
+        }
+
