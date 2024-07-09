@@ -786,8 +786,8 @@
 
    function createFullWidthColumn() {
             const container = document.getElementById('container');
-            var buttonLabel4 = document.getElementById("buttonLabel4").value;
-            var buttonHref4 = document.getElementById("buttonHref4").value;
+            var buttonLabel5 = document.getElementById("buttonLabel5").value;
+            var buttonHref5 = document.getElementById("buttonHref5").value;
             
             let table = document.getElementById('dynamicTable');
             if (!table) {
@@ -836,11 +836,11 @@
 
 
         <!--[if mso]>
-                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref4}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#364647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto', sans-serif; font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn button-text">${buttonLabel4}</center></v:roundrect>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref5}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#364647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto', sans-serif; font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn button-text">${buttonLabel5}</center></v:roundrect>
                       <![endif]-->
         <!--[if !mso]><!-->
 
-        <a href="${buttonHref4}" style="background-color: #f2f2f2; color: #333;font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;text-align: center;font-size: 1rem;font-weight: normal;height: auto;text-transform: uppercase;text-decoration: none; padding: 24px 42px 20px;" target="_blank">${buttonLabel4}</a>
+        <a href="${buttonHref5}" style="background-color: #f2f2f2; color: #333;font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif;text-align: center;font-size: 1rem;font-weight: normal;height: auto;text-transform: uppercase;text-decoration: none; padding: 24px 42px 20px;" target="_blank">${buttonLabel5}</a>
    
 
         <!--<![endif]-->
@@ -860,8 +860,8 @@
 
         function createHalfWidthColumn() {
             const container = document.getElementById('container');
-            var buttonLabel4 = document.getElementById("buttonLabel4").value;
-            var buttonHref4 = document.getElementById("buttonHref4").value;
+            var buttonLabel5 = document.getElementById("buttonLabel5").value;
+            var buttonHref5 = document.getElementById("buttonHref5").value;
             
             let table = document.getElementById('dynamicTable');
             if (!table) {
@@ -922,11 +922,11 @@
 
 
         <!--[if mso]>
-                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref4}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto', sans-serif; font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn button-text">${buttonLabel4}</center></v:roundrect>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref5}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto', sans-serif; font-size:16px;font-weight:bold;text-transform:uppercase;" class="_cta_btn button-text">${buttonLabel5}</center></v:roundrect>
                       <![endif]-->
         <!--[if !mso]><!-->
 
-        <a href="${buttonHref4}" style="height: auto; width: 100%; max-width: 268px; text-align: center; justify-content: center; margin: 0 auto 0 0; background-color: #f2f2f2;border: none; text-decoration: none; text-transform: uppercase; color: #333; font-family: 'UniversLTStd-Cn','Roboto', sans-serif; font-size: 1rem; font-weight: normal; padding: 24px 0 20px; "target="_blank">${buttonLabel4}</a>
+        <a href="${buttonHref5}" style="height: auto; width: 100%; max-width: 268px; text-align: center; justify-content: center; margin: 0 auto 0 0; background-color: #f2f2f2;border: none; text-decoration: none; text-transform: uppercase; color: #333; font-family: 'UniversLTStd-Cn','Roboto', sans-serif; font-size: 1rem; font-weight: normal; padding: 24px 0 20px; "target="_blank">${buttonLabel5}</a>
 
         <!--<![endif]-->
 
