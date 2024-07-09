@@ -784,9 +784,8 @@
 
        //-------------------------------------------
 
-
- function createFullWidthColumn() {
-            const container = document.getElementById('tableContainer');
+  function createFullWidthColumn() {
+            const container = document.getElementById('container');
             var buttonLabel3 = document.getElementById("buttonLabel3").value;
             var buttonHref3 = document.getElementById("buttonHref3").value;
             
@@ -860,7 +859,7 @@
         
 
         function createHalfWidthColumn() {
-            const container = document.getElementById('tableContainer');
+            const container = document.getElementById('container');
             var buttonLabel3 = document.getElementById("buttonLabel3").value;
             var buttonHref3 = document.getElementById("buttonHref3").value;
             
