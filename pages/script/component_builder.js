@@ -40,13 +40,13 @@
                 </td></tr>
                 
                 
-                <tr style="padding:32px 16px 0; display: block;" class="_introline">
+                <tr style="padding:32px 16px 0; display: flex;" class="_introline">
                         <td align="center" valign="middle" width="100%">
                                  <!--[if (gte mso 9) | (IE)]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px;"><![endif]-->
 
                                
-                          			<h1 style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto', sans-serif; text-align: left; text-transform: uppercase;line-height: 2.85rem; color: inherit !important;">${introLine}</h1>
-                                <p style="margin:0 16px ; padding: 16px 0; color: inherit !important; font:300 17px/1.5  'UniversLTStd-Cn','Roboto', sans-serif; text-align: left;">${bodyCopy}</p>
+                          			<h1 class="_header-centering" style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto', sans-serif; text-align: left; text-transform: uppercase;line-height: 2.85rem; color: inherit !important;">${introLine}</h1>
+                                <p class="_header-centering" style="margin:0 16px ; padding: 16px 0; color: inherit !important; font:300 17px/1.5  'UniversLTStd-Cn','Roboto', sans-serif; text-align: left;">${bodyCopy}</p>
                           <!--[if (gte mso 9) | (IE)]></td></tr></table><![endif]-->
                         </td>
                 </tr>
@@ -98,7 +98,7 @@
           <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref}" target="_blank" style="height:56px; v-text-anchor:middle;width:220px;height: 52px;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647"><w:anchorlock/><center style="color:#ffffff;font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px;font-weight:bold;text-transform:uppercase;" id="_cta_btn" class="btn-style1">${buttonLabel}</center></v:roundrect>
           <![endif]-->
           <!--[if !mso]><!-->
-          <a href="${buttonHref}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn','Roboto', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" id="_cta_btn" class="btn-style1 _cta_btn"><span class="button-text"><nobr>${buttonLabel}</nobr></span></a>
+          <a class="_header-cta-centering" href="${buttonHref}" target="_blank" style="background-color:#464647;border:1px solid #464647;border-radius:5px;color:#ffffff;display:block;font-family:'UniversLTStd-Cn','Roboto', sans-serif;font-size: 1rem;font-weight:normal;line-height:56px;text-align:center;text-decoration:none;text-transform: uppercase !important;width:220px;height: 52px;margin:0 ;-webkit-text-size-adjust:none;mso-hide:all;" id="_cta_btn" class="btn-style1 _cta_btn"><span class="button-text"><nobr>${buttonLabel}</nobr></span></a>
           <!--<![endif]-->
         </div>
 
