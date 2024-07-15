@@ -589,17 +589,17 @@
 
         var container = document.getElementById("container");
         var template = document.createElement("table");
-        template.style.maxWidth = "600px";
+   
         template.width = "600";
-        template.style.width = "100%";
-        template.style.margin = "0 auto";
-        template.style.height = "auto";
-        template.verticalAlign = "top";
         template.border = "0";
         template.cellPadding = "0";
         template.cellSpacing = "0";
         template.role = "presentation";
         template.align = "center";
+        template.style.width = "100%";
+        template.style.maxWidth = "600px";
+        template.style.margin = "0 auto";
+        template.style.height = "auto";
         template.className = "_body-footer";
         template.innerHTML = `
   <!--[if (mso)|(IE)]><table border="0" cellpadding="0" cellspacing="0" role="presentation"align="center" width="600" style="width:600px;">     <![endif]-->
