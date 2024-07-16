@@ -613,7 +613,7 @@
         template.className = "_body-footer";
         template.innerHTML = `
 
-        <!--[if (mso)|(IE)]><table border="0" cellpadding="0" cellspacing="0" align="center" width="600" style="width:600px;"><tr> <td style="width: 260px;" valign="top" width="260"> <![endif]-->
+             <!--[if (mso)|(IE)]><table border="0" cellpadding="0" cellspacing="0" align="center" width="600" style="width:600px;"><tr> <![endif]-->
     <tr bgcolor="#f9f9f9" style="background-color:#f9f9f9;">
         <td align="center" style="display: table-cell;max-width: 280px;width: 50%;text-align: center;margin: 0 auto;justify-content: center;" class="floating">
             <span style="margin: 0 auto; width: 100%;">
@@ -631,13 +631,14 @@
             <div style="color:#2C2C2C; font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px; padding-top:18px;padding-right: 16px;">${imageCopy3}</div>
 
              <div style="color:#333;font-size:18px; line-height:26px; padding-bottom:0px;padding-top:16px; margin: 0;"><a href="${buttonHref3}" target="_blank" style="color:#333; font-weight:bold; text-decoration:underline;font-family:'UniversLTStd-Cn','Roboto', sans-serif; text-transform: uppercase;" class="footer_cta">${buttonLabel3}<span style="position: relative; bottom: 0.05rem;"> ></span></a></div>
-
+                   <!--[if (mso)|(IE)]> <td style="padding-right:32px" valign="top" width="260"> <![endif]-->
+          <!--[if (mso)|(IE)]></td><![endif]-->
 
         </td>
     </tr>
    <tr height="24"></tr>
 
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
   
         `;
         container.appendChild(template);
