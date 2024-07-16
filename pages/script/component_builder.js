@@ -7,14 +7,13 @@
         var template = document.createElement("table");
         template.className = "_header-section";
         template.width = "600";
-        template.style.maxWidth = "600px";
          template.border = "0";
          template.cellPadding = "0"; 
          template.cellSpacing = "0"; 
          template.role = "presentation";
          template.align = "center";
         template.borderCollapse = "collapse";
-        
+        template.style.maxWidth = "600px";        
         template.style.width = "100%";
         template.style.backgroundColor = "#fffff";
         template.style.margin = "0 auto";
