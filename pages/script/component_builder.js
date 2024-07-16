@@ -617,7 +617,7 @@
 
             <h3 style="color: #000000 !important;font-size: 2rem;font-weight: 300;text-transform: uppercase;margin: 0;mso-ansi-font-size: 24px;font-family: 'tungsten','Roboto', sans-serif !important; text-align: left; line-height: 2rem; letter-spacing: 0.1rem;">${introBodyTitle2}</h3>
 
-            <p style="color:#2C2C2C; font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px; padding-top:18px;padding-right: 16px;">${imageCopy3}</p>
+            <div style="color:#2C2C2C; font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px; padding-top:18px;padding-right: 16px;">${imageCopy3}</div>
 
              <div style="color:#333;font-size:18px; line-height:26px; padding-bottom:0px;padding-top:16px; margin: 0;"><a href="${buttonHref3}" target="_blank" style="color:#333; font-weight:bold; text-decoration:underline;font-family:'UniversLTStd-Cn','Roboto', sans-serif; text-transform: uppercase;" class="footer_cta">${buttonLabel3}<span style="position: relative; bottom: 0.05rem;"> ></span></a></div>
 
