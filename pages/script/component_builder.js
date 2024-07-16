@@ -594,7 +594,6 @@
         template.border = "0";
         template.cellPadding = "0";
         template.cellSpacing = "0";
-        template.role = "presentation";
         template.align = "center";
         template.style.width = "100%";
         template.style.maxWidth = "600px";
@@ -602,7 +601,8 @@
         template.style.height = "auto";
         template.className = "_body-footer";
         template.innerHTML = `
-     <!--[if (mso)|(IE)]><table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" width="600" style="width:600px;"><tr> <td style="width: 260px;" valign="top" width="260"> <![endif]-->
+
+         <!--[if (mso)|(IE)]><table border="0" cellpadding="0" cellspacing="0" align="center" width="600" style="width:600px;"><tr> <td style="width: 260px;" valign="top" width="260"> <![endif]-->
     <tr bgcolor="#f9f9f9" style="background-color:#f9f9f9;">
         <td align="center" style="display: table-cell;max-width: 280px;width: 50%;text-align: center;margin: 0 auto;justify-content: center;" class="floating">
             <span style="margin: 0 auto; width: 100%;">
