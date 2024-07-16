@@ -602,11 +602,8 @@
         template.style.height = "auto";
         template.className = "_body-footer";
         template.innerHTML = `
-  <!--[if (mso)|(IE)]><table border="0" cellpadding="0" cellspacing="0" role="presentation"align="center" width="600" style="width:600px;">     <![endif]-->
+     <!--[if (mso)|(IE)]><table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" width="600" style="width:600px;"><tr> <td style="width: 260px;" valign="top" width="260"> <![endif]-->
     <tr bgcolor="#f9f9f9" style="background-color:#f9f9f9;">
-        <!--[if true]>
-                <td style="width: 260px;" valign="top" width="260"> 
-                <![endif]-->
         <td align="center" style="display: table-cell;max-width: 280px;width: 50%;text-align: center;margin: 0 auto;justify-content: center;" class="floating">
             <span style="margin: 0 auto; width: 100%;">
             <a href="${buttonHref3}" target="_blank" >
@@ -615,34 +612,19 @@
 
 
         </td>
-        <!--[if true]> 
-                </td> 
-                <![endif]-->
 
-        <!--[if true]>
-                <td style="width: 260px;" valign="top" width="260"> 
-                <![endif]-->
         <td align="center" style="display: grid;max-width: 224px;width: auto !important;text-align: left;padding: 16px 0 16px 16px;float: left;height: 240px;align-content: center;"  class="floating">
-        <!--[if mso]>
-                <h3 style="font-size: 50px;mso-ansi-font-size:50px"> 
-                <![endif]-->
 
             <h3 style="color: #000000 !important;font-size: 2rem;font-weight: 300;text-transform: uppercase;margin: 0;mso-ansi-font-size: 24px;font-family: 'tungsten','Roboto', sans-serif !important; text-align: left; line-height: 2rem; letter-spacing: 0.1rem;">${introBodyTitle2}</h3>
 
-        <!--[if true]> 
-                </h3> 
-                <![endif]-->
             <div style="color:#2C2C2C; font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px; padding-top:18px;">${imageCopy3}</div>
 
              <div style="color:#333;font-size:18px; line-height:26px; padding-bottom:0px;padding-top:16px; margin: 0;"><a href="${buttonHref3}" target="_blank" style="color:#333; font-weight:bold; text-decoration:underline;font-family:'UniversLTStd-Cn','Roboto', sans-serif; text-transform: uppercase;" class="footer_cta">${buttonLabel3}<span style="position: relative; bottom: 0.05rem;"> ></span></a></div>
 
 
         </td>
-        <!--[if true]> 
-                </td> 
-                <![endif]-->
     </tr>
-    <tr height="24"></td>
+   <tr height="24"></tr>
 
     <!--[if (mso)|(IE)]>
      </table>
