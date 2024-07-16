@@ -15,40 +15,50 @@
         template.borderCollapse = "collapse";
         template.style.maxWidth = "600px";        
         template.style.width = "100%";
-        template.style.backgroundColor = "#fffff";
         template.style.margin = "0 auto";
         template.style.padding = "0";
         template.style.tableLayout = "fixed";
-        template.style.verticalAlign = "top";
+
     
         template.innerHTML = `
 
-<tr style="vertical-align: top">
-            <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top; margin: 0;padding:0;">
-                <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #FFFFFF;margin: 0;padding:0;"><![endif]-->
+        <tr>
+            <td align="center"  style="word-break: break-word;border-collapse: collapse !important;vertical-align: top; margin: 0;padding:0;">
+                <!--[if (mso)|(IE)]>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td align="center" style="background-color: #FFFFFF;margin: 0;padding:0;">
+                <![endif]-->
 
-            <div align="center" style="margin: 0;padding:0;">
-                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px;line-height:0px;"><td style="padding-right: 0px; padding-left: 0px;" align="center"><![endif]-->
                    
                         <img align="center" border="0" src="${heroImage}" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px" width="600" id="imageAlt1">
            
-                    <!--[if mso]></td></tr></table><![endif]-->
-                </div>
-             <!--[if (mso)|(IE)]></td></tr>  </table>
-              <![endif]-->
-                </td></tr>
+                <!--[if (mso)|(IE)]>
+                        </td>
+                    </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
                 
                 
-                <tr style="padding:32px 16px 0; display: flex;" class="_introline">
-                        <td align="center" valign="middle" width="100%">
-                                 <!--[if (gte mso 9) | (IE)]><table width="600" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="padding: 16px;"><![endif]-->
-
+                   <tr style="display: flex;" class="_introline">
+            <td align="center" valign="middle" width="100%" style="padding: 16px 32px 0 16px;">
+                <!--[if (gte mso 9) | (IE)]>
+                <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                        <td style="padding: 16px;">
+                <![endif]-->
                                
                           			<h1 class="_header-centering" style="margin:16px 16px 0;font-size: 3.5rem; mso-ansi-font-size:40px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto', sans-serif; text-align: left; text-transform: uppercase;line-height: 2.85rem; color: inherit !important;">${introLine}</h1>
                                 <p class="_header-centering" style="margin:0 16px ; padding: 16px 0; color: inherit !important; font:300 17px/1.5  'UniversLTStd-Cn','Roboto', sans-serif; text-align: left;">${bodyCopy}</p>
-                          <!--[if (gte mso 9) | (IE)]></td></tr></table><![endif]-->
+                                          <!--[if (gte mso 9) | (IE)]>
                         </td>
-                </tr>
+                    </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
             `;
         container.appendChild(template);
     }
