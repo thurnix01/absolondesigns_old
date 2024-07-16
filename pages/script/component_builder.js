@@ -624,7 +624,7 @@
 
         </td>
 
-        <td align="center" style="display: grid;width: 90%;text-align: left;padding: 16px 32px 16px 16px;float: left;height: 240px;align-content: center;"  class="floating">
+        <td align="center" style="display: grid;width: 90%;text-align: left;padding: 16px 0 16px 16px;float: left;height: 240px;align-content: center;"  class="floating">
 
             <h3 style="color: #000000 !important;font-size: 2rem;font-weight: 300;text-transform: uppercase;margin: 0;mso-ansi-font-size: 24px;font-family: 'tungsten','Roboto', sans-serif !important; text-align: left; line-height: 2rem; letter-spacing: 0.1rem;">${introBodyTitle2}</h3>
 
