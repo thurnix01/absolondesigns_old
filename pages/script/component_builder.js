@@ -626,7 +626,7 @@
 
         <td align="center" style="display: grid;width: 90%;text-align: left;padding: 16px 0 16px 16px;float: left;height: 240px;align-content: center;"  class="floating">
 
-            <h3 style="color: #000000 !important;font-size: 1.5rem;font-weight: 300;text-transform: uppercase;margin: 0;mso-ansi-font-size: 18px;font-family: 'tungsten','Roboto', sans-serif !important; text-align: left; line-height: 1.85rem; letter-spacing: 0rem;padding-right: 16px;">${introBodyTitle2}</h3>
+            <h3 style="color: #000000 !important;font-size: 1.75rem;font-weight: 300;text-transform: uppercase;margin: 0;mso-ansi-font-size: 18px;font-family: 'tungsten','Roboto', sans-serif !important; text-align: left; line-height: 1.85rem; letter-spacing: 0rem;padding-right: 16px;">${introBodyTitle2}</h3>
 
             <div style="color:#2C2C2C; font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px; padding-top:18px;padding-right: 16px;">${imageCopy3}</div>
 
