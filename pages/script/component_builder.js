@@ -274,7 +274,8 @@
         template.style.margin = "0 auto"; 
          
         template.innerHTML = `
-        <p style="margin: 0 auto 12px; width: 290px; font-family: 'UniversLTStd-Cn','Roboto Condensed', sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:238px; background-color: #fff;"><a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:272px; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300"></a>${imageCopy1}</p>
+        <a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:272px; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300"></a>
+        <p style="margin: 12px auto 12px; width: 290px; font-family: 'UniversLTStd-Cn','Roboto Condensed', sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:auto; background-color: #fff;">${imageCopy1}</p>
 
             <!--[if mso]>
             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" style="v-text-anchor:middle;width:220px;height: 52px;text-transform: uppercase;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647">
@@ -626,7 +627,7 @@
 
         <td align="center" style="display: grid;width: 90%;text-align: left;padding: 16px 0 16px 16px;float: left;height: 240px;align-content: center;"  class="floating">
 
-            <h3 style="color: #000000 !important;font-size: 1.75rem;font-weight: 300;text-transform: uppercase;margin: 0;mso-ansi-font-size: 18px;font-family: 'tungsten','Roboto', sans-serif !important; text-align: left; line-height: 1.85rem; letter-spacing: 0rem;padding-right: 16px;">${introBodyTitle2}</h3>
+            <h3 style="color: #000000 !important;font-size: 1.75rem;font-weight: 300;text-transform: uppercase;margin: 0;mso-ansi-font-size: 20px;font-family: 'tungsten','Roboto', sans-serif; text-align: left; line-height: 1.85rem; letter-spacing: 0rem;padding-right: 16px;">${introBodyTitle2}</h3>
 
             <div style="color:#2C2C2C; font-family:'UniversLTStd-Cn','Roboto Condensed', sans-serif; font-size:16px; padding-top:18px;padding-right: 16px;">${imageCopy3}</div>
 
@@ -689,7 +690,7 @@
         <a href="${buttonHref4}" target="_blank"><img align="center" border="0" src="${image4}" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none; float: none;width: 100%;max-width: 536px;  object-fit: contain; object-position: center; border-radius: 8px; overflow: hidden;" width="536" id="imageAlt2"></a>
 
 
-        <p style="margin: 0 auto 12px; width: 100%; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:auto; padding-top: 16px; line-height: 1.5rem;" >${imageCopy4}</p>
+        <p style="margin: 12px auto 12px; width: 100%; font-family: 'UniversLTStd-Cn', Helvetica, Arial, Tahoma, sans-serif; text-align: center; font-size:17px;font-weight: normal; color:#000; height:auto;  line-height: 1.5rem;" >${imageCopy4}</p>
 
             <!--[if mso]>
                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${buttonHref4}" target="_blank" style="v-text-anchor:middle;width:260px;height: 52px;text-transform: uppercase;" arcsize="11.11111111111111%" strokecolor="#464647" fillcolor="#464647">
