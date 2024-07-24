@@ -156,7 +156,7 @@
                       <td align="center" valign="middle" width="100%">
                   <![endif]-->
 
-                      <h3 style="font-size: 3rem; mso-ansi-font-size:32px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto', sans-serif; text-align: center; text-transform: uppercase; margin: 32px 32px; color: #000; padding-top: 32px;">${introBodyTitle}</h3>
+                      <h3 style="font-size: 3rem; mso-ansi-font-size:32px;font-weight: 400 !important; letter-spacing: 0.1rem; font-family: 'tungsten','Roboto', sans-serif; text-align: center; text-transform: uppercase; margin: 64px 32px 32px; color: #000;">${introBodyTitle}</h3>
 
                  <!--[if (gte mso 9) | (IE)]>
                       </td>
