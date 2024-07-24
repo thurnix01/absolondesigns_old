@@ -199,8 +199,10 @@
           var innerContainer = document.createElement('table');
           innerContainer.style.width = "100%";
           innerContainer.style.maxWidth = "600px";
+          innerContainer.style.marginBottom = "40px";
           innerContainer.width = "600";
           innerContainer.align = "center";
+        
               
           innerContainer.setAttribute('id', 'inner-container');
           container.appendChild(innerContainer);
