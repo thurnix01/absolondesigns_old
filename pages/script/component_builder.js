@@ -272,8 +272,7 @@
         template.style.textAlign = "center";   
         template.style.flexGrow = "1";
         template.style.flexShrink = "0"; 
-        template.style.paddingTop = "8px"; 
-        template.style.margin = "0 auto"; 
+        template.style.margin = "0 auto 32px"; 
          
         template.innerHTML = `
         <a href="${buttonHref1}" target="_blank"><img src="${image1}" alt="Product Image" style="width:272px; margin: 0 auto; display: flex; height: auto; object-fit: contain;" border="0" width="300"></a>
