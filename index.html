@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <style>
         
           :root {
@@ -36,13 +37,13 @@
                 
 
         .nav_wrapper{
-            width: 90%; height: auto; display: block; margin: 0 auto; justify-content: space-between; align-items: center; position: relative; color: #fff; 
+            width: 100%; max-width: 870px; height: auto; display: block; margin: 0 auto; justify-content: space-between; align-items: center; position: relative; color: #fff; 
         }
     
 
         
         .logo{
-            width:12%;float: left;
+            width:12%;float: right;
     
         }
         
@@ -54,11 +55,11 @@
         
         
         .hero{
-            max-width: 1000px; height: 360px; margin: 30px auto;  position: relative;
+            max-width: 100vw; height: 280px; margin: 0 auto;  position: relative;
         }
         
         .hero_img{
-            width: 100%; position: absolute; height: 320px; object-fit: cover;
+            width: 100%; position: absolute; height: 480px; object-fit: cover;
         }
         
 
@@ -96,7 +97,7 @@
         }
         
         .card_info{
-            height: 50%; padding: 0 30px; font-family: 'Montserrat'; font-size: 0.75rem; line-height: 1.25rem; color: #000;
+            height: auto; padding: 0 30px; font-family: 'Montserrat'; font-size: 0.75rem; line-height: 1.25rem; color: #000;
             
         }
         
@@ -108,11 +109,11 @@
             }
 
             .topnav a {
-              float: left;
+    
               display: block;
               color: #f2f2f2;
               text-align: center;
-              padding: 14px 16px;
+              margin: 16px 0;
               text-decoration: none;
               font-size: 17px;
             
@@ -130,8 +131,6 @@
             }
         
                 .nav_section{
-            float: right; 
-            text-align: right;
            z-index: 99999;
             }
 
@@ -146,15 +145,13 @@
             }
 
              .logo{
-            width: 20%;
-            height: auto;
-            float: left;
+            display: none;
             }
             
 
             
           .hero{
-            max-width: 1000px; height: 530px; margin: 30px auto;  position: relative;
+            max-width: 1000px; margin: 0 auto;  position: relative; height: 580px;
         }
         
             .hero_img{
@@ -201,7 +198,113 @@
             font-size: 0.75rem; color: #a9a9a9; line-height: 2.2rem;
         }
 
+        
+            
+    .main_block {
+        font-family: 'Outfit', sans-serif;
+        max-width: 1000px;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-content: center;
+        border-radius: 20px;
+        opacity: 0;
+        transition: opacity 1s ease-out, transform 1s ease-out;
+        position: absolute;
+        top: 0;
+        left: -50%;
+        transform: translate(-50%, 90%);
+        align-items: flex-end;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 16px;
+        padding-top: 24px;
+    }
+        .img_block {
+            margin: 0 0 16px 32px;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 285px;
+            height: auto;
+            box-shadow: 0 13px 30px rgb(0 0 0 / 0.40);
+        }
+        
+        .title{
+            font-weight: 700;
+            font-size: 1.35rem;
+            color: var(--White);
+            text-align: left;
+                }
+    
+        .copy{
+            cursor: default;
+            color: var(--White);
+            font-weight: 300;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            text-align: left;
+           
+        }
+        
+        .main_block .card_info{
+
+        width: 100%;
+
+        }
+
+        .reveal_container,
+        .reveal_container_01,
+        .reveal_container_02 {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+
+
+
+        .visible {
+        opacity: 1;
+        transform: translateY(0);
+        }
+
+        .copy a {
+        color: #fff;
+        text-decoration: none;
+        }
+
+        .copy a:hover {
+        text-decoration: underline;
+        }
+        
+        @media screen and (max-width:698px){
+                .main_block {
+                display: block;
+                top: -25%;
+                width: 80%;
+                height: auto;
+            }
+            
+                .img_block {
+                    margin: 0 auto;
+                    display: flex;
+            }
+                .main_block .card_info{
+                max-width: 500px;
+                width: auto;    
+
+            }
+                .title{
+            text-align: center;
+                }
+            
+        }
     </style>
+    
+  
 </head>
 
 <body>
@@ -212,11 +315,12 @@
   <div><img src="https://thurnix01.github.io/absolondesigns/images/hero_img.jpg"  class="hero_img"></div>
     <div class="nav_wrapper">
 
-        <a href="#main"><img src="https://thurnix01.github.io/absolondesigns/images/absolon_designs_logo_blk_edit.gif" class="logo"></a>
+
         <div class="topnav" id="myTopnav">
 
      
       <div class="nav_section">
+<!--
             <a href="#hide" class="hide" style="display: block; color: transparent; pointer-events: none;">hidden</a>
               <a href="https://thurnix01.github.io/absolondesigns/pages/about.html">About</a>
             <a href="#contact">Contact</a>
@@ -224,6 +328,8 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"  style="font-size:24px"></i>
             </a>
+-->
+            <a href="#main"><img src="https://thurnix01.github.io/absolondesigns/images/absolon_designs_logo_blk_edit.gif" class="logo"></a>
     </div>
        
        
@@ -235,6 +341,100 @@
     </div>
        </header>
     </div>
+    
+
+        
+    <div class="main_block">
+        <img src="https://thurnix01.github.io/absolondesigns/pages/images/profile.jpg" class="img_block" alt="Profile picture">
+        <div class="card_info">
+            <h1 class="title" id="title"></h1>
+            <p class="copy"><span style="font-size: 1.2rem;">Graphic Designer / Front-End Developer </span><br><i class="material-icons" style="vertical-align: bottom; padding-right: 8px;padding-top: 8px; ">&#xe55c;</i><a href="https://maps.app.goo.gl/iUQrFNbbBd8qPuCh7" target="_blank" style="padding-right: 8px;font-size:0.95rem">Victoria, British Columbia, Canada</a> 
+            <i class="material-icons" style="vertical-align: bottom; padding-right: 8px;padding-top: 8px;  ">&#xe0e1;</i>
+             <a href="mailto:absolondesigns@gmail.com" style="padding-right: 8px;font-size:0.95rem" target="_blank" >Email Me</a>
+             <i class="material-icons" style="vertical-align: bottom; padding-right: 8px; ">&#xe541;</i>
+             <a href="https://www.starbucks.ca/gift/00000043" target="_blank" style="font-size:0.95rem">Buy me a coffee</a>
+             
+             </p>
+            
+             
+             
+        </div>
+    </div>
+    
+
+
+
+<div class="reveal_container">
+    <div class="card_info" style="max-width: 900px; margin: 0 auto 52px; width: auto; letter-spacing: 0.5px; padding: 0 52px;">
+        <h1 class="title">About me</h1>
+        <p class="copy">I am constantly striving to improve my professional and personal growth. My objective is to explore career opportunities that will help me advance my design talents and provide me with further experience in an environment that encourages creativity. I have extensive industry knowledge and experience in campaign management, production design, and website development. Together with my strategic thinking and interpersonal communication, I believe this allows me to advocate for myself in an effective and rewarding manner.</p>
+    </div>
+</div>
+
+<div class="reveal_container_01">
+    <div class="card_info" style="max-width: 900px; margin: 0 auto 52px; width: auto; letter-spacing: 0.5px; padding: 0 52px;">
+        <h1 class="title">Some of my skills</h1>
+        <p class="copy"></p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+            const mainBlock = document.querySelector(".main_block");
+            mainBlock.style.opacity = "1";
+            mainBlock.style.left = "50%";
+            mainBlock.style.transform = "translate(-50%, 60%)";
+        }, 600); // Delay in milliseconds (500ms = 0.5s)
+    });
+    
+
+    var i = 0;
+    var txt = 'Hi, I’m Terence Absolon'; // The text
+    var speed = 50; // The speed/duration of the effect in milliseconds
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("title").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    
+        document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(typeWriter, 600); // Start after 0.6 seconds
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const containers = document.querySelectorAll(".reveal_container, .reveal_container_01, .reveal_container_02");
+
+        // Page Load Delay - Staggered Effect
+        containers.forEach((container, index) => {
+            setTimeout(() => {
+                container.classList.add("visible");
+            }, 1200 + index * 300); // Stagger delay: 1200ms, 1500ms, 1800ms
+        });
+
+        // Scroll Reveal Function for Multiple Containers
+        function revealOnScroll() {
+            containers.forEach((container) => {
+                const rect = container.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+
+                if (rect.top < windowHeight - 100) { // Adjust for better reveal timing
+                    container.classList.add("visible");
+                }
+            });
+        }
+
+        // Add Scroll Event Listener
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll(); // Check on initial load
+    });
+</script>
+
+
     
     
      <div class="card_wrapper">
@@ -322,5 +522,3 @@ $(window).scroll(function() {
 </html>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
