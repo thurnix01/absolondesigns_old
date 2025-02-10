@@ -55,7 +55,9 @@
         
         
         .hero{
-            max-width: 100vw; height: 280px; margin: 0 auto;  position: relative;
+            max-width: 100vw; 
+            height: 280px; margin: 0 auto;  position: relative;
+
         }
         
         .hero_img{
@@ -349,7 +351,14 @@
        </header>
     </div>
     
+<script>
+    var scrollEventHandler = function()
+    {
+    window.scroll(0, window.pageYOffset)
+    }
 
+    window.addEventListener("scroll", scrollEventHandler, false);
+</script>
         
     <div class="main_block">
         <img src="https://thurnix01.github.io/absolondesigns/pages/images/profile.jpg" class="img_block" alt="Profile picture">
@@ -385,7 +394,7 @@
 
 <div class="reveal_container_01">
     <div class="card_info" style="max-width: 900px; margin: 0 auto 52px; width: auto; letter-spacing: 0.5px; padding: 0 52px;">
-        <h1 class="title">Some of my skills</h1>
+        <h1 class="title">Some of my work</h1>
         <p class="copy"></p>
     </div>
 </div>
@@ -449,7 +458,7 @@
 
     
     
-     <div class="card_wrapper">
+     <div class="reveal_container_02 card_wrapper">
 
          <a href="https://thurnix01.github.io/absolondesigns/pages/product-preview-comp.html"><div class="card">
              <div class="card_top"><img src="https://thurnix01.github.io/absolondesigns/images/preview_01.jpg" class="card-img" alt="image"></div>
